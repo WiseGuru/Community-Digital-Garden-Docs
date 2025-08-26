@@ -1,11 +1,10 @@
 ---
-title: Troubleshooting Digital Gardens
-category: Bugs
-description: Brief description
 layout: default
 parent: Bugs and Fixes
-nav_order: 10
+title: Troubleshooting Digital Gardens
+nav_order: 2
 ---
+
 > [!Reminder]
 >  Free software isn't free. Support Ole, the Digital Garden developer: [Buy Ole Eskild Steensen a Coffee - oleeskild - Ko-fi](https://ko-fi.com/oleeskild)
 
@@ -69,18 +68,18 @@ Let's review the publication pipeline for your Obsidian Digital Garden. Each sto
 
 ### Option 1: Through the Obsidian Command Palette
 Open the Obsidian *Command Palette*, search for **Digital Garden**, and select the "Digital Garden: Add publish flag" command.
-![[Troubleshooting Digital Gardens-1.png]]
+![](attachment/8f7cad6b70451880cde9d5576459d64b.png)
 If you do not have a `dg-home` property set, you can manually change `dg-publish` to `dg-home` and then add another publish flag to the sheet.
 
 ### Option 2: Manually add the properties
 1. Select the three-dot menu at the top-left of your note, and click "Add file property..."
-	1. ![[Troubleshooting Digital Gardens-2.png]]
+	1. ![](attachment/3f42a84128c1632467de6a89deaf0e50.png)
 2. Name the property either `dg-home` or `dg-publish`
-	1. ![[Troubleshooting Digital Gardens-4.png]]
+	1. ![](attachment/090bd324f0247fd6d3d7c691c67179fc.png)
 3. Select the icon to the left of the name, and change the "Property Type" to *Checkbox*
-	1. ![[Troubleshooting Digital Gardens-5.png]]
+	1. ![](attachment/f3f601348812b1bf9e1aed4230d389a4.png)
 4. Check the box to enable the property, uncheck the box to disable it.
-	1. ![[Troubleshooting Digital Gardens-6.png]]
+	1. ![](attachment/b1dfa00cf72ebe9eea5829a6cac5c5fd.png)
 		1. With *this configuration*, the note is set as the home page, *but* will not be published to the Digital Garden, and *will result in a failed deployment.*
 		2. Both `dg-home` and `dg-publish` need to be checked on the homepage.
 
@@ -94,8 +93,8 @@ If you do not have a `dg-home` property set, you can manually change `dg-publish
 If your site doesn't update, or your pages are marked correctly, proceed to the next step.
 ## 02. Check your GitHub Repo to make sure its populating
 Log into your *GitHub* account, open your repository, and check `src/site/notes` to see if it's populated with any of your notes.
-![[Troubleshooting Digital Gardens-7.png]]
-![[Troubleshooting Digital Gardens-8.png]]
+![](attachment/c71d3837716992fa8f2298a6a4219af4.png)
+![](attachment/e61e0f87f1c87a3701951827399f6b72.png)
 
 If it's not populated, it means GitHub is not receiving your notes, and this is likely caused by a **fine-grained token** misconfiguration, so let's just rebuild it from scratch.
 
@@ -136,11 +135,11 @@ Will add details later, but for now, check these three things:
 
 1. You are publishing to the "Main" branch by default
 	1. [Changing the default branch - GitHub Docs](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/changing-the-default-branch)
-	2. ![[Troubleshooting Digital Gardens-9.png]]
+	2. ![](attachment/bc50e16bd917004be62d3c978323ba5d.png)
 2. In GitHub, got to the *Actions* tab and look for Errors
-	1. ![[Troubleshooting Digital Gardens-11.png]]
-	2. ![[Troubleshooting Digital Gardens-10.png]]
-	3. ![[Troubleshooting Digital Gardens-12.png]]
+	1. ![](attachment/8ab5e1f6101150cc7b99d963354fded2.png)
+	2. ![](attachment/c6516c4ab32e27d09bb012bf82e43f3f.png)
+	3. ![](attachment/2bbc7a0be2db425b031d54ae73a80adb.png)
 		1. If you see errors like this one, it means there are duplicate files in your repo or two pages marked with `dg-home`.
 3. Host (Vercel, Cloudflare, etc.) logs
 	1. These logs will look similar to the ones in GitHub.
@@ -156,14 +155,14 @@ The first 5 or so lines of the 11ty output contain the information you want.
 In this case, I have a problem with the file "Do I have ADHD?" which was originally uploaded from a Windows machine (which does not allow a `?` in the file name) and then a Linux machine, which has no problem with question marks in file names.
 
 DG formatted their URLs the same way, and there was a build error.
-![[Troubleshooting Digital Gardens-13.png]]
+![](attachment/23a4956493a68d9dea89f0f11500cb54.png)
 
 Depending on the issue, you may need to manually delete the file from your GitHub Repo or Obsidian. If the issue is a syntax problem (like above) and you did a "Publish All" command, then the problem should resolve itself when it deletes the (now missing) file and rebuilds the site.
 
 #### Sample Log; Multiple Homepages
 As an example, I set two pages to have the `dg-home` page checked; it references `dist/index.html` in the second line, indicating two or more files writing to `dist/index.html`, which is the home page.
 
-![[Troubleshooting Digital Gardens-14.png]]
+![](attachment/d24ed04f2d366357c4786da8cde60628.png)
 
 While the log tells you which files are being problematic (in this case, "S16 - We Got Milk" and "Fake Character"), you can also use a Dataview table to find and review all published files.
 
@@ -196,11 +195,11 @@ Remove any special characters from folder names, republish the site, and work fo
 ## First time publishing Garden stuck on "Calculating publication status from GitHub"
 This is caused by the fine-tuned GitHub Token not being configured with the correct permissions. You will need to recreate the token following these steps: 
 
-![[How to host a Digital Garden on Cloudflare#Create an access token to the Repo for Digital Garden]]
+undefined
 
 Once complete, the token permissions should be summarized on GitHub like this:
 
-![[image-4.png]]
+![](attachment/c8217bc0451c4636b96311f1c8a4d325.png)
 
 ## Obsidian Properties Passthrough and Nunjucks Scripts
 Scenario: You are trying display multiple Aliases (or other Obsidian Properties) on your notes. You've followed [Ole's guide on adding custom components](https://dg-docs.ole.dev/advanced/adding-custom-components/), and you've copied [uroybd's 001-aliases.njk](https://github.com/uroybd/topobon/blob/main/src/site/_includes/components/user/notes/header/001-aliases.njk) script into your repo in the right place, but nothing happens. This is because *Digital Garden does not inherently pass through all frontmatter* on a page; so the script you've copied has nothing to work with.
@@ -214,12 +213,12 @@ There are two possible solutions, but be careful; if your Nunjucks script is bus
 
 ## Manually updating packages for your Digital Garden broke something
 You've [[How to manually update packages for Digital Gardens|manually updated packages in your repo]] and now something's busted:
-![[How to manually update packages for Digital Gardens#Problems and Solutions - Manual Package Updates]]
+undefined
 
 ## Build failure with htmlMinifier and HTML content in logs
 When you try to publish your page, you get an error that looks like this: 
 
-![[Troubleshooting Digital Gardens-19.png]]
+![](attachment/a1bfb55d2b6bffd6beb33ffe56e91366.png)
 
 This is caused by `htmlMinifier` interpreting a character on your page incorrectly and failing to render the page properly.
 
@@ -242,7 +241,7 @@ The only solution so far is to either disable `htmlMinifier` in the `.eleventy.j
 
 To remove htmlMinifier, open `.eleventy.js` in your favorite text or code editor, and add a `//` to the beginning of every line in the "htmlMinifier" section.
 
-![[Troubleshooting Digital Gardens-21.png]]
+![](attachment/fec695ac9b1585c6089d9848f1bd56de.png)
 
 Since I'm using [Kate](https://kate-editor.org/), I can drop the cursor at the beginning of the top line, press and hold **Ctrl + Alt**, and then use the arrow keys to drop the cursor to all subsequent lines. Save your changes then push the repo up.
 
@@ -257,20 +256,20 @@ For example, if you added the following creation date `2025-05-28 23:59:58.024` 
 
 You only need data up to the most granular time you want. If you wanted to only show the date, you would just `YYYY-MM-DD`, or the to minute, just `YYYY-MM-DD HH:mm`
 
-![[Troubleshooting Digital Gardens-16.png]]
+![](attachment/396adae1bb7d6de2292bc782653a73c3.png)
 > Timestamp Settings in the Digital Garden plugin
 
-![[Troubleshooting Digital Gardens-15.png]]
+![](attachment/6165c95fe0ebcaf93ceed03259ad2939.png)
 > Frontmatter values formatted in ISO-8601
 
-![[Troubleshooting Digital Gardens-17.png]]
+![](attachment/93763ab35f8d92f135bb77d2a13e7a98.png)
 > Published page showing the created date and times.
 
 
 ## Missing Menu and Search icons in Firefox
 When the sidebar is hidden, the hamburger menu icon at the top left and the magnifying glass in the search bar in the top right are missing, as seen in the example below.
 
-![[Troubleshooting Digital Gardens-18.png]]
+![](attachment/5d9083719290134ea5e1e14b01917fac.png)
 
 This is caused by a bug in Digital Garden where the lucide icon library isn't loaded before it's called to generate the icons. This can be fixed by updating the script in `src/site/_includes/components/lucide.njk` to the following:
 

@@ -1,25 +1,23 @@
 ---
-title: How to Host on Cloudflare
-category: Deployment
-description: Cloooooudflare
 layout: default
-parent: Deploying your Digital Garden
-nav_order: 10
+parent: Deployment Guides
+title: How to host a Digital Garden on Cloudflare
+nav_order: 2
 ---
 I've created a few sites using Ole's [GitHub - oleeskild/digitalgarden](https://github.com/oleeskild/digitalgarden) and [Cloudflare Pages](https://pages.cloudflare.com/). When I was first getting setup, there were precious few guides out there on the matter, and nothing that was very concise or straightforward. 
 
 To that end, I've created this guide on configuring *Cloudflare* as a host for your *Digital Garden*
 
 ## Table of Contents
-- [[How to host a Digital Garden on Cloudflare#Steps to Publish Cloudflare|Steps to Publish Cloudflare]]
-	- [[How to host a Digital Garden on Cloudflare#00. Prep-work|00. Prep-work]]
-	- [[How to host a Digital Garden on Cloudflare#01. Setup GitHub Repository and Access Token|01. Setup GitHub Repository and Access Token]]
-	- [[How to host a Digital Garden on Cloudflare#02. Configure Obsidian Plugin and Pages|02. Configure Obsidian Plugin and Pages]]
-    - [[How to host a Digital Garden on Cloudflare#03. Configure Cloudflare|03. Configure Cloudflare]]
-    - [[How to host a Digital Garden on Cloudflare#04. (OPT) Register and Assign a Custom Domain|04. (OPT) Register and Assign a Custom Domain]]
-    - [[How to host a Digital Garden on Cloudflare#05. (OPT) Configure Dependabot on GitHub and Create Custom Headers|05. (OPT) Configure Dependabot on GitHub and Create Custom Headers]]
-- [[How to host a Digital Garden on Cloudflare#Troubleshooting|Troubleshooting]]
-- [[How to host a Digital Garden on Cloudflare#Other Resources and Honorable Mentions|Other Resources and Honorable Mentions]]
+- [How to host a Digital Garden on Cloudflare#Steps to Publish Cloudflare|Steps to Publish Cloudflare](How%20to%20host%20a%20Digital%20Garden%20on%20Cloudflare%23Steps%20to%20Publish%20Cloudflare%7CSteps%20to%20Publish%20Cloudflare)
+	- [How to host a Digital Garden on Cloudflare#00. Prep-work|00. Prep-work](How%20to%20host%20a%20Digital%20Garden%20on%20Cloudflare%2300.%20Prep-work%7C00.%20Prep-work)
+	- [How to host a Digital Garden on Cloudflare#01. Setup GitHub Repository and Access Token|01. Setup GitHub Repository and Access Token](How%20to%20host%20a%20Digital%20Garden%20on%20Cloudflare%2301.%20Setup%20GitHub%20Repository%20and%20Access%20Token%7C01.%20Setup%20GitHub%20Repository%20and%20Access%20Token)
+	- [How to host a Digital Garden on Cloudflare#02. Configure Obsidian Plugin and Pages|02. Configure Obsidian Plugin and Pages](How%20to%20host%20a%20Digital%20Garden%20on%20Cloudflare%2302.%20Configure%20Obsidian%20Plugin%20and%20Pages%7C02.%20Configure%20Obsidian%20Plugin%20and%20Pages)
+    - [How to host a Digital Garden on Cloudflare#03. Configure Cloudflare|03. Configure Cloudflare](How%20to%20host%20a%20Digital%20Garden%20on%20Cloudflare%2303.%20Configure%20Cloudflare%7C03.%20Configure%20Cloudflare)
+    - [How to host a Digital Garden on Cloudflare#04. (OPT) Register and Assign a Custom Domain|04. (OPT) Register and Assign a Custom Domain](How%20to%20host%20a%20Digital%20Garden%20on%20Cloudflare%2304.%20(OPT)%20Register%20and%20Assign%20a%20Custom%20Domain%7C04.%20(OPT)%20Register%20and%20Assign%20a%20Custom%20Domain)
+    - [How to host a Digital Garden on Cloudflare#05. (OPT) Configure Dependabot on GitHub and Create Custom Headers|05. (OPT) Configure Dependabot on GitHub and Create Custom Headers](How%20to%20host%20a%20Digital%20Garden%20on%20Cloudflare%2305.%20(OPT)%20Configure%20Dependabot%20on%20GitHub%20and%20Create%20Custom%20Headers%7C05.%20(OPT)%20Configure%20Dependabot%20on%20GitHub%20and%20Create%20Custom%20Headers)
+- [How to host a Digital Garden on Cloudflare#Troubleshooting|Troubleshooting](How%20to%20host%20a%20Digital%20Garden%20on%20Cloudflare%23Troubleshooting%7CTroubleshooting)
+- [How to host a Digital Garden on Cloudflare#Other Resources and Honorable Mentions|Other Resources and Honorable Mentions](How%20to%20host%20a%20Digital%20Garden%20on%20Cloudflare%23Other%20Resources%20and%20Honorable%20Mentions%7COther%20Resources%20and%20Honorable%20Mentions)
 
 ## Steps to Publish Cloudflare
 
@@ -34,7 +32,7 @@ In order to complete this project, you will need the following:
 Now that you've got your accounts in order, you need to use the [Digital Garden Repo](https://github.com/oleeskild/digitalgarden) Template to create your site's repo.
 #### Create the Repo
 Go to [this repo](https://github.com/oleeskild/digitalgarden), click "*Use this Template*," and select "*Create a new repository*"
-![[How this site was made-4.png]]
+![](attachment/9fabbeb10f3cd0020e5878d895eb506d.png)
 
 >**NOTE**: If you don't see the *Template* button, you may need to either maximize the page or zoom out.
 
@@ -46,7 +44,7 @@ On the next page, configure the repo as follows:
 	1. This doesn't have any impact on the function of the site, but you may or may not want to share the page source.
 	2. When troubleshooting or asking for help, it is much easier if the repo is Public; however, if you accidentally publish a password and take down the page, someone could go through the repo history and find the password.
 
-![[How this site was made-20.png]]
+![](attachment/1c814c59252c6645ba5d461ba67c23bf.png)
 
 >Example configuration for my idea-dumpsite, [wisdump.work](https://wisdump.work/)
 
@@ -102,7 +100,7 @@ Nothing here is hard and fast, just some observations I've made:
 			1. The standard is `YYYY-MM-DDTHH:mm:ss.sssZ`,^[[JavaScript Date toISOString() Method](https://www.w3schools.com/jsref/jsref_toisostring.asp)] ^[[luxon/docs/formatting.md at master · moment/luxon · GitHub](https://github.com/moment/luxon/blob/master/docs/formatting.md#table-of-tokens)] where `T` marks the difference between date and time^[Though it could also just be left as a space.]
 				1. For example, you would add the following date to a file: `2025-05-28T23:59:59.024+6`
 			2. You only need data up to the most granular time you want. If you wanted to only show the date, you would just `YYYY-MM-DD`, or the to minute, just `YYYY-MM-DD HH:mm`
-			3. More details and screenshots are available in [[Troubleshooting Digital Gardens#Created or Updated Date and Time not Appearing|Troubleshooting Digital Gardens]]
+			3. More details and screenshots are available in [Troubleshooting Digital Gardens#Created or Updated Date and Time not Appearing|Troubleshooting Digital Gardens](Troubleshooting%20Digital%20Gardens%23Created%20or%20Updated%20Date%20and%20Time%20not%20Appearing%7CTroubleshooting%20Digital%20Gardens)
 		3. **WARNING**: If you have a lot of pages and choose to update this later on, it may update every page as its own job.
 		4. **WARNING**: If you use a tool like Resilio Sync or Syncthing to share your vault between computers, it will change the metadata of the file, and you are likely to get unexpected changes to the _Created_ and _Modified_ dates of your files.
 
@@ -128,22 +126,22 @@ If you don't see a "Properties" section at the top of your page, you can create 
 	3. Probably others
 
 If you've manually created a *Property*, you need to set it as a *checkbox*.
-![[How to host a Digital Garden on Cloudflare-1.png]]
+![](attachment/70346ead3605c638cebbd4e586b565c2.png)
 
 #### Publishing your Site
 There are a few ways to publish your site when you're ready.
 
 You could open the *Command Palette* and select *Publish all notes* or *Publish single note*
-![[How this site was made-11.png]]
+![](attachment/8eb84664c7fe20fcf11346002d282647.png)
 
 
 >**NOTE**: You can [configure hotkeys](https://help.obsidian.md/Customization/Custom+hotkeys) in Obsidian’s Settings to make publication easier. The combination below is intuitive for me, and doesn’t have any overlapping uses.
-> ![[How-this-site-was-made-21.png]]
+> ![](attachment/8b1e5f61947b75af19417b22975c1566.png)
 
 
 Or you could use the *Digital Garden Publication Center* and pick from a more nuanced-selection of options.
 
-![[How to host a Digital Garden on Cloudflare-2.png]]
+![](attachment/9646d6f27d9b1e2810012dfb1f8cdc60.png)
 
 ### 03. Configure Cloudflare
 Now that your Vault is ready for **Prime Time**, let's get it setup in Cloudflare
@@ -151,15 +149,15 @@ Now that your Vault is ready for **Prime Time**, let's get it setup in Cloudflar
 #### Create the Pages Application
 
 Log in to Cloudflare, expand the left menu bar, expand *Compute (Worker)*, select *Workers and PAges*, and click *Create*
-![[How to host a Digital Garden on Cloudflare.old-1.png]]
+![](attachment/334299bf3b27f876b8577e5c05842c79.png)
 
 Select the *Pages* tab, then *Get started* next to "Import an existing Git repository" to link your GIT account, and select the Repo you created from the *Digital Garden* template.
-![[How to host a Digital Garden on Cloudflare-6.png]]
+![](attachment/dbfc2bfb9324a96381ae94e819ea2f16.png)
 
 > [!NOTE]
 > If you've done this before, you'll have to select "*Add account*", then scroll down and select the new repo from the dropdown for the it to appear in Cloudflare.
-> ![[How to host a Digital Garden on Cloudflare-7.png]]
-> ![[How to host a Digital Garden on Cloudflare-11.png]]
+> ![](attachment/b0f3ff99a3db9d1413782670a102f15a.png)
+> ![](attachment/a6a025e45dccf5f3fb20ef3e5fb7b659.png)
 
 #### Configure your First Deployment
 1. Enter the project name (default is the Repo name)
@@ -168,9 +166,9 @@ Select the *Pages* tab, then *Get started* next to "Import an existing Git repos
 	1. I don't think this matters, as we immediately change the commands afterward
 4. Set the *Build command* to `npm run build`
 5. Set the *Build output directory* to `dist`
- ![[How this site was made-9.png|500]]
+ ![](attachment/4550e035a1c4c2fd707b6b2a5dd45974.png)
 
-Then click Finish (or something, I completely forgot to screencap this part), and it will do the first build for your site! If you're going to run into problems, you're likely to run into them here. Check out the [[Troubleshooting Digital Gardens]] guide at the very end for help.
+Then click Finish (or something, I completely forgot to screencap this part), and it will do the first build for your site! If you're going to run into problems, you're likely to run into them here. Check out the [Troubleshooting Digital Gardens](Troubleshooting%20Digital%20Gardens) guide at the very end for help.
 
 > [!note]
 > You may need to re-apply the features or appearance customizations you set earlier by clicking "Apply Settings" in the plugin.
@@ -203,7 +201,7 @@ Now that we've connected our domain to Cloudflare, we can view it under *Website
 
 Click on your domain, and let's get started with the Quick Start Guide from the main panel.
 1. Click "*Review Settings*" in the *Quick Start Guide* pane
-	1. ![[How this site was made-15.png]]
+	1. ![](attachment/d901152ffd026897e78d3288a18fc8f7.png)
 2. Enable *Automatic HTTPS rewrites*
 3. Enable *Always Use HTTPS*
 4. Your choice whether to *enable* or *disable* *Brotli* compression; I couldn't find anything indicating it was insecure to use, and is apparently a [A Fast Alternative to GZIP Compression](https://kinsta.com/blog/brotli-compression/)
@@ -219,7 +217,7 @@ Once done, we should go down the options in left slide-out menu and enable a bun
 
 1. **DNS**
 	1. Records
-		1. If you don't use email with this domain, create two records to prevent anyone from sending mail from your domain.^[For more details, check out [[Protecting your Identity and your Domain with Email Security]].]
+		1. If you don't use email with this domain, create two records to prevent anyone from sending mail from your domain.^[For more details, check out [Protecting your Identity and your Domain with Email Security](Protecting%20your%20Identity%20and%20your%20Domain%20with%20Email%20Security).]
 			1. [SPF](https://maxwellcti.com/definitions-and-topics/spf): `TXT   @   "v=spf1 -all"`
 				1. Type is `TXT`, the name is `@` (meaning your domain), and the value requires the quotes.
 				2. This says that there are no servers authenticated to send email for your domain.
@@ -270,7 +268,7 @@ Now that we have *Cloudflare* configured securely, let's make sure we're not pub
 
 >  **WARNING**: Deploying patches outside of **Digital Garden** updates *may* break your site. This has not happened to me yet, but if it happens *to you*, you can [revert Dependabot branch merges](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/reverting-a-pull-request) and easily roll-back the problem.
 
-Additionally, **I strongly recommended** that you familiarize yourself with *Visual Studio Code*, *Node.js*, and *GitHub Desktop*^[What, you thought you were signing up for some free and easy way to upload your notes to the internet? Well with great power comes great security risks, and if you don't want some script kiddie owning your base, you should assume the people making free tools have overlooked something. Sometimes you gotta fix dependencies yourself for security updates, and boy howdy, knowing how these tools work is key]. But rather than make this already long guide longer, you can find more information on this under [[How to manually update packages for Digital Gardens]].
+Additionally, **I strongly recommended** that you familiarize yourself with *Visual Studio Code*, *Node.js*, and *GitHub Desktop*^[What, you thought you were signing up for some free and easy way to upload your notes to the internet? Well with great power comes great security risks, and if you don't want some script kiddie owning your base, you should assume the people making free tools have overlooked something. Sometimes you gotta fix dependencies yourself for security updates, and boy howdy, knowing how these tools work is key]. But rather than make this already long guide longer, you can find more information on this under [How to manually update packages for Digital Gardens](How%20to%20manually%20update%20packages%20for%20Digital%20Gardens).
 
 Ok, with that out of the way, let's...
 #### Configure Security and Dependency Updates in GitHub
@@ -278,20 +276,20 @@ Ok, with that out of the way, let's...
 >**NOTE**: If you apply updates through Dependabot, *Digital Garden* updates overwrite them, and you may be required to re-apply them. However, *it's better to be running patched* than unpatched, and *it's not that hard to do*.
 
 In the Repo, navigate to "*Settings*," *Code security and analysis*, and enable Dependabot *Alerts* and *Security Updates*
-	![[How this site was made-12.png]]
+	![](attachment/410a9fbdbad96a893bc8b5e39cecd142.png)
 
 When there is a dependency update or security issue, Dependabot will create a *pull request*, and Cloudflare will test the build in a preview to make sure it builds correctly.
-![[How this site was made-13.png]]
+![](attachment/edb4fa27bcd2aeb79bebfcf21f60d7a3.png)
 
 *Be wary of any pull requests where either the build fails or has a low compatibility rating.*
-![[How to host a Digital Garden on Cloudflare-8.png]]
-![[How to host a Digital Garden on Cloudflare-9.png]]
+![](attachment/45ae76539a575fdd734269f3bb8a8a63.png)
+![](attachment/99bbf1f4642dce907ef6cc6362749441.png)
 
 To merge a succeeding pull request, click the *green button to "Merge pull request* and then click *confirm merge*.
-![[How to host a Digital Garden on Cloudflare-10.png]]
-![[How this site was made-14.png]]
+![](attachment/0ac15d9f70b0bc8756d55e731a4b261d.png)
+![](attachment/2e362f205ba88d8d70b123ce5126b638.png)
 
-And it's updated! Hoo-raaay! But if you haven't already, I *highly recommend* you check out my guide on [[How to manually update packages for Digital Gardens]]. It covers instances where Dependabot finds a security vulnerability but can't fix it for you automatically. 
+And it's updated! Hoo-raaay! But if you haven't already, I *highly recommend* you check out my guide on [How to manually update packages for Digital Gardens](How%20to%20manually%20update%20packages%20for%20Digital%20Gardens). It covers instances where Dependabot finds a security vulnerability but can't fix it for you automatically. 
 
 #### Custom Security Headers
 Cloudflare allows you to install custom headers^[[Headers · Cloudflare Pages docs](https://developers.cloudflare.com/pages/platform/headers/)] on your site without much fuss.
@@ -305,7 +303,7 @@ Don't believe me? You can check your site's headers and see how an attacker can 
 To add security headers, you need to first create a file called `_headers` in the folder `/src/site` in your GitHub Repo, then modify the *.eleventy.js* configuration file to the file through to Cloudflare.
 
 The quickest way to create the file is to navigate to the folder in GitHub, and select *Add file* from the top right.
-![[How to host a Digital Garden on Cloudflare-3.png]]
+![](attachment/f45b2dd1c633b26b812f5d646a1adf4b.png)
 
 Name the file `_headers`,^[JUST `_headers`, not `_headers.txt`, not `headers`, and for godsake not `TheseAreMySecurityHeadersForMyCloudflareSite.txt.xml.zip.tar.gz`] and insert the following text:
 
@@ -320,10 +318,10 @@ I've tested this against all of my sites and it hasn't caused any issues so far.
 Next, you will need to modify the `.eleventy.js` file at the root of the repo to add a passthrough for the `_headers` file. This is also easy to do in GitHub.
 
 Open the file `.eleventy.js` at the top-level folder of your repo by clicking on its name, and at the top-right corner of the code, click the drop-down menu next to the pen and select *Edit in place*.
-![[How to host a Digital Garden on Cloudflare-4.png]]
+![](attachment/dfde83d561cf761e88b418c993d7fad0.png)
 
 Now, scroll down until you find all the lines that begin with `eleventyConfig.addPassthroughCopy`
-![[How this site was made-18.png]]
+![](attachment/03c688d4570bb645c07ffedf8957b761.png)
 
 For me, it's around line 500-510.
 
@@ -336,24 +334,24 @@ eleventyConfig.addPassthroughCopy("src/site/_headers");
 To verify that your headers have been added, under "*Deployment Details*" click on the *Headers* tab and see what was added
 
 >Successful addition of headers:
-![[How this site was made-16.png]]
+![](attachment/ad5751ebef5f934bc331f9bbefe13372.png)
 
 >Failed addition of headers:
-![[How this site was made-17.png]]
+![](attachment/b40106512d1ddacb4276eb1ad02ee057.png)
 
-You can also go to [Security Header Scanner by Probely](https://securityheaders.com) to view your site's current headers after the deployment succeeds.^[You might be wondering about the Content-Security-Policy warning; I don't want to distract from this guide, but here's why I gave up trying to impletement [[CSP on Digital Gardens]]]
+You can also go to [Security Header Scanner by Probely](https://securityheaders.com) to view your site's current headers after the deployment succeeds.^[You might be wondering about the Content-Security-Policy warning; I don't want to distract from this guide, but here's why I gave up trying to impletement [CSP on Digital Gardens](CSP%20on%20Digital%20Gardens)]
 
 And that's it! Finally! Now go write some stuff and publish it.
 
 ## Troubleshooting
 ... unless it didn't work. 
 
-Don't panic! If you're running into trouble, I highly recommend checking out my guide on [[Troubleshooting Digital Gardens]], which covers common problems and the best way to find help. But to get you started, let's review the Digital Garden build pipeline:
+Don't panic! If you're running into trouble, I highly recommend checking out my guide on [Troubleshooting Digital Gardens](Troubleshooting%20Digital%20Gardens), which covers common problems and the best way to find help. But to get you started, let's review the Digital Garden build pipeline:
 
-![[Troubleshooting Digital Gardens#00. The Digital Garden Pipeline|The Digital Garden Pipeline]]
+![Troubleshooting Digital Gardens#00. The Digital Garden Pipeline|The Digital Garden Pipeline](Troubleshooting%20Digital%20Gardens%2300.%20The%20Digital%20Garden%20Pipeline%7CThe%20Digital%20Garden%20Pipeline)
 
 ## Other Resources and Honorable Mentions
 
 The guide I used to get started is [How I Published My Knowledge Base Online for Free](https://sharaf.cc/40-49-toolbox/40-note-taking/40-01-obsidian/guides/publish-obsidian-vault-for-free/) by Sharaf; unfortunately, it gets a critical part of the process wrong during initial setup in the **Build Configuration**. Specifically, you need to set the "*Build command*" to `npm run build` and the "*Build output directory*" to `/dist`.
 
-![[How this site was made-1.png]]
+![](attachment/456df70f458bd3878f9c287aa860468e.png)
