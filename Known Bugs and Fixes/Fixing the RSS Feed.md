@@ -6,6 +6,9 @@ nav_order: 2
 ---
 # tl;dr
 For most people, you can just open `/src/site/feed.njk` from your repo and modify lines 10, 11, and 26 to have 5 slashes (`/`) instead of 4.
+
+![jd.e's comment in assets](assets/jdeComment.png)
+![jd.e's illuminating comment](attachment/58c767cc167844502d0fcc9d0901563c.png)
 ![](attachment/58c767cc167844502d0fcc9d0901563c.png)
 
 ![](attachment/7250c626c1f41002c8de0013cadae0d8.png)
