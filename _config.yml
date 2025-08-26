@@ -1,8 +1,8 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Unofficial Digital Garden Docs
+description: A user-edited collection of helpful guides, bugs, fixes, and customizations.
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://wiseguru.github.io/Unofficial-Digital-Garden-Docs
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  Template Repository: https://github.com/WiseGuru/Unofficial-Digital-Garden-Docs
