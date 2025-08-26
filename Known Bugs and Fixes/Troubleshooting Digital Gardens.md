@@ -5,10 +5,10 @@ title: Troubleshooting Digital Gardens
 nav_order: 2
 ---
 
-> [!Reminder]
+{: .reminder}
 >  Free software isn't free. Support Ole, the Digital Garden developer: [Buy Ole Eskild Steensen a Coffee - oleeskild - Ko-fi](https://ko-fi.com/oleeskild)
 
-> [!Success]
+{: .success}
 > If you find this guide helpful, consider tossing me a coin! [Support WiseGuru](https://ko-fi.com/S6S3TOIAO)
 
 # Table of Contents

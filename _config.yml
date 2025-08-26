@@ -8,3 +8,17 @@ url: https://wiseguru.github.io/Unofficial-Digital-Garden-Docs
 
 aux_links:
   Template Repository: https://github.com/WiseGuru/Unofficial-Digital-Garden-Docs
+
+
+
+# Callouts
+callouts:
+  warning:
+    title: Warning
+    color: red
+  reminder:
+    title: Reminder
+    color: blue
+  success:
+    title: Success
+    color: green
