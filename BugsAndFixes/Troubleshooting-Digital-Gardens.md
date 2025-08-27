@@ -56,12 +56,16 @@ Let's review the publication pipeline for your Obsidian Digital Garden. Each sto
 **Only one** page should have the property `dg-home` checked, and it also *must* have the `dg-publish` property checked. You can add these properties a couple of ways:
 
 ### Option 1: Through the Obsidian Command Palette
+{: .no_toc}
+
 Open the Obsidian *Command Palette*, search for **Digital Garden**, and select the "Digital Garden: Add publish flag" command.
 
 ![](../assets/images/8f7cad6b70451880cde9d5576459d64b.png)
 If you do not have a `dg-home` property set, you can manually change `dg-publish` to `dg-home` and then add another publish flag to the sheet.
 
 ### Option 2: Manually add the properties
+{: .no_toc}
+
 1. Select the three-dot menu at the top-left of your note, and click "Add file property..."
 	1. ![](../assets/images/3f42a84128c1632467de6a89deaf0e50.png)
 2. Name the property either `dg-home` or `dg-publish`
