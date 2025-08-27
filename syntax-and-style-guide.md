@@ -32,12 +32,19 @@ nav_order:        # The position this document should appear in lists
 ```
 
 `nav_order` prioritizes lower numbers to be higher in the list. If the nav_order matches, then it sorts alphabetically.
+
+Other relevant frontmatter properties are listed below:
+1. `nav_exclude`
+	1. Boolean property
+	2. Designates whether it's published (`false`) or unpublished (`true`)
 ## Folders, File names, Titles, and Headers
 ### Folders and index.md
 Each folder should have a short summary document named "index.md" that describes the folder contents. All other notes in the folder should list that file's title as the parent so that they appear in the Table of Contents automatically generated at the bottom of the file.
 
 ### Naming conventions
 File names should be all lower-case with hyphens between words. Use the `title` property in the frontmatter and a Header 1 in the first line of the document to set the readable title of the document.
+
+The name of the `index.md` file in a folder should match the readable folder name.
 
 ### Headers
 The page title should be "Header 1" and the first line of a document after the frontmatter.
