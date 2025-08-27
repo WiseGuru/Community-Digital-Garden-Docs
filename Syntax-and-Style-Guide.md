@@ -42,6 +42,7 @@ File names should be all lower-case with hyphens between words. Use the `title` 
 ### Headers
 The page title should be "Header 1" and the first line of a document after the frontmatter.
 
+```
 # Header 1
 Some text
 ## Header 2
@@ -54,7 +55,9 @@ Some text
 Some text
 ###### Header 6
 Some text
+```
 
+![](assets/images/Syntax-and-Style-Guide.png)
 
 ## Images
 Images should be stored in `assets/images` for easier management.
