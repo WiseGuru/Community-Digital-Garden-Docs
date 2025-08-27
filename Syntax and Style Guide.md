@@ -35,10 +35,12 @@ Append the callout type with "-title" to convert the first line into the title f
 
 {: .warning-title}
 > This is the title
+> 
 > This is the text.
 
 ```
 {: .warning-title}
 > This is the title
-> This is the test
+> 
+> This is the text
 ```
