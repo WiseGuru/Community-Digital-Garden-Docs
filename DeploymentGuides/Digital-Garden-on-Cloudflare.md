@@ -9,15 +9,8 @@ I've created a few sites using Ole's [GitHub - oleeskild/digitalgarden](https://
 To that end, I've created this guide on configuring *Cloudflare* as a host for your *Digital Garden*
 
 ## Table of Contents
-- [Steps to Publish Cloudflare](#Steps%20to%20Publish%20Cloudflare)
-	- [00. Prep-work](#00.%20Prep-work)
-	- [01. Setup GitHub Repository and Access Token](#01.%20Setup%20GitHub%20Repository%20and%20Access%20Token)
-	- [02. Configure Obsidian Plugin and Pages](#02.%20Configure%20Obsidian%20Plugin%20and%20Pages)
-	- [03. Configure Cloudflare](#03.%20Configure%20Cloudflare)
-	- [04. (OPT) Register and Assign a Custom Domain](#04.%20(OPT)%20Register%20and%20Assign%20a%20Custom%20Domain)
-	- [05. (OPT) Configure Dependabot on GitHub and Create Custom Headers](#05.%20(OPT)%20Configure%20Dependabot%20on%20GitHub%20and%20Create%20Custom%20Headers)
-- [Troubleshooting](#Troubleshooting)
-- [Other Resources and Honorable Mentions](#Other%20Resources%20and%20Honorable%20Mentions)
+1. TOC {:toc}
+
 ## Steps to Publish Cloudflare
 
 ### 00. Prep-work
