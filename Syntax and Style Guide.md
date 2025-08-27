@@ -23,11 +23,11 @@ Callouts are written following the [Just the Docs - Callouts](https://just-the-d
 ### Callout Formatting
 Use braces to indicate what kind of callout you're using, and then greater-than symbols for text.
 
-{: .note}
+{: .tip}
 > My text.
 
 ```
-{: .note}
+{: .tip}
 > My text.
 ```
 
