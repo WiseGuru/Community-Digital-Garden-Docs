@@ -81,7 +81,9 @@ Creating a Table of Contents is pretty simple, and is described [Just the Docs -
 
 ```
 
-`{: .text-delta}` is a CSS type scale that matches an H4 header, as described in [Just the Docs - Typography](https://just-the-docs.github.io/just-the-docs/docs/ui-components/typography/#responsive-type-scale).
+`{: .text-delta}` is a CSS type scale that matches an H4 header, as described in [Just the Docs - Typography](https://just-the-docs.github.io/just-the-docs/docs/ui-components/typography/#responsive-type-scale). In the example above, it converts the H2 header of "Table of Contents" to look like an H4 header.
+
+![](assets/images/Syntax-and-Style-Guide-1.png)
 
 ## Images
 Images should be stored in `assets/images` for easier management.
