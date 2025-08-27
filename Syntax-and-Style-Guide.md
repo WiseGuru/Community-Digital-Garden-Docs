@@ -7,14 +7,17 @@ layout: default
 This site uses a slightly different version of Markdown than Obsidian, and there are some key differences in how files are formatted
 
 ## Editing in Obsidian
-If you choose to work on documents in Obsidian, I recommend making the following changes to your preferences:
+To edit the files in this repository in Obsidian, clone the repo to your computer[^2] then open the folder as a vault in Obsidian.
+
+Once the vault is open, I recommend the following changes:
 1. Files and Links
 	1. **Automatically update internal links**: Toggled on
 	2. **Default location for new notes**: Same folder as current file
 	3. **New link format**: Relative path to file
 	4. **Use `[[Wikilinks]]`**: Toggled off
-	5. **Attachment folder path**: assets/images
-2. Community plugin
+	5. **Default location for new attachments**: In the folder specified below
+	6. **Attachment folder path**: assets/images
+2. Community plugins
 	1. [Auto Link Title](https://github.com/zolrath/obsidian-auto-link-title) by Matt Furden
 	2. [Paste image rename](https://github.com/reorx/obsidian-paste-image-rename) by Reorx
 
@@ -115,3 +118,5 @@ This is some text with a footnote.[^1]
 ----
 
 [^1]: This is the linked text in the footnote.
+
+[^2]: Using GitHub Desktop or Git.
