@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: Deployment Guides
+parent: Deploying your Digital Garden
 title: How to host a Digital Garden on Cloudflare
 nav_order: 2
 ---
@@ -9,16 +9,15 @@ I've created a few sites using Ole's [GitHub - oleeskild/digitalgarden](https://
 To that end, I've created this guide on configuring *Cloudflare* as a host for your *Digital Garden*
 
 ## Table of Contents
-- [How to host a Digital Garden on Cloudflare#Steps to Publish Cloudflare|Steps to Publish Cloudflare](How%20to%20host%20a%20Digital%20Garden%20on%20Cloudflare%23Steps%20to%20Publish%20Cloudflare%7CSteps%20to%20Publish%20Cloudflare)
-	- [How to host a Digital Garden on Cloudflare#00. Prep-work|00. Prep-work](How%20to%20host%20a%20Digital%20Garden%20on%20Cloudflare%2300.%20Prep-work%7C00.%20Prep-work)
-	- [How to host a Digital Garden on Cloudflare#01. Setup GitHub Repository and Access Token|01. Setup GitHub Repository and Access Token](How%20to%20host%20a%20Digital%20Garden%20on%20Cloudflare%2301.%20Setup%20GitHub%20Repository%20and%20Access%20Token%7C01.%20Setup%20GitHub%20Repository%20and%20Access%20Token)
-	- [How to host a Digital Garden on Cloudflare#02. Configure Obsidian Plugin and Pages|02. Configure Obsidian Plugin and Pages](How%20to%20host%20a%20Digital%20Garden%20on%20Cloudflare%2302.%20Configure%20Obsidian%20Plugin%20and%20Pages%7C02.%20Configure%20Obsidian%20Plugin%20and%20Pages)
-    - [How to host a Digital Garden on Cloudflare#03. Configure Cloudflare|03. Configure Cloudflare](How%20to%20host%20a%20Digital%20Garden%20on%20Cloudflare%2303.%20Configure%20Cloudflare%7C03.%20Configure%20Cloudflare)
-    - [How to host a Digital Garden on Cloudflare#04. (OPT) Register and Assign a Custom Domain|04. (OPT) Register and Assign a Custom Domain](How%20to%20host%20a%20Digital%20Garden%20on%20Cloudflare%2304.%20(OPT)%20Register%20and%20Assign%20a%20Custom%20Domain%7C04.%20(OPT)%20Register%20and%20Assign%20a%20Custom%20Domain)
-    - [How to host a Digital Garden on Cloudflare#05. (OPT) Configure Dependabot on GitHub and Create Custom Headers|05. (OPT) Configure Dependabot on GitHub and Create Custom Headers](How%20to%20host%20a%20Digital%20Garden%20on%20Cloudflare%2305.%20(OPT)%20Configure%20Dependabot%20on%20GitHub%20and%20Create%20Custom%20Headers%7C05.%20(OPT)%20Configure%20Dependabot%20on%20GitHub%20and%20Create%20Custom%20Headers)
-- [How to host a Digital Garden on Cloudflare#Troubleshooting|Troubleshooting](How%20to%20host%20a%20Digital%20Garden%20on%20Cloudflare%23Troubleshooting%7CTroubleshooting)
-- [How to host a Digital Garden on Cloudflare#Other Resources and Honorable Mentions|Other Resources and Honorable Mentions](How%20to%20host%20a%20Digital%20Garden%20on%20Cloudflare%23Other%20Resources%20and%20Honorable%20Mentions%7COther%20Resources%20and%20Honorable%20Mentions)
-
+- [Steps to Publish Cloudflare](#Steps%20to%20Publish%20Cloudflare)
+	- [00. Prep-work](#00.%20Prep-work)
+	- [01. Setup GitHub Repository and Access Token](#01.%20Setup%20GitHub%20Repository%20and%20Access%20Token)
+	- [02. Configure Obsidian Plugin and Pages](#02.%20Configure%20Obsidian%20Plugin%20and%20Pages)
+	- [03. Configure Cloudflare](#03.%20Configure%20Cloudflare)
+	- [04. (OPT) Register and Assign a Custom Domain](#04.%20(OPT)%20Register%20and%20Assign%20a%20Custom%20Domain)
+	- [05. (OPT) Configure Dependabot on GitHub and Create Custom Headers](#05.%20(OPT)%20Configure%20Dependabot%20on%20GitHub%20and%20Create%20Custom%20Headers)
+- [Troubleshooting](#Troubleshooting)
+- [Other Resources and Honorable Mentions](#Other%20Resources%20and%20Honorable%20Mentions)
 ## Steps to Publish Cloudflare
 
 ### 00. Prep-work
