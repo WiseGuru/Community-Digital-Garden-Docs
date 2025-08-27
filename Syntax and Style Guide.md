@@ -18,6 +18,19 @@ If you choose to work on documents in Obsidian, I recommend making the following
 	1. [Auto Link Title](https://github.com/zolrath/obsidian-auto-link-title) by Matt Furden
 	2. [Paste image rename](https://github.com/reorx/obsidian-paste-image-rename) by Reorx
 
+## Frontmatter
+The following frontmatter should be included in all documents:
+
+```
+title:            # The readable title of the document
+layout: default   # Leave as default
+parent:           # The title of the parent document, used in ToC's 
+nav_order:        # The position this document should appear in lists
+```
+
+## Headers and Titles
+The page title should be "Header 1" and the first line of a document after the frontmatter.
+
 ## Images
 Images should be stored in `assets/images` for easier management.
 

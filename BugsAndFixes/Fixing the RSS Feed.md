@@ -4,7 +4,8 @@ parent: Bugs and Fixes
 title: Fixing the RSS Feed
 nav_order: 2
 ---
-# tl;dr
+# Fixing the RSS Feed
+## tl;dr
 For most people, you can just open `/src/site/feed.njk` from your repo and modify lines 10, 11, and 26 to have 5 slashes (`/`) instead of 4.
 
 ![jdeComment](../assets/images/jdeComment.png)
@@ -15,7 +16,7 @@ Save and push changes, and your feed should start rendering properly.
 
 **If you use custom icons**, you may only need the 4 slashes to make the feed work.[^1]
 
-# RSS Feed not working
+## Explaination
 
 ![](../assets/images/280ef664d06874de2c78de24a90ccdf4.png)
 
@@ -29,7 +30,7 @@ I tried a few things before I remembered that I should search for answers first,
 ![](../assets/images/98b7854739e6946e724541fab1455a97.png)
 
 
-# Linked Issues and Pull Requests
+## Linked Issues and Pull Requests
 
 ### Pull Requests
 [Fix XML Syntax of feed.xml by jeremi · Pull Request #280 · oleeskild/digitalgarden · GitHub](https://github.com/oleeskild/digitalgarden/pull/280)

@@ -97,10 +97,10 @@ Nothing here is hard and fast, just some observations I've made:
 	4. Add Timestamps to pages
 		1. When adding timestamps to your site, you can either use the files built-in metadata or set your own values manually.
 		2. When setting your own values, you create a frontmatter key (which can be anything you choose), but you *must* set the time values in the files using the ISO-8601 standard.
-			1. The standard is `YYYY-MM-DDTHH:mm:ss.sssZ`,^[[JavaScript Date toISOString() Method](https://www.w3schools.com/jsref/jsref_toisostring.asp)] ^[[luxon/docs/formatting.md at master · moment/luxon · GitHub](https://github.com/moment/luxon/blob/master/docs/formatting.md#table-of-tokens)] where `T` marks the difference between date and time^[Though it could also just be left as a space.]
+			1. The standard is `YYYY-MM-DDTHH:mm:ss.sssZ`,[^1] [^2] where `T` marks the difference between date and time[^3]
 				1. For example, you would add the following date to a file: `2025-05-28T23:59:59.024+6`
 			2. You only need data up to the most granular time you want. If you wanted to only show the date, you would just `YYYY-MM-DD`, or the to minute, just `YYYY-MM-DD HH:mm`
-			3. More details and screenshots are available in [Troubleshooting Digital Gardens#Created or Updated Date and Time not Appearing|Troubleshooting Digital Gardens](Troubleshooting%20Digital%20Gardens%23Created%20or%20Updated%20Date%20and%20Time%20not%20Appearing%7CTroubleshooting%20Digital%20Gardens)
+			3. More details and screenshots are available in [Troubleshooting Digital Gardens](../BugsAndFixes/Troubleshooting%20Digital%20Gardens.md)
 		3. **WARNING**: If you have a lot of pages and choose to update this later on, it may update every page as its own job.
 		4. **WARNING**: If you use a tool like Resilio Sync or Syncthing to share your vault between computers, it will change the metadata of the file, and you are likely to get unexpected changes to the _Created_ and _Modified_ dates of your files.
 
@@ -134,8 +134,8 @@ There are a few ways to publish your site when you're ready.
 You could open the *Command Palette* and select *Publish all notes* or *Publish single note*
 ![](../assets/images/8eb84664c7fe20fcf11346002d282647.png)
 
-
->**NOTE**: You can [configure hotkeys](https://help.obsidian.md/Customization/Custom+hotkeys) in Obsidian’s Settings to make publication easier. The combination below is intuitive for me, and doesn’t have any overlapping uses.
+{: .note}
+> You can [configure hotkeys](https://help.obsidian.md/Customization/Custom+hotkeys) in Obsidian’s Settings to make publication easier. The combination below is intuitive for me, and doesn’t have any overlapping uses.
 > ![](../assets/images/8b1e5f61947b75af19417b22975c1566.png)
 
 
@@ -270,7 +270,7 @@ Now that we have *Cloudflare* configured securely, let's make sure we're not pub
 {: .warning}
 > Deploying patches outside of **Digital Garden** updates *may* break your site. This has not happened to me yet, but if it happens *to you*, you can [revert Dependabot branch merges](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/reverting-a-pull-request) and easily roll-back the problem.
 
-Additionally, **I strongly recommended** that you familiarize yourself with *Visual Studio Code*, *Node.js*, and *GitHub Desktop*^[What, you thought you were signing up for some free and easy way to upload your notes to the internet? Well with great power comes great security risks, and if you don't want some script kiddie owning your base, you should assume the people making free tools have overlooked something. Sometimes you gotta fix dependencies yourself for security updates, and boy howdy, knowing how these tools work is key]. But rather than make this already long guide longer, you can find more information on this under [How to manually update packages for Digital Gardens](How%20to%20manually%20update%20packages%20for%20Digital%20Gardens).
+Additionally, **I strongly recommended** that you familiarize yourself with *Visual Studio Code*, *Node.js*, and *GitHub Desktop*[^4]. But rather than make this already long guide longer, you can find more information on this under [How to manually update packages for Digital Gardens](How%20to%20manually%20update%20packages%20for%20Digital%20Gardens).
 
 Ok, with that out of the way, let's...
 #### Configure Security and Dependency Updates in GitHub
@@ -309,7 +309,7 @@ To add security headers, you need to first create a file called `_headers` in th
 The quickest way to create the file is to navigate to the folder in GitHub, and select *Add file* from the top right.
 ![](../assets/images/f45b2dd1c633b26b812f5d646a1adf4b.png)
 
-Name the file `_headers`,^[JUST `_headers`, not `_headers.txt`, not `headers`, and for godsake not `TheseAreMySecurityHeadersForMyCloudflareSite.txt.xml.zip.tar.gz`] and insert the following text:
+Name the file `_headers`,[^5] and insert the following text:
 
 ```
 /*
@@ -343,7 +343,7 @@ To verify that your headers have been added, under "*Deployment Details*" click 
 >Failed addition of headers:
 ![](../assets/images/b40106512d1ddacb4276eb1ad02ee057.png)
 
-You can also go to [Security Header Scanner by Probely](https://securityheaders.com) to view your site's current headers after the deployment succeeds.^[You might be wondering about the Content-Security-Policy warning; I don't want to distract from this guide, but here's why I gave up trying to impletement [CSP on Digital Gardens](CSP%20on%20Digital%20Gardens)]
+You can also go to [Security Header Scanner by Probely](https://securityheaders.com) to view your site's current headers after the deployment succeeds.[^6]
 
 And that's it! Finally! Now go write some stuff and publish it.
 
@@ -357,3 +357,15 @@ Don't panic! If you're running into trouble, I highly recommend checking out my 
 The guide I used to get started is [How I Published My Knowledge Base Online for Free](https://sharaf.cc/40-49-toolbox/40-note-taking/40-01-obsidian/guides/publish-obsidian-vault-for-free/) by Sharaf; unfortunately, it gets a critical part of the process wrong during initial setup in the **Build Configuration**. Specifically, you need to set the "*Build command*" to `npm run build` and the "*Build output directory*" to `/dist`.
 
 ![](../assets/images/456df70f458bd3878f9c287aa860468e.png)
+
+[^1]: [JavaScript Date toISOString() Method](https://www.w3schools.com/jsref/jsref_toisostring.asp)
+
+[^2]: [luxon/docs/formatting.md at master · moment/luxon · GitHub](https://github.com/moment/luxon/blob/master/docs/formatting.md#table-of-tokens)
+
+[^3]: Though it could also just be left as a space.
+
+[^4]: What, you thought you were signing up for some free and easy way to upload your notes to the internet? Well with great power comes great security risks, and if you don't want some script kiddie owning your base, you should assume the people making free tools have overlooked something. Sometimes you gotta fix dependencies yourself for security updates, and boy howdy, knowing how these tools work is key.
+
+[^5]: JUST `_headers`, not `_headers.txt`, not `headers`, and for godsake not `TheseAreMySecurityHeadersForMyCloudflareSite.txt.xml.zip.tar.gz`
+
+[^6]: You might be wondering about the Content-Security-Policy warning; I don't want to distract from this guide, but here's why I gave up trying to implement [CSP on Digital Gardens](CSP%20on%20Digital%20Gardens)
