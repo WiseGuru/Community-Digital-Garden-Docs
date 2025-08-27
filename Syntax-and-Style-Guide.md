@@ -64,10 +64,11 @@ Creating a Table of Contents is pretty simple, and is described [Just the Docs -
 
 - `{: .no_toc}` 
 	- Placed after a header to exclude it from the table of contents
-- `{: .toc}`
+- `{:toc}`
 	- Immediately follows the first line of an ordered or unordered list to generate a ToC
 	- The first line of that list must also have "TOC" as the only text
-	- There can only be one `{: .toc}` tag per document
+	- There can only be one `{:toc}` tag per document
+
 
 ```
 # In-Page Navigation
@@ -80,6 +81,9 @@ Creating a Table of Contents is pretty simple, and is described [Just the Docs -
 {:toc}
 
 ```
+
+{: .warning}
+> Make sure that you use `{:toc}` and not `{: .toc}`, or it won't work.
 
 `{: .text-delta}` is a CSS type scale that matches an H4 header, as described in [Just the Docs - Typography](https://just-the-docs.github.io/just-the-docs/docs/ui-components/typography/#responsive-type-scale). In the example above, it converts the H2 header of "Table of Contents" to look like an H4 header.
 
