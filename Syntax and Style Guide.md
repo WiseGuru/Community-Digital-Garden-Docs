@@ -44,3 +44,21 @@ Append the callout type with "-title" to convert the first line into the title f
 > 
 > This is the text
 ```
+
+Paragraphs must be separated with a full line break.
+
+{: .example-title}
+> This is the title
+> 
+> This is the first paragraph
+>
+> This is the second paragraph
+
+```
+{: .example-title}
+> This is the title
+> 
+> This is the first paragraph
+>
+> This is the second paragraph
+```

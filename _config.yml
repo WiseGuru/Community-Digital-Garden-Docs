@@ -13,15 +13,27 @@ aux_links:
 
 # Callouts
 callouts:
+## Red
   warning:
     title: Warning
     color: red
-  reminder:
-    title: Reminder
-    color: blue
-  success:
-    title: Success
-    color: green
+## Yellow
   tip:
     title: Tip
     color: yellow
+## Green
+  success:
+    title: Success
+    color: green
+## Blue
+  reminder:
+    title: Reminder
+    color: blue
+  note:
+    title: Note
+    color: blue
+## Purple
+  example:
+    title: Example
+    color: purple
+
