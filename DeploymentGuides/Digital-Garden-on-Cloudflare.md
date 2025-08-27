@@ -100,7 +100,7 @@ Nothing here is hard and fast, just some observations I've made:
 			1. The standard is `YYYY-MM-DDTHH:mm:ss.sssZ`,[^1] [^2] where `T` marks the difference between date and time[^3]
 				1. For example, you would add the following date to a file: `2025-05-28T23:59:59.024+6`
 			2. You only need data up to the most granular time you want. If you wanted to only show the date, you would just `YYYY-MM-DD`, or the to minute, just `YYYY-MM-DD HH:mm`
-			3. More details and screenshots are available in [Troubleshooting Digital Gardens](../BugsAndFixes/Troubleshooting%20Digital%20Gardens.md)
+			3. More details and screenshots are available in [Troubleshooting-Digital-Gardens](../BugsAndFixes/Troubleshooting-Digital-Gardens.md)
 		3. **WARNING**: If you have a lot of pages and choose to update this later on, it may update every page as its own job.
 		4. **WARNING**: If you use a tool like Resilio Sync or Syncthing to share your vault between computers, it will change the metadata of the file, and you are likely to get unexpected changes to the _Created_ and _Modified_ dates of your files.
 
@@ -168,7 +168,7 @@ Select the *Pages* tab, then *Get started* next to "Import an existing Git repos
 5. Set the *Build output directory* to `dist`
  ![](../assets/images/4550e035a1c4c2fd707b6b2a5dd45974.png)
 
-Then click Finish (or something, I completely forgot to screencap this part), and it will do the first build for your site! If you're going to run into problems, you're likely to run into them here. Check out the [Troubleshooting Digital Gardens](BugsAndFixes/Troubleshooting%20Digital%20Gardens.md) guide at the very end for help.
+Then click Finish (or something, I completely forgot to screencap this part), and it will do the first build for your site! If you're going to run into problems, you're likely to run into them here. Check out the [Troubleshooting-Digital-Gardens](../BugsAndFixes/Troubleshooting-Digital-Gardens.md) guide at the very end for help.
 
 {: .reminder}
 > You may need to re-apply the features or appearance customizations you set earlier by clicking "Apply Settings" in the plugin.
@@ -350,7 +350,7 @@ And that's it! Finally! Now go write some stuff and publish it.
 ## Troubleshooting
 ... unless it didn't work. 
 
-Don't panic! If you're running into trouble, I highly recommend checking out my guide on [Troubleshooting Digital Gardens](BugsAndFixes/Troubleshooting%20Digital%20Gardens.md), which covers common problems and the best way to find help.
+Don't panic! If you're running into trouble, I highly recommend checking out my guide on [Troubleshooting-Digital-Gardens](../BugsAndFixes/Troubleshooting-Digital-Gardens.md), which covers common problems and the best way to find help.
 
 ## Other Resources and Honorable Mentions
 

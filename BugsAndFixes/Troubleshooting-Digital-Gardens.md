@@ -186,7 +186,7 @@ SORT dg-home DESCENDING, file.name
 > 
 > This is a patch to template-managed code, and *will be overwritten* when the plugin updates.
 
-I discuss this in [[BugsAndFixes/Fixing the RSS Feed]], but basically, the script `/src/site/feed.njk` is not closing links properly when generating the file. It needs lines 10, 11, and 26 to be updated to use 5 slashes (`/`) instead of 4.
+I discuss this in [[Fixing-the-RSS-Feed]], but basically, the script `/src/site/feed.njk` is not closing links properly when generating the file. It needs lines 10, 11, and 26 to be updated to use 5 slashes (`/`) instead of 4.
 
 ## Filetree disappears or collapses when you click a folder
 This happens because a folder name has an illegal character in it, most likely an apostrophe. The offending folder will likely also be fully expanded.
