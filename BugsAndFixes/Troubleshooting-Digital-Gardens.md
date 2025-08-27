@@ -4,6 +4,8 @@ parent: Bugs and Fixes
 title: Troubleshooting Digital Gardens
 nav_order: 2
 ---
+# Troubleshooting Digital Gardens
+{: .no_toc}
 
 {: .reminder}
 >  Free software isn't free. Support Ole, the Digital Garden developer: [Buy Ole Eskild Steensen a Coffee - oleeskild - Ko-fi](https://ko-fi.com/oleeskild)
@@ -12,24 +14,10 @@ nav_order: 2
 > If you find this guide helpful, consider tossing me a coin! [Support WiseGuru](https://ko-fi.com/S6S3TOIAO)
 
 # Table of Contents
-- [How to ask for Help](#How%20to%20ask%20for%20Help) !! **Start here** !!
-- [Initial steps - Digital Garden Isn't Deploying](#Initial%20steps%20-%20Digital%20Garden%20Isn't%20Deploying)
-	- [00. The Digital Garden Pipeline](#00.%20The%20Digital%20Garden%20Pipeline)
-	- [01. Verify that your pages in Obsidian have the correct properties](#01.%20Verify%20that%20your%20pages%20in%20Obsidian%20have%20the%20correct%20properties)
-	- [02. Check your GitHub Repo to make sure its populating](#02.%20Check%20your%20GitHub%20Repo%20to%20make%20sure%20its%20populating)
-	- [03. Check the build and Gather Logs](#03.%20Check%20the%20build%20and%20Gather%20Logs)
-		- [11ty error troubleshooting](#11ty%20error%20troubleshooting)
-- [Common Problems](#Common%20Problems)
-	- [feed.xml experiences an "XML Parsing Error"](#feed.xml%20experiences%20an%20"XML%20Parsing%20Error")
-	- [Filetree disappears or collapses when you click a folder](#Filetree%20disappears%20or%20collapses%20when%20you%20click%20a%20folder)
-	- [You see a bunch of Failed deployments in Cloudflare to "Filetree"](#You%20see%20a%20bunch%20of%20Failed%20deployments%20in%20Cloudflare%20to%20"Filetree")
-	- [First time publishing Garden stuck on "Calculating publication status from GitHub"](#First%20time%20publishing%20Garden%20stuck%20on%20"Calculating%20publication%20status%20from%20GitHub")
-	- [Obsidian Properties Passthrough and Nunjucks Scripts](#Obsidian%20Properties%20Passthrough%20and%20Nunjucks%20Scripts)
-	- [Manually updating packages for your Digital Garden broke something](#Manually%20updating%20packages%20for%20your%20Digital%20Garden%20broke%20something)
-	- [Build failure with htmlMinifier and HTML content in logs](#Build%20failure%20with%20htmlMinifier%20and%20HTML%20content%20in%20logs)
-	- [Created or Updated Date and Time not Appearing](#Created%20or%20Updated%20Date%20and%20Time%20not%20Appearing)
-	- [Missing Menu and Search icons in Firefox](#Missing%20Menu%20and%20Search%20icons%20in%20Firefox)
-	- [ITS Theme Callouts Not Formatting Correctly](#ITS%20Theme%20Callouts%20Not%20Formatting%20Correctly)
+{: .no_toc .text-delta}
+
+1. TOC
+{: .toc}
 
 {: .reminder}
 > **Protect your Domain from Spoofing**
