@@ -12,26 +12,26 @@ nav_order: 2
 > If you find this guide helpful, consider tossing me a coin! [Support WiseGuru](https://ko-fi.com/S6S3TOIAO)
 
 # Table of Contents
-[How to ask for Help](#How%20to%20ask%20for%20Help)
-- [[BugsAndFixes/Troubleshooting Digital Gardens#How to ask for Help|How to ask for Help]] !! **Start here** !!
-- [[BugsAndFixes/Troubleshooting Digital Gardens#Initial steps - Digital Garden Isn't Deploying|Initial Steps - Digital Garden Isn't Deploying]]
-	- [[BugsAndFixes/Troubleshooting Digital Gardens#00. The Digital Garden Pipeline|00. The Digital Garden Pipeline]]
-	- [[BugsAndFixes/Troubleshooting Digital Gardens#01. Verify that your pages in Obsidian have the correct properties|01. Verify that your pages in Obsidian have the correct properties]]
-	- [[BugsAndFixes/Troubleshooting Digital Gardens#02. Check your GitHub Repo to make sure its populating|02. Check your GitHub Repo to make sure its populating]]
-	- [[BugsAndFixes/Troubleshooting Digital Gardens#03. Check the build and Gather Logs|03. Check the build and Gather Logs]]
-		- [[BugsAndFixes/Troubleshooting Digital Gardens#11ty error troubleshooting|11ty error troubleshooting]]
-- [[BugsAndFixes/Troubleshooting Digital Gardens#Common Problems|Common Problems]]
-	- [[BugsAndFixes/Troubleshooting Digital Gardens#feed.xml experiences an "XML Parsing Error"|feed.xml experiences an "XML Parsing Error"]]
-	- [[BugsAndFixes/Troubleshooting Digital Gardens#Filetree disappears or collapses when you click a folder|Filetree disappears or collapses when you click a folder]]
-	- [[BugsAndFixes/Troubleshooting Digital Gardens#You see a bunch of Failed deployments in Cloudflare to "Filetree"|You see a bunch of Failed deployments in Cloudflare to "Filetree"]]
-	- [[BugsAndFixes/Troubleshooting Digital Gardens#First time publishing Garden stuck on "Calculating publication status from GitHub"|First time publishing stuck on "Calculating publication status from GitHub"]]
-	- [[BugsAndFixes/Troubleshooting Digital Gardens#Obsidian Properties Passthrough and Nunjucks Scripts|Obsidian Properties Passthrough and Nunjucks Scripts]]
-	- [[BugsAndFixes/Troubleshooting Digital Gardens#Manually updating packages for your Digital Garden broke something|Manually updating packages for your Digital Garden broke something]]
-	- [[BugsAndFixes/Troubleshooting Digital Gardens#Build failure with htmlMinifier and HTML content in logs|Build failure with htmlMinifier and HTML content in logs]]
-	- [[BugsAndFixes/Troubleshooting Digital Gardens#Created or Updated Date and Time not Appearing|Created or Updated Date and Time not Appearing]]
-	- [[BugsAndFixes/Troubleshooting Digital Gardens#Missing Menu and Search icons in Firefox|Missing Menu and Search icons in Firefox]]
+- [How to ask for Help](#How%20to%20ask%20for%20Help) !! **Start here** !!
+- [Initial steps - Digital Garden Isn't Deploying](#Initial%20steps%20-%20Digital%20Garden%20Isn't%20Deploying)
+	- [00. The Digital Garden Pipeline](#00.%20The%20Digital%20Garden%20Pipeline)
+	- [01. Verify that your pages in Obsidian have the correct properties](#01.%20Verify%20that%20your%20pages%20in%20Obsidian%20have%20the%20correct%20properties)
+	- [02. Check your GitHub Repo to make sure its populating](#02.%20Check%20your%20GitHub%20Repo%20to%20make%20sure%20its%20populating)
+	- [03. Check the build and Gather Logs](#03.%20Check%20the%20build%20and%20Gather%20Logs)
+		- [11ty error troubleshooting](#11ty%20error%20troubleshooting)
+- [Common Problems](#Common%20Problems)
+	- [feed.xml experiences an "XML Parsing Error"](#feed.xml%20experiences%20an%20"XML%20Parsing%20Error")
+	- [Filetree disappears or collapses when you click a folder](#Filetree%20disappears%20or%20collapses%20when%20you%20click%20a%20folder)
+	- [You see a bunch of Failed deployments in Cloudflare to "Filetree"](#You%20see%20a%20bunch%20of%20Failed%20deployments%20in%20Cloudflare%20to%20"Filetree")
+	- [First time publishing Garden stuck on "Calculating publication status from GitHub"](#First%20time%20publishing%20Garden%20stuck%20on%20"Calculating%20publication%20status%20from%20GitHub")
+	- [Obsidian Properties Passthrough and Nunjucks Scripts](#Obsidian%20Properties%20Passthrough%20and%20Nunjucks%20Scripts)
+	- [Manually updating packages for your Digital Garden broke something](#Manually%20updating%20packages%20for%20your%20Digital%20Garden%20broke%20something)
+	- [Build failure with htmlMinifier and HTML content in logs](#Build%20failure%20with%20htmlMinifier%20and%20HTML%20content%20in%20logs)
+	- [Created or Updated Date and Time not Appearing](#Created%20or%20Updated%20Date%20and%20Time%20not%20Appearing)
+	- [Missing Menu and Search icons in Firefox](#Missing%20Menu%20and%20Search%20icons%20in%20Firefox)
 
-> [!tip] Protect your Domain from Spoofing
+{: .reminder}
+> **Protect your Domain from Spoofing**
 > Even if you don't have email connected to your domain, you should set up SPF and DMARC records for your Digital Garden. Check out [[Protecting your Identity and your Domain with Email Security]] for more details.
 
 # How to ask for Help

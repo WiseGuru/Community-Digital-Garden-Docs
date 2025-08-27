@@ -22,3 +22,6 @@ callouts:
   success:
     title: Success
     color: green
+  tip:
+    title: Note
+    color: Teal
