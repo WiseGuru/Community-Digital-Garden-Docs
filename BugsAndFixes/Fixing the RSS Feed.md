@@ -7,9 +7,9 @@ nav_order: 2
 # tl;dr
 For most people, you can just open `/src/site/feed.njk` from your repo and modify lines 10, 11, and 26 to have 5 slashes (`/`) instead of 4.
 
-![jd.e's comment in assets](./jdeComment.png)
+![jdeComment](../assets/images/jdeComment.png)
 
-![](feed.njk.png)
+![](../assets/images/feed.njk.png)
 
 Save and push changes, and your feed should start rendering properly.
 
@@ -17,15 +17,15 @@ Save and push changes, and your feed should start rendering properly.
 
 # RSS Feed not working
 
-![](280ef664d06874de2c78de24a90ccdf4.png)
+![](../assets/images/280ef664d06874de2c78de24a90ccdf4.png)
 
 If you've tried to view the RSS feed for your site, you've probably seen the above error and noticed that your RSS feed otherwise looks well formed. If you look closely, the problem is when links are created with the feed.njk script, they don't get closed properly in the `feed.xml` output file.
 
-![](945987665e77523800fc447e56c33254.png)
+![](../assets/images/945987665e77523800fc447e56c33254.png)
 
 I tried a few things before I remembered that I should search for answers first, and found that this problem is well documented and explored; in particular, dayne on GitHub did a ton of testing and found the solution of using 5 `/` instead of 4.^[[Atom/RSS feed error · Issue #493 · oleeskild/obsidian-digital-garden](https://github.com/oleeskild/obsidian-digital-garden/issues/493#issuecomment-1825034758)]
 
-![](98b7854739e6946e724541fab1455a97.png)
+![](../assets/images/98b7854739e6946e724541fab1455a97.png)
 
 
 # Linked GitHub Issues

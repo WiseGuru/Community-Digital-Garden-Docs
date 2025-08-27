@@ -32,7 +32,7 @@ In order to complete this project, you will need the following:
 Now that you've got your accounts in order, you need to use the [Digital Garden Repo](https://github.com/oleeskild/digitalgarden) Template to create your site's repo.
 #### Create the Repo
 Go to [this repo](https://github.com/oleeskild/digitalgarden), click "*Use this Template*," and select "*Create a new repository*"
-![](attachment/9fabbeb10f3cd0020e5878d895eb506d.png)
+![](../assets/images/9fabbeb10f3cd0020e5878d895eb506d.png)
 
 >**NOTE**: If you don't see the *Template* button, you may need to either maximize the page or zoom out.
 
@@ -44,7 +44,7 @@ On the next page, configure the repo as follows:
 	1. This doesn't have any impact on the function of the site, but you may or may not want to share the page source.
 	2. When troubleshooting or asking for help, it is much easier if the repo is Public; however, if you accidentally publish a password and take down the page, someone could go through the repo history and find the password.
 
-![](attachment/1c814c59252c6645ba5d461ba67c23bf.png)
+![](../assets/images/1c814c59252c6645ba5d461ba67c23bf.png)
 
 >Example configuration for my idea-dumpsite, [wisdump.work](https://wisdump.work/)
 
@@ -126,22 +126,22 @@ If you don't see a "Properties" section at the top of your page, you can create 
 	3. Probably others
 
 If you've manually created a *Property*, you need to set it as a *checkbox*.
-![](attachment/70346ead3605c638cebbd4e586b565c2.png)
+![](../assets/images/70346ead3605c638cebbd4e586b565c2.png)
 
 #### Publishing your Site
 There are a few ways to publish your site when you're ready.
 
 You could open the *Command Palette* and select *Publish all notes* or *Publish single note*
-![](attachment/8eb84664c7fe20fcf11346002d282647.png)
+![](../assets/images/8eb84664c7fe20fcf11346002d282647.png)
 
 
 >**NOTE**: You can [configure hotkeys](https://help.obsidian.md/Customization/Custom+hotkeys) in Obsidian’s Settings to make publication easier. The combination below is intuitive for me, and doesn’t have any overlapping uses.
-> ![](attachment/8b1e5f61947b75af19417b22975c1566.png)
+> ![](../assets/images/8b1e5f61947b75af19417b22975c1566.png)
 
 
 Or you could use the *Digital Garden Publication Center* and pick from a more nuanced-selection of options.
 
-![](attachment/9646d6f27d9b1e2810012dfb1f8cdc60.png)
+![](../assets/images/9646d6f27d9b1e2810012dfb1f8cdc60.png)
 
 ### 03. Configure Cloudflare
 Now that your Vault is ready for **Prime Time**, let's get it setup in Cloudflare
@@ -149,15 +149,15 @@ Now that your Vault is ready for **Prime Time**, let's get it setup in Cloudflar
 #### Create the Pages Application
 
 Log in to Cloudflare, expand the left menu bar, expand *Compute (Worker)*, select *Workers and PAges*, and click *Create*
-![](attachment/334299bf3b27f876b8577e5c05842c79.png)
+![](../assets/images/334299bf3b27f876b8577e5c05842c79.png)
 
 Select the *Pages* tab, then *Get started* next to "Import an existing Git repository" to link your GIT account, and select the Repo you created from the *Digital Garden* template.
-![](attachment/dbfc2bfb9324a96381ae94e819ea2f16.png)
+![](../assets/images/dbfc2bfb9324a96381ae94e819ea2f16.png)
 
 > [!NOTE]
 > If you've done this before, you'll have to select "*Add account*", then scroll down and select the new repo from the dropdown for the it to appear in Cloudflare.
-> ![](attachment/b0f3ff99a3db9d1413782670a102f15a.png)
-> ![](attachment/a6a025e45dccf5f3fb20ef3e5fb7b659.png)
+> ![](../assets/images/b0f3ff99a3db9d1413782670a102f15a.png)
+> ![](../assets/images/a6a025e45dccf5f3fb20ef3e5fb7b659.png)
 
 #### Configure your First Deployment
 1. Enter the project name (default is the Repo name)
@@ -166,9 +166,9 @@ Select the *Pages* tab, then *Get started* next to "Import an existing Git repos
 	1. I don't think this matters, as we immediately change the commands afterward
 4. Set the *Build command* to `npm run build`
 5. Set the *Build output directory* to `dist`
- ![](attachment/4550e035a1c4c2fd707b6b2a5dd45974.png)
+ ![](../assets/images/4550e035a1c4c2fd707b6b2a5dd45974.png)
 
-Then click Finish (or something, I completely forgot to screencap this part), and it will do the first build for your site! If you're going to run into problems, you're likely to run into them here. Check out the [Troubleshooting Digital Gardens](Troubleshooting%20Digital%20Gardens) guide at the very end for help.
+Then click Finish (or something, I completely forgot to screencap this part), and it will do the first build for your site! If you're going to run into problems, you're likely to run into them here. Check out the [Troubleshooting Digital Gardens](BugsAndFixes/Troubleshooting%20Digital%20Gardens.md) guide at the very end for help.
 
 > [!note]
 > You may need to re-apply the features or appearance customizations you set earlier by clicking "Apply Settings" in the plugin.
@@ -201,7 +201,7 @@ Now that we've connected our domain to Cloudflare, we can view it under *Website
 
 Click on your domain, and let's get started with the Quick Start Guide from the main panel.
 1. Click "*Review Settings*" in the *Quick Start Guide* pane
-	1. ![](attachment/d901152ffd026897e78d3288a18fc8f7.png)
+	1. ![](../assets/images/d901152ffd026897e78d3288a18fc8f7.png)
 2. Enable *Automatic HTTPS rewrites*
 3. Enable *Always Use HTTPS*
 4. Your choice whether to *enable* or *disable* *Brotli* compression; I couldn't find anything indicating it was insecure to use, and is apparently a [A Fast Alternative to GZIP Compression](https://kinsta.com/blog/brotli-compression/)
@@ -276,18 +276,18 @@ Ok, with that out of the way, let's...
 >**NOTE**: If you apply updates through Dependabot, *Digital Garden* updates overwrite them, and you may be required to re-apply them. However, *it's better to be running patched* than unpatched, and *it's not that hard to do*.
 
 In the Repo, navigate to "*Settings*," *Code security and analysis*, and enable Dependabot *Alerts* and *Security Updates*
-	![](attachment/410a9fbdbad96a893bc8b5e39cecd142.png)
+	![](../assets/images/410a9fbdbad96a893bc8b5e39cecd142.png)
 
 When there is a dependency update or security issue, Dependabot will create a *pull request*, and Cloudflare will test the build in a preview to make sure it builds correctly.
-![](attachment/edb4fa27bcd2aeb79bebfcf21f60d7a3.png)
+![](../assets/images/edb4fa27bcd2aeb79bebfcf21f60d7a3.png)
 
 *Be wary of any pull requests where either the build fails or has a low compatibility rating.*
-![](attachment/45ae76539a575fdd734269f3bb8a8a63.png)
-![](attachment/99bbf1f4642dce907ef6cc6362749441.png)
+![](../assets/images/45ae76539a575fdd734269f3bb8a8a63.png)
+![](../assets/images/99bbf1f4642dce907ef6cc6362749441.png)
 
 To merge a succeeding pull request, click the *green button to "Merge pull request* and then click *confirm merge*.
-![](attachment/0ac15d9f70b0bc8756d55e731a4b261d.png)
-![](attachment/2e362f205ba88d8d70b123ce5126b638.png)
+![](../assets/images/0ac15d9f70b0bc8756d55e731a4b261d.png)
+![](../assets/images/2e362f205ba88d8d70b123ce5126b638.png)
 
 And it's updated! Hoo-raaay! But if you haven't already, I *highly recommend* you check out my guide on [How to manually update packages for Digital Gardens](How%20to%20manually%20update%20packages%20for%20Digital%20Gardens). It covers instances where Dependabot finds a security vulnerability but can't fix it for you automatically. 
 
@@ -303,7 +303,7 @@ Don't believe me? You can check your site's headers and see how an attacker can 
 To add security headers, you need to first create a file called `_headers` in the folder `/src/site` in your GitHub Repo, then modify the *.eleventy.js* configuration file to the file through to Cloudflare.
 
 The quickest way to create the file is to navigate to the folder in GitHub, and select *Add file* from the top right.
-![](attachment/f45b2dd1c633b26b812f5d646a1adf4b.png)
+![](../assets/images/f45b2dd1c633b26b812f5d646a1adf4b.png)
 
 Name the file `_headers`,^[JUST `_headers`, not `_headers.txt`, not `headers`, and for godsake not `TheseAreMySecurityHeadersForMyCloudflareSite.txt.xml.zip.tar.gz`] and insert the following text:
 
@@ -318,10 +318,10 @@ I've tested this against all of my sites and it hasn't caused any issues so far.
 Next, you will need to modify the `.eleventy.js` file at the root of the repo to add a passthrough for the `_headers` file. This is also easy to do in GitHub.
 
 Open the file `.eleventy.js` at the top-level folder of your repo by clicking on its name, and at the top-right corner of the code, click the drop-down menu next to the pen and select *Edit in place*.
-![](attachment/dfde83d561cf761e88b418c993d7fad0.png)
+![](../assets/images/dfde83d561cf761e88b418c993d7fad0.png)
 
 Now, scroll down until you find all the lines that begin with `eleventyConfig.addPassthroughCopy`
-![](attachment/03c688d4570bb645c07ffedf8957b761.png)
+![](../assets/images/03c688d4570bb645c07ffedf8957b761.png)
 
 For me, it's around line 500-510.
 
@@ -334,10 +334,10 @@ eleventyConfig.addPassthroughCopy("src/site/_headers");
 To verify that your headers have been added, under "*Deployment Details*" click on the *Headers* tab and see what was added
 
 >Successful addition of headers:
-![](attachment/ad5751ebef5f934bc331f9bbefe13372.png)
+![](../assets/images/ad5751ebef5f934bc331f9bbefe13372.png)
 
 >Failed addition of headers:
-![](attachment/b40106512d1ddacb4276eb1ad02ee057.png)
+![](../assets/images/b40106512d1ddacb4276eb1ad02ee057.png)
 
 You can also go to [Security Header Scanner by Probely](https://securityheaders.com) to view your site's current headers after the deployment succeeds.^[You might be wondering about the Content-Security-Policy warning; I don't want to distract from this guide, but here's why I gave up trying to impletement [CSP on Digital Gardens](CSP%20on%20Digital%20Gardens)]
 
@@ -346,7 +346,7 @@ And that's it! Finally! Now go write some stuff and publish it.
 ## Troubleshooting
 ... unless it didn't work. 
 
-Don't panic! If you're running into trouble, I highly recommend checking out my guide on [Troubleshooting Digital Gardens](Troubleshooting%20Digital%20Gardens), which covers common problems and the best way to find help. But to get you started, let's review the Digital Garden build pipeline:
+Don't panic! If you're running into trouble, I highly recommend checking out my guide on [Troubleshooting Digital Gardens](BugsAndFixes/Troubleshooting%20Digital%20Gardens.md), which covers common problems and the best way to find help. But to get you started, let's review the Digital Garden build pipeline:
 
 ![Troubleshooting Digital Gardens#00. The Digital Garden Pipeline|The Digital Garden Pipeline](Troubleshooting%20Digital%20Gardens%2300.%20The%20Digital%20Garden%20Pipeline%7CThe%20Digital%20Garden%20Pipeline)
 
@@ -354,4 +354,4 @@ Don't panic! If you're running into trouble, I highly recommend checking out my 
 
 The guide I used to get started is [How I Published My Knowledge Base Online for Free](https://sharaf.cc/40-49-toolbox/40-note-taking/40-01-obsidian/guides/publish-obsidian-vault-for-free/) by Sharaf; unfortunately, it gets a critical part of the process wrong during initial setup in the **Build Configuration**. Specifically, you need to set the "*Build command*" to `npm run build` and the "*Build output directory*" to `/dist`.
 
-![](attachment/456df70f458bd3878f9c287aa860468e.png)
+![](../assets/images/456df70f458bd3878f9c287aa860468e.png)
