@@ -9,8 +9,13 @@ This site uses a slightly different version of Markdown than Obsidian, and there
 ## Editing in Obsidian
 If you choose to work on documents in Obsidian, I recommend making the following changes to your preferences:
 1. Files and Links
-	1. New link format: **Relative path to file**
-	2. Attachment folder path: **assets/images**
+	1. **Automatically update internal links**: Toggled on
+	2. **Default location for new notes**: Same folder as current file
+	3. **New link format**: Relative path to file
+	4. **Use `[[Wikilinks]]`**: Toggled off
+	5. **Attachment folder path**: assets/images
+2. Community plugin
+	1. [Auto Link Title](https://github.com/zolrath/obsidian-auto-link-title) by Matt Furden
 
 ## Images
 Images should be stored in `assets/images` for easier management.
@@ -62,3 +67,6 @@ Paragraphs must be separated with a full line break.
 > 
 > This is the second paragraph
 ```
+
+{: .example}
+> This is an example?
