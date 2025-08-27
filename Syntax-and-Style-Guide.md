@@ -59,6 +59,30 @@ Some text
 
 ![](assets/images/Syntax-and-Style-Guide.png)
 
+## Table of Contents
+Creating a Table of Contents is pretty simple, and is described [Just the Docs - In-Page Navigation](https://just-the-docs.github.io/just-the-docs/docs/navigation/in-page/#generating-table-of-contents). Basically, there are a few tags to be aware of.
+
+- `{: .no_toc}` 
+	- Placed after a header to exclude it from the table of contents
+- `{: .toc}`
+	- Immediately follows the first line of an ordered or unordered list to generate a ToC
+	- The first line of that list must also have "TOC" as the only text
+	- There can only be one `{: .toc}` tag per document
+
+```
+# In-Page Navigation
+{: .no_toc }
+
+## Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+```
+
+`{: .text-delta}` is a CSS type scale that matches an H4 header, as described in [Just the Docs - Typography](https://just-the-docs.github.io/just-the-docs/docs/ui-components/typography/#responsive-type-scale).
+
 ## Images
 Images should be stored in `assets/images` for easier management.
 
