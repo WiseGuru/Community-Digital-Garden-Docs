@@ -172,6 +172,7 @@ Then click Finish (or something, I completely forgot to screencap this part), an
 
 {: .reminder}
 > You may need to re-apply the features or appearance customizations you set earlier by clicking "Apply Settings" in the plugin.
+
 ### 04. (OPT) Register and Assign a Custom Domain
 In order to configure various Cloudflare security features (*but not custom headers*), you will need to register a domain name and link it to your Pages project on Cloudflare.
 
@@ -214,7 +215,6 @@ Once done, we should go down the options in left slide-out menu and enable a bun
 > DMARC: `TXT  _dmarc.example.com   "v=DMARC1; p=reject"`
 > 
 > For more details, check out [Securing Email - MaxwellCTI](https://maxwellcti.com/technical-guides/securing-email/)
-
 
 1. **DNS**
 	1. Records
