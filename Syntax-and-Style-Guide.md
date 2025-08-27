@@ -32,10 +32,14 @@ nav_order:        # The position this document should appear in lists
 ```
 
 `nav_order` prioritizes lower numbers to be higher in the list. If the nav_order matches, then it sorts alphabetically.
-## File names, Titles, and Headers
+## Folders, File names, Titles, and Headers
+Each folder should have a short summary document named "index.md" that describes the folder contents. All other notes in the folder should list that file's title as the parent so that they appear in the Table of Contents automatically generated at the bottom of the file.
+
 File names should be all lower-case with hyphens between words. Use the frontmatter and first line of the document to set the readable title of the document.
 
 The page title should be "Header 1" and the first line of a document after the frontmatter.
+
+
 
 ## Images
 Images should be stored in `assets/images` for easier management.
