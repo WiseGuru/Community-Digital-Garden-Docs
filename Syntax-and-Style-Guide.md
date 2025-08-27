@@ -28,7 +28,10 @@ parent:           # The title of the parent document, used in ToC's
 nav_order:        # The position this document should appear in lists
 ```
 
-## Headers and Titles
+`nav_order` prioritizes lower numbers to be higher in the list. If the nav_order matches, then it sorts alphabetically.
+## File names, Titles, and Headers
+File names should be all lower-case with hyphens between words. Use the frontmatter and first line of the document to set the readable title of the document.
+
 The page title should be "Header 1" and the first line of a document after the frontmatter.
 
 ## Images
