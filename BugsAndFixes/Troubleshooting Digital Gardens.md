@@ -29,6 +29,7 @@ nav_order: 2
 	- [Build failure with htmlMinifier and HTML content in logs](#Build%20failure%20with%20htmlMinifier%20and%20HTML%20content%20in%20logs)
 	- [Created or Updated Date and Time not Appearing](#Created%20or%20Updated%20Date%20and%20Time%20not%20Appearing)
 	- [Missing Menu and Search icons in Firefox](#Missing%20Menu%20and%20Search%20icons%20in%20Firefox)
+	- [ITS Theme Callouts Not Formatting Correctly](#ITS%20Theme%20Callouts%20Not%20Formatting%20Correctly)
 
 {: .reminder}
 > **Protect your Domain from Spoofing**
@@ -89,7 +90,7 @@ If you do not have a `dg-home` property set, you can manually change `dg-publish
 
 **If you made any changes,** publish your *homepage* using the *Command Palette* or the *Digital Garden Publication Center* and check your site.
 
->[!NOTE]
+{: .note}
 >Be careful when unchecking the `dg-publish` tag or moving many pages. Uploading multiple pages counts as one commit, but *deleting or moving multiple pages counts as one commit per page*. If you have a large site (100+ pages), you can quickly run out of available free commits.
 
 If your site doesn't update, or your pages are marked correctly, proceed to the next step.
@@ -100,10 +101,10 @@ Log into your *GitHub* account, open your repository, and check `src/site/notes`
 
 If it's not populated, it means GitHub is not receiving your notes, and this is likely caused by a **fine-grained token** misconfiguration, so let's just rebuild it from scratch.
 
->[!NOTE]
+{: .note}
 >Even if you see a green checkmark in the Digital Garden plugin in Obsidian, that only checks if the token is *legitimate*, not that it has the correct permissions.
 
->[!WARNING]
+{: .warning}
 >The tokens are only visible *immediately after creation or regeneration*, and if you do not copy/paste it before you navigate away from the page, you will have to regenerate it.
 >This is not the end of the world, just a *douleurs dans le cul*, as Google Translate tells me the French say
 
@@ -180,7 +181,9 @@ SORT dg-home DESCENDING, file.name
 # Common Problems
 ## feed.xml experiences an "XML Parsing Error"
 
-> [!WARNING] *WARNING*: Out-of-Band Patch
+{: .warning-title} 
+> *WARNING*: Out-of-Band Patch
+> 
 > This is a patch to template-managed code, and *will be overwritten* when the plugin updates.
 
 I discuss this in [[BugsAndFixes/Fixing the RSS Feed]], but basically, the script `/src/site/feed.njk` is not closing links properly when generating the file. It needs lines 10, 11, and 26 to be updated to use 5 slashes (`/`) instead of 4.
@@ -238,7 +241,9 @@ This is similar to the disappearing filetree issue, as it's the special characte
 
 The only solution so far is to either disable `htmlMinifier` in the `.eleventy.js` file in your Digital Garden repo or remove the offending character.
 
-> [!WARNING] *WARNING*: Out-of-Band Patch
+{: .warning-title} 
+> *WARNING*: Out-of-Band Patch
+> 
 > Commenting out htmlMinifier from .eleventy.js modifies template-managed code, and *will be overwritten* when the plugin updates.
 
 To remove htmlMinifier, open `.eleventy.js` in your favorite text or code editor, and add a `//` to the beginning of every line in the "htmlMinifier" section.
@@ -275,7 +280,9 @@ When the sidebar is hidden, the hamburger menu icon at the top left and the magn
 
 This is caused by a bug in Digital Garden where the lucide icon library isn't loaded before it's called to generate the icons. This can be fixed by updating the script in `src/site/_includes/components/lucide.njk` to the following:
 
-> [!WARNING] *WARNING*: Out-of-Band Patch
+{: .warning-title} 
+> *WARNING*: Out-of-Band Patch
+> 
 > This is a patch to template-managed code, and *will be overwritten* when the plugin updates.
 
 ```html
@@ -300,7 +307,6 @@ This updated coad loads the lucide icon library before the script calling the ic
 
 ## ITS Theme Callouts Not Formatting Correctly
 The ITS theme allows the creation of right- or left-justified infobox callouts. These callouts should appear to the right or left of text, but sometines are not when published to Digital Gardens.
-
 
 
 This is commonly caused by the theme settings not being synced with Digital Garden, which can be done in Obsidian by going to Settings>Community Plugins>Digital Garden>Appearance, and then applying theme settings at the top.
