@@ -34,7 +34,8 @@ Now that you've got your accounts in order, you need to use the [Digital Garden 
 Go to [this repo](https://github.com/oleeskild/digitalgarden), click "*Use this Template*," and select "*Create a new repository*"
 ![](../assets/images/9fabbeb10f3cd0020e5878d895eb506d.png)
 
->**NOTE**: If you don't see the *Template* button, you may need to either maximize the page or zoom out.
+{: .reminder}
+>If you don't see the *Template* button, you may need to either maximize the page or zoom out.
 
 On the next page, configure the repo as follows:
 
@@ -154,7 +155,7 @@ Log in to Cloudflare, expand the left menu bar, expand *Compute (Worker)*, selec
 Select the *Pages* tab, then *Get started* next to "Import an existing Git repository" to link your GIT account, and select the Repo you created from the *Digital Garden* template.
 ![](../assets/images/dbfc2bfb9324a96381ae94e819ea2f16.png)
 
-> [!NOTE]
+{: .reminder}
 > If you've done this before, you'll have to select "*Add account*", then scroll down and select the new repo from the dropdown for the it to appear in Cloudflare.
 > ![](../assets/images/b0f3ff99a3db9d1413782670a102f15a.png)
 > ![](../assets/images/a6a025e45dccf5f3fb20ef3e5fb7b659.png)
@@ -170,7 +171,7 @@ Select the *Pages* tab, then *Get started* next to "Import an existing Git repos
 
 Then click Finish (or something, I completely forgot to screencap this part), and it will do the first build for your site! If you're going to run into problems, you're likely to run into them here. Check out the [Troubleshooting Digital Gardens](BugsAndFixes/Troubleshooting%20Digital%20Gardens.md) guide at the very end for help.
 
-> [!note]
+{: .reminder}
 > You may need to re-apply the features or appearance customizations you set earlier by clicking "Apply Settings" in the plugin.
 ### 04. (OPT) Register and Assign a Custom Domain
 In order to configure various Cloudflare security features (*but not custom headers*), you will need to register a domain name and link it to your Pages project on Cloudflare.
@@ -208,6 +209,7 @@ Click on your domain, and let's get started with the Quick Start Guide from the 
 
 Once done, we should go down the options in left slide-out menu and enable a bunch of other security and optimization features.
 
+{: .tip}
 >*Don't send email from your domain*? Stop anyone from impersonating you with **these rules that reject all email sent from your domain**:
 > SPF: `TXT   @   "v=spf1 -all"`
 > DMARC: `TXT  _dmarc.example.com   "v=DMARC1; p=reject"`
@@ -266,14 +268,16 @@ Once done, we should go down the options in left slide-out menu and enable a bun
 ### 05. (OPT) Configure Dependabot on GitHub and Create Custom Headers
 Now that we have *Cloudflare* configured securely, let's make sure we're not publishing obsolete and vulnerable code.
 
->  **WARNING**: Deploying patches outside of **Digital Garden** updates *may* break your site. This has not happened to me yet, but if it happens *to you*, you can [revert Dependabot branch merges](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/reverting-a-pull-request) and easily roll-back the problem.
+{: .warning}
+> Deploying patches outside of **Digital Garden** updates *may* break your site. This has not happened to me yet, but if it happens *to you*, you can [revert Dependabot branch merges](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/reverting-a-pull-request) and easily roll-back the problem.
 
 Additionally, **I strongly recommended** that you familiarize yourself with *Visual Studio Code*, *Node.js*, and *GitHub Desktop*^[What, you thought you were signing up for some free and easy way to upload your notes to the internet? Well with great power comes great security risks, and if you don't want some script kiddie owning your base, you should assume the people making free tools have overlooked something. Sometimes you gotta fix dependencies yourself for security updates, and boy howdy, knowing how these tools work is key]. But rather than make this already long guide longer, you can find more information on this under [How to manually update packages for Digital Gardens](How%20to%20manually%20update%20packages%20for%20Digital%20Gardens).
 
 Ok, with that out of the way, let's...
 #### Configure Security and Dependency Updates in GitHub
 
->**NOTE**: If you apply updates through Dependabot, *Digital Garden* updates overwrite them, and you may be required to re-apply them. However, *it's better to be running patched* than unpatched, and *it's not that hard to do*.
+{: .reminder}
+>If you apply updates through Dependabot, *Digital Garden* updates overwrite them, and you may be required to re-apply them. However, *it's better to be running patched* than unpatched, and *it's not that hard to do*.
 
 In the Repo, navigate to "*Settings*," *Code security and analysis*, and enable Dependabot *Alerts* and *Security Updates*
 	![](../assets/images/410a9fbdbad96a893bc8b5e39cecd142.png)
@@ -298,7 +302,8 @@ Installing security headers **critical**, as it improves your site's security an
 
 Don't believe me? You can check your site's headers and see how an attacker can take advantage of your sit with [securityheaders.com](https://securityheaders.com)
 
->**NOTE**: These headers will get overwritten when *Digital Garden* releases an update, so you will have to re-apply them each time. This re-application is made much easier if you use **Github Desktop** and **Visual Studio Code** as mentioned before.
+{: .reminder}
+> These headers will get overwritten when *Digital Garden* releases an update, so you will have to re-apply them each time. This re-application is made much easier if you use **Github Desktop** and **Visual Studio Code** as mentioned before.
 
 To add security headers, you need to first create a file called `_headers` in the folder `/src/site` in your GitHub Repo, then modify the *.eleventy.js* configuration file to the file through to Cloudflare.
 
@@ -346,9 +351,7 @@ And that's it! Finally! Now go write some stuff and publish it.
 ## Troubleshooting
 ... unless it didn't work. 
 
-Don't panic! If you're running into trouble, I highly recommend checking out my guide on [Troubleshooting Digital Gardens](BugsAndFixes/Troubleshooting%20Digital%20Gardens.md), which covers common problems and the best way to find help. But to get you started, let's review the Digital Garden build pipeline:
-
-![Troubleshooting Digital Gardens#00. The Digital Garden Pipeline|The Digital Garden Pipeline](Troubleshooting%20Digital%20Gardens%2300.%20The%20Digital%20Garden%20Pipeline%7CThe%20Digital%20Garden%20Pipeline)
+Don't panic! If you're running into trouble, I highly recommend checking out my guide on [Troubleshooting Digital Gardens](BugsAndFixes/Troubleshooting%20Digital%20Gardens.md), which covers common problems and the best way to find help.
 
 ## Other Resources and Honorable Mentions
 
