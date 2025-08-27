@@ -13,11 +13,10 @@ nav_order: 2
 {: .success}
 > If you find this guide helpful, consider tossing me a coin! [Support WiseGuru](https://ko-fi.com/S6S3TOIAO)
 
-# Table of Contents
+## Table of Contents
 {: .no_toc .text-delta}
-
 1. TOC
-{: .toc}
+{:toc}
 
 {: .reminder}
 > **Protect your Domain from Spoofing**
