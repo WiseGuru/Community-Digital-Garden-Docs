@@ -16,12 +16,18 @@ If you choose to work on documents in Obsidian, I recommend making the following
 	5. **Attachment folder path**: assets/images
 2. Community plugin
 	1. [Auto Link Title](https://github.com/zolrath/obsidian-auto-link-title) by Matt Furden
+	2. [Paste image rename](https://github.com/reorx/obsidian-paste-image-rename) by Reorx
 
 ## Images
 Images should be stored in `assets/images` for easier management.
 
 Embedded images must linked to the exact folder from the current location; for example, linking to a file in `/assets/images` from `/Folder1` would require the path `../assets/images/picture.jpg`
 
+Below is not a great example because the syntax guide as at the root of the repo, but here's what it looks like:
+
+`![](assets/images/Syntax%20and%20Style%20Guide.png)`
+
+![](assets/images/Syntax%20and%20Style%20Guide.png)
 ## Callouts
 Callouts are written following the [Just the Docs - Callouts](https://just-the-docs.github.io/just-the-docs/docs/ui-components/callouts/) documentation. This site has the following defined callouts:
 
