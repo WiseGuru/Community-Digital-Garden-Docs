@@ -23,7 +23,20 @@ Images should be stored in `assets/images` for easier management.
 Embedded images must linked to the exact folder from the current location; for example, linking to a file in `/assets/images` from `/Folder1` would require the path `../assets/images/picture.jpg`
 
 ## Callouts
-Callouts are written following the [Just the Docs - Callouts](https://just-the-docs.github.io/just-the-docs/docs/ui-components/callouts/) documentation. Below are a couple key pieces of information that I wish to highlight.
+Callouts are written following the [Just the Docs - Callouts](https://just-the-docs.github.io/just-the-docs/docs/ui-components/callouts/) documentation. This site has the following defined callouts:
+
+1. warning
+	1. red
+2. tip
+	1. yellow
+3. success
+	1. green
+4. reminder
+	1. blue
+5. note
+	1. blue
+6. example
+	1. purple
 
 ### Callout Formatting
 Use braces to indicate what kind of callout you're using, and then greater-than symbols for text.
@@ -67,6 +80,3 @@ Paragraphs must be separated with a full line break.
 > 
 > This is the second paragraph
 ```
-
-{: .example}
-> This is an example?
