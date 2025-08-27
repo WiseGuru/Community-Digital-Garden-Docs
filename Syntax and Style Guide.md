@@ -86,3 +86,16 @@ Paragraphs must be separated with a full line break.
 > 
 > This is the second paragraph
 ```
+
+## Footnotes
+Footnotes should use the following formatting as the link, and then as the linked text
+Link: `[^(1, 2, 3, etc.)]`
+Linked text: `[^(1, 2, 3, etc.)]: Linked text`
+
+This is some text with a footnote.[^1]
+
+![](assets/images/Syntax%20and%20Style%20Guide-1.png)
+
+----
+
+[^1]: This is the linked text in the footnote.
