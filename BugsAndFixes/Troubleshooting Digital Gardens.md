@@ -12,6 +12,7 @@ nav_order: 2
 > If you find this guide helpful, consider tossing me a coin! [Support WiseGuru](https://ko-fi.com/S6S3TOIAO)
 
 # Table of Contents
+[How to ask for Help](#How%20to%20ask%20for%20Help)
 - [[BugsAndFixes/Troubleshooting Digital Gardens#How to ask for Help|How to ask for Help]] !! **Start here** !!
 - [[BugsAndFixes/Troubleshooting Digital Gardens#Initial steps - Digital Garden Isn't Deploying|Initial Steps - Digital Garden Isn't Deploying]]
 	- [[BugsAndFixes/Troubleshooting Digital Gardens#00. The Digital Garden Pipeline|00. The Digital Garden Pipeline]]
