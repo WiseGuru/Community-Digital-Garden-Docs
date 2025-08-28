@@ -2,7 +2,7 @@
 layout: default
 parent: Bugs and Fixes
 title: Troubleshooting Digital Gardens
-nav_order: 2
+nav_order: 50
 ---
 # Troubleshooting Digital Gardens
 {: .no_toc}

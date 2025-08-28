@@ -2,7 +2,7 @@
 layout: default
 parent: Bugs and Fixes
 title: Fixing the RSS Feed
-nav_order: 2
+nav_order: 50
 ---
 # Fixing the RSS Feed
 ## tl;dr
@@ -16,7 +16,7 @@ Save and push changes, and your feed should start rendering properly.
 
 **If you use custom icons**, you may only need the 4 slashes to make the feed work.[^1]
 
-## Explaination
+## Explanation
 
 ![](../assets/images/280ef664d06874de2c78de24a90ccdf4.png)
 

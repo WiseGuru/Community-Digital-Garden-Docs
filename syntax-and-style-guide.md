@@ -33,6 +33,8 @@ nav_order:        # The position this document should appear in lists
 
 `nav_order` prioritizes lower numbers to be higher in the list. If the nav_order matches, then it sorts alphabetically.
 
+By default for most posts, `nav_order` should be set to `50` to ensure adequate space for prioritization and growth. `index.md` pages should have a `nav_order` of `0` or `1`.
+
 Other relevant frontmatter properties are listed below:
 1. `nav_exclude`
 	1. Boolean property

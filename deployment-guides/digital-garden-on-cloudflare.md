@@ -2,7 +2,7 @@
 layout: default
 parent: Deploying your Digital Garden
 title: How to host a Digital Garden on Cloudflare
-nav_order: 2
+nav_order: 50
 ---
 # Deploying your Digital Garden
 {: .no_toc}
