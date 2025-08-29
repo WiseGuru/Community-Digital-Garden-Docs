@@ -1,10 +1,10 @@
 ---
 layout: default
 parent: Deploying your Digital Garden
-title: How to host a Digital Garden on Cloudflare
+title: How to Deploy your Digital Garden on Cloudflare
 nav_order: 50
 ---
-# Deploying your Digital Garden
+# How to Deploy your Digital Garden on Cloudflare
 {: .no_toc}
 
 I've created a few sites using Ole's [GitHub - oleeskild/digitalgarden](https://github.com/oleeskild/digitalgarden) and [Cloudflare Pages](https://pages.cloudflare.com/). When I was first getting setup, there were precious few guides out there on the matter, and nothing that was very concise or straightforward. 
