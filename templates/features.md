@@ -1,7 +1,7 @@
 ---
 title:
 layout: default
-parent: Bugs and Fixes
+parent: Customizing your Digital Garden
 nav_order: 50
 nav_exclude: true
 ---
