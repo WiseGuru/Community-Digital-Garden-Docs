@@ -13,8 +13,13 @@ It is incredibly easy to impersonate someone online. One of the easiest methods 
 
 Email is not a secure protocol; it doesn't require any kind of authentication or authorization before you can send or receive an email. This means that without anything else, I could send an email as jeff.bezos@amazon.com and the email protocol has nothing to verify that I'm not Jeff Bezos.
 
-{: .success}
->*Don't send email from your domain*? Stop anyone from impersonating you by adding these rules to your DNS host:
+![](../assets/images/prevent-domain-spoofing.png)
+> An example spoofed email from [Zoom.us](https://www.zoom.us)
+
+{: .success-title}
+> Don't send email from your domain?
+>
+>Stop anyone from impersonating you by adding these rules to your DNS host:
 > SPF: `TXT   @   "v=spf1 -all"`
 > DMARC: `TXT  _dmarc.example.com   "v=DMARC1; p=reject"`
 
@@ -23,10 +28,10 @@ Email is not a secure protocol; it doesn't require any kind of authentication or
 There are new(ish) tools and protocols that have been tacked onto email to make it more secure. Specifically, tools like [SPF, DKIM, and DMARC](https://maxwellcti.com/technical-guides/securing-email/) identify authorized email servers, authenticate emails, and set a policy for what to do when recipients get unauthorized email.
 
 - **SPF** identifies which servers are allowed to send email.
-- **DKIM** signs messages sent from preconfigured servers.
+- **DKIM** signs messages sent from configured servers.
 - **DMARC** tells receiving servers what to do with inauthentic mail.
 
-If you send and receive emails from your own email server, have a newsletter, or just want to learn more, we recommend checking out [the guide at MaxwellCTI on Securing Email](https://maxwellcti.com/technical-guides/securing-email/). This gets into the nitty-gritty and has a roll-out plan for organizations implementing email security.
+If you send and receive emails from your own email server, have a newsletter, or just want to learn more, we recommend checking out [this guide at MaxwellCTI on Securing Email](https://maxwellcti.com/technical-guides/securing-email/). This gets into the nitty-gritty and has a roll-out plan for organizations implementing email security.
 
 ## What if I don't send email from my domain?
 
