@@ -1,7 +1,7 @@
 ---
 title:
 layout: default
-parent: Customizing your Digital Garden
+parent: Customization
 nav_order: 50
 nav_exclude: true
 ---

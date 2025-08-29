@@ -13,6 +13,11 @@ Welcome! This is a collection of guides, fixes, and customizations you can apply
 > Pages, links, and formatting are likely to change significantly during this phase of development.
 
 ## Official Resources
+
+{: .reminder}
+>  Free software isn't free. Support Ole, the Digital Garden developer: [Buy Ole Eskild Steensen a Coffee - oleeskild - Ko-fi](https://ko-fi.com/oleeskild)
+
+
 - Digital Garden Docs
 	- [https://dg-docs.ole.dev/](https://dg-docs.ole.dev/)
 - Digital Garden plugin repository/source code

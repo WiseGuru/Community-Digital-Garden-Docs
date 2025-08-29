@@ -216,7 +216,7 @@ Once done, we should go down the options in left slide-out menu and enable a bun
 
 1. **DNS**
 	1. Records
-		1. If you don't use email with this domain, create two records to prevent anyone from sending mail from your domain.^[For more details, check out [Protecting your Identity and your Domain with Email Security](Protecting%20your%20Identity%20and%20your%20Domain%20with%20Email%20Security).]
+		1. If you don't use email with this domain, create two records to prevent anyone from sending mail from your domain.^[For more details, check out [prevent-domain-spoofing](../customization/prevent-domain-spoofing.md).]
 			1. [SPF](https://maxwellcti.com/definitions-and-topics/spf): `TXT   @   "v=spf1 -all"`
 				1. Type is `TXT`, the name is `@` (meaning your domain), and the value requires the quotes.
 				2. This says that there are no servers authenticated to send email for your domain.

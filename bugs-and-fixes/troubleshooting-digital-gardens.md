@@ -7,11 +7,7 @@ nav_order: 30
 # Troubleshooting Digital Gardens
 {: .no_toc}
 
-{: .reminder}
->  Free software isn't free. Support Ole, the Digital Garden developer: [Buy Ole Eskild Steensen a Coffee - oleeskild - Ko-fi](https://ko-fi.com/oleeskild)
-
-{: .success}
-> If you find this guide helpful, consider tossing me a coin! [Support WiseGuru](https://ko-fi.com/S6S3TOIAO)
+Troubleshooting problems with your Digital Garden can be difficult, especially if you do not have a technical background. This guide aims to explain how the Digital Garden works, how to gather information, and the best way to ask for help.
 
 ## Table of Contents
 {: .no_toc .text-delta}
@@ -20,7 +16,7 @@ nav_order: 30
 
 {: .reminder}
 > **Protect your Domain from Spoofing**
-> Even if you don't have email connected to your domain, you should set up SPF and DMARC records for your Digital Garden. Check out [[Protecting your Identity and your Domain with Email Security]] for more details.
+> Even if you don't have email connected to your domain, you should set up SPF and DMARC records for your Digital Garden. Check out [[../customization/prevent-domain-spoofing]] for more details.
 
 # How to ask for Help
 If you have gone through the steps below and you're still having trouble, then reach out on the [Digital Garden Discord **Help** Channel](https://discord.gg/Z46n2RNX8e) with the following information:
@@ -34,7 +30,7 @@ This information makes it much easier to troubleshoot the problem and get you up
 
 > Below are steps you should take ***BEFORE*** asking for help. ***Following this guide*** will get your site up and running faster, and if you need help, ***will get you better help sooner***.
 
-## 00. The Digital Garden Pipeline
+## 00. The Digital Garden Publication Pipeline
 Let's review the publication pipeline for your Obsidian Digital Garden. Each stop is a place to look for typos, warnings, or problems.
 1. Create content on Obsidian
 	1. Set correct file properties
