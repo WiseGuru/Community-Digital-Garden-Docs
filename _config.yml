@@ -1,5 +1,5 @@
 title: Unofficial Digital Garden Docs
-description: A user-edited collection of helpful guides, bugs, fixes, and customizations.
+description: A community-built collection of helpful guides, bugs, fixes, and customizations.
 theme: just-the-docs
 favicon_ico: "/assets/favicon.svg"
 
@@ -7,7 +7,7 @@ favicon_ico: "/assets/favicon.svg"
 url: https://wiseguru.github.io/Unofficial-Digital-Garden-Docs
 
 aux_links:
-  Template Repository: https://github.com/WiseGuru/Unofficial-Digital-Garden-Docs
+  Unofficial Digital Garden Docs Repository: https://github.com/WiseGuru/Unofficial-Digital-Garden-Docs
 
 
 
