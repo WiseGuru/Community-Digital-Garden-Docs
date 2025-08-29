@@ -1,7 +1,7 @@
 ---
 layout: default
-parent: Deploying your Digital Garden
 title: How to Deploy your Digital Garden on Cloudflare
+parent: Deployment Guides
 nav_order: 50
 ---
 # How to Deploy your Digital Garden on Cloudflare

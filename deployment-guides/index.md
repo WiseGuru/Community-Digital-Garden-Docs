@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Deploying your Digital Garden
+title: Deployment Guides
 nav_order: 10
 has_children: true
 ---

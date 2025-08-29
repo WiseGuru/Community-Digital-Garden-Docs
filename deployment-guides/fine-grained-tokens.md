@@ -1,7 +1,7 @@
 ---
 title: Creating Fine-Grained tokens in GitHub
 layout: default
-parent: Deploying your Digital Garden
+parent: Deployment Guides
 nav_order: 50
 nav_exclude: false
 ---

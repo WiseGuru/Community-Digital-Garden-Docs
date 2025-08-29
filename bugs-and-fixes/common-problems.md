@@ -1,5 +1,5 @@
 ---
-title:
+title: Common Problems
 layout: default
 parent: Bugs and Fixes
 nav_order: 35

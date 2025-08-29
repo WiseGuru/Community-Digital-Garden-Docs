@@ -20,6 +20,9 @@ Once the vault is open, I recommend the following changes:
 2. Community plugins
 	1. [Auto Link Title](https://github.com/zolrath/obsidian-auto-link-title) by Matt Furden
 	2. [Paste image rename](https://github.com/reorx/obsidian-paste-image-rename) by Reorx
+	3. [Dataview](https://github.com/blacksmithgu/obsidian-dataview) by blacksmithgu
+		1. This is specifically for the "Malformed Pages" table which looks for pages with formatting problems.
+		2. **Dataview is not supported by Jekyll**
 
 ## Frontmatter
 The following frontmatter should be included in all documents:
@@ -40,7 +43,9 @@ By default for most posts, `nav_order` should be set to `50` to ensure adequate 
 Other relevant frontmatter properties are listed below:
 1. `nav_exclude`
 	1. Boolean property
-	2. Designates whether it's published (`false`) or unpublished (`true`)
+	2. **This does not say whether the page is published, just if it's listed on the site**
+	3. Designates whether it's listed on the site (`false`) or not (`true`)
+
 ## Folders, File names, Titles, and Headers
 ### Folders and index.md
 Each folder should have a short summary document named "index.md" that describes the folder contents. All other notes in the folder should list that file's title as the parent so that they appear in the Table of Contents automatically generated at the bottom of the file.

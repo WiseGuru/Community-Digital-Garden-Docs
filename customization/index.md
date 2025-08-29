@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Customizing your Digital Garden
+title: Customization
 nav_order: 30
 has_children: true
 ---
