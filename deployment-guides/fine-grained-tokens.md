@@ -59,7 +59,8 @@ Make the following changes to each section
 {: .warning}
 > This is the only time you will see this token. You navigate away from the page, you will need to regenerate the token following steps at the bottom of this guide.
 
-1. *This is the only time on GitHub that you will be able to see this token!*
+1. When you're ready, click on the green "Generate Token" button at the bottom of the screen.
+2. *This is the only time on GitHub that you will be able to see this token!*
 	1. Feel free to save it to your preferred password manager as a backup.
 	2. It is also stored in the plugin itself in clear text.
 ![](../assets/images/fine-grained-tokens-4.png)
