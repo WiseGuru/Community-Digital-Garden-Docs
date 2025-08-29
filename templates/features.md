@@ -2,7 +2,7 @@
 title:
 layout: default
 parent: Bugs and Fixes
-nav_order:50
+nav_order: 50
 nav_exclude: true
 ---
 
