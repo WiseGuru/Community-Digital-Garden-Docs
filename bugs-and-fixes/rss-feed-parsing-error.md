@@ -5,6 +5,8 @@ title: RSS Feed Parsing Error
 nav_order: 50
 ---
 # RSS Feed Parsing Error
+{: .no_toc}
+
 Out of the box, the RSS feed for Digital Gardens doesn't compile properly. When navigating to `yoursite.com/feed.xml`, you see an XML Parsing error (like below).
 
 ![](../assets/images/280ef664d06874de2c78de24a90ccdf4.png)
@@ -13,6 +15,11 @@ The raw XML file will reveal that the "link" tags are not being closed properly.
 
 ![](../assets/images/fixing-the-rss-feed-1.png)
 
+
+## Table of Contents
+{: .no_toc .text-delta}
+1. TOC
+{:toc}
 
 ## How to Fix RSS Feed Parsing Errors
 

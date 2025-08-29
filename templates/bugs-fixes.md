@@ -18,8 +18,6 @@ Define the {topic} in a few sentences. The topic/title should accurately describ
 1. TOC
 {:toc}
 
-Table of Contents may not be necessary depending on how complicated the problem is.
-
 ## How to Fix {topic} 
 Describe each step with screenshots, using language aimed at a new user of Obsidian and the digital garden plugin. Explain why a step needs to be taken, where appropriate. 
 

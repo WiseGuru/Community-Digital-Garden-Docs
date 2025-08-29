@@ -27,4 +27,4 @@ From here, you can download all of the docs if you'd like, submit issues with ou
 
 
 {: .warning}
-> While made with the best intentions, no guarantees can be made about the content on this site. You are expected to perform your own due diligence to take precautions (such as backups) to protect your accounts and resources.
+> While made with the best intentions, no guarantees can be made about the content on this site. You are expected to perform your own due diligence take reasonable precautions (such as backups) to protect your accounts and resources.
