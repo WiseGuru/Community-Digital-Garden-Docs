@@ -32,7 +32,6 @@ Created three files:
 	1. `css`
 		1. `just-the-docs-switchable-src.css`
 		2. `just-the-docs-switchable.css`
-		3. `just-the-docs-switchable-patch.css`
 	2. `js`
 		1. `theme-switch.js`
 
@@ -42,5 +41,7 @@ There were a few key changes that deviated from the source site:
 	2. ChatGPT proved extremely helpful here
 2. Making sure that `head.html` was complete with content from the original JTD template
 	1. And had to remove references to some other `just-the-docs-head-nav.css` styling files
-3. Added the `just-the-docs-switchable-patch.css` while troubleshooting the button background color
-	1. I could probably revert it, but 
+
+
+# Customizing Title
+Added the file `_includes/title.html` so I could customize the words without affecting the rest of the site and add an image (the SVG favicon).
