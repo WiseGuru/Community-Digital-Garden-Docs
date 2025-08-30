@@ -7,13 +7,23 @@ window.addEventListener("DOMContentLoaded", function() {
     setTheme('light');
   }
 
-  jtd.addEvent(toggleDarkMode, 'click', function(){
-    const currentTheme = getTheme();
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  // Wait for jtd to be available
+  function waitForJTD() {
+    if (typeof jtd !== 'undefined') {
+      jtd.addEvent(toggleDarkMode, 'click', function(){
+        const currentTheme = getTheme();
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
-    localStorage.setItem('theme', newTheme);
-    setTheme(newTheme);
-  });
+        localStorage.setItem('theme', newTheme);
+        setTheme(newTheme);
+      });
+    } else {
+      // Retry after 100ms
+      setTimeout(waitForJTD, 100);
+    }
+  }
+
+  waitForJTD();
 
   function getTheme() {
     return document.documentElement.classList.contains('dark-mode') ? 'dark' : 'light';
