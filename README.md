@@ -1,24 +1,23 @@
-# just-the-docs-template
+# Community Digital Garden Docs 
+This is a collection of guides, fixes, and customizations you can apply to your Digital Garden. It is not directly affiliated with Ole’s Digital Garden plugin, template, or docs. (We love it!) 
 
-This is a *bare-minimum* template to create a [Jekyll] site that:
+You can access the docs [here](https://wiseguru.github.io/Community-Digital-Garden-Docs/).
 
-- uses the [Just the Docs] theme;
-- can be built and published on [GitHub Pages];
-- can be built and previewed locally, and published on other platforms.
+## Tech stack 
+The Community Digital Garden Docs tech stack includes: 
+- [Jekyll] for static site generator
+- [GitHub Pages] for deployment and version control
+- [Just the Docs] for the theme
 
-More specifically, the created site:
+## How to contribute (Teamwork!)
+This is a community-managed site and series of guides. If you would like to contribute to the repo, we invite you to: 
+- suggest changes via pull request
+- submit or respond to issues 
+- fork or download all of the docs.
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem;
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages.
+Accepted changes will be merged with the main branch [^1]. 
 
-To get started with creating a site, simply:
-
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
-
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](#hosting-your-docs-from-an-existing-project-repo).
-
-After completing the creation of your new site on GitHub, update it as needed:
+--- 
 
 ## Replace the content of the template pages
 
