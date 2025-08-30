@@ -14,3 +14,44 @@
         crossorigin="anonymous"
         async>
 </script>
+
+<script>
+  (function () {
+    const STORAGE_KEY = 'jtd-theme';
+    const btn = document.querySelector('.js-toggle-dark-mode');
+
+    // Pick initial theme: saved value -> system pref -> site default
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved === 'light' || saved === 'dark') {
+      jtd.setTheme(saved);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      jtd.setTheme('dark');
+    }
+
+    // Reflect current state on the button
+    function syncButton() {
+      const isDark = (jtd.getTheme() === 'dark');
+      btn.setAttribute('aria-pressed', String(isDark));
+      btn.textContent = isDark ? '☀️' : '🌙';
+      btn.title = isDark ? 'Return to light mode' : 'Switch to dark mode';
+    }
+    syncButton();
+
+    // Toggle + persist
+    jtd.addEvent(btn, 'click', function () {
+      const next = (jtd.getTheme() === 'dark') ? 'light' : 'dark';
+      jtd.setTheme(next);
+      localStorage.setItem(STORAGE_KEY, next);
+      syncButton();
+    });
+
+    // If user hasn’t chosen yet, track system changes live
+    if (!saved && window.matchMedia) {
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        // Only auto-switch if there’s no saved preference
+        jtd.setTheme(e.matches ? 'dark' : 'light');
+        syncButton();
+      });
+    }
+  })();
+</script>
