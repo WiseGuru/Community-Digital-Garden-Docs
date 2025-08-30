@@ -7,23 +7,13 @@ window.addEventListener("DOMContentLoaded", function() {
     setTheme('light');
   }
 
-  // Wait for jtd to be available
-  function waitForJTD() {
-    if (typeof jtd !== 'undefined') {
-      jtd.addEvent(toggleDarkMode, 'click', function(){
-        const currentTheme = getTheme();
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  jtd.addEvent(toggleDarkMode, 'click', function(){
+    const currentTheme = getTheme();
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
-        localStorage.setItem('theme', newTheme);
-        setTheme(newTheme);
-      });
-    } else {
-      // Retry after 100ms
-      setTimeout(waitForJTD, 100);
-    }
-  }
-
-  waitForJTD();
+    localStorage.setItem('theme', newTheme);
+    setTheme(newTheme);
+  });
 
   function getTheme() {
     return document.documentElement.classList.contains('dark-mode') ? 'dark' : 'light';
