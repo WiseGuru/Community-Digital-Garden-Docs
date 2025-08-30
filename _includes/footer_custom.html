@@ -14,3 +14,64 @@
         crossorigin="anonymous"
         async>
 </script>
+
+<script>
+/** Map your site theme -> giscus theme name */
+const giscusThemeMap = {
+  light: "light",      // or "noborder_light", "light_high_contrast", etc.
+  dark:  "dark"        // or "dark_dimmed", "noborder_dark", etc.
+};
+
+/** Tell the giscus iframe to switch theme */
+function setGiscusTheme(theme) {
+  const target = giscusThemeMap[theme] ?? "preferred_color_scheme";
+  const send = () => {
+    const iframe = document.querySelector("iframe.giscus-frame");
+    if (!iframe) return false;
+    iframe.contentWindow.postMessage(
+      { giscus: { setConfig: { theme: target } } },
+      "https://giscus.app"
+    );
+    return true;
+  };
+
+  // Try now; if iframe isn’t ready yet, retry a few times.
+  if (!send()) {
+    let attempts = 0;
+    const t = setInterval(() => {
+      attempts++;
+      if (send() || attempts > 20) clearInterval(t);
+    }, 150);
+  }
+}
+
+/** 1) Sync once on load */
+document.addEventListener("DOMContentLoaded", () => {
+  const current =
+    (window.jtd?.getTheme && window.jtd.getTheme()) ||
+    (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  setGiscusTheme(current);
+});
+
+/** 2) Hook into our toggle: call setGiscusTheme() when you switch */
+(function patchThemeToggle(){
+  // If you used the earlier 'apply(theme)' helper, just add this line inside it:
+  //   setGiscusTheme(theme);
+  //
+  // Otherwise, wire it up generically by observing Just-the-Docs' theme getter every click.
+  const btn = document.getElementById("theme-toggle");
+  btn?.addEventListener("click", () => {
+    const theme = window.jtd?.getTheme ? window.jtd.getTheme() : null;
+    if (theme) setGiscusTheme(theme);
+  });
+})();
+
+/** 3) Follow system changes (when user hasn’t manually toggled this session) */
+(function () {
+  const mq = window.matchMedia("(prefers-color-scheme: dark)");
+  mq.addEventListener?.("change", (e) => {
+    const manual = sessionStorage.getItem("jtd-theme-manual") === "1";
+    if (!manual) setGiscusTheme(e.matches ? "dark" : "light");
+  });
+})();
+</script>
