@@ -1,18 +1,37 @@
-/* Scope to main page content so nav menus aren't affected */
-.main-content {
-  /* Ordered Lists */
-  ol { list-style-type: decimal; }                /* Level 1: 1, 2, 3, ... */
-  ol ol { list-style-type: lower-alpha; }         /* Level 2: a, b, c, ... */
-  ol ol ol { list-style-type: lower-roman; }      /* Level 3: i, ii, iii, ... */
-  ol ol ol ol { list-style-type: upper-alpha; }   /* Level 4: A, B, C, ... */
-  ol ol ol ol ol { list-style-type: upper-roman; }/* Level 5: I, II, III, ... */
-  ol ol ol ol ol ol { list-style-type: decimal-leading-zero; } /* Level 6: 01, 02... */
+/* Ordered Lists */
+ol {
+  list-style-type: decimal; /* Level 1: 1, 2, 3, ... */
+}
 
-  /* Unordered Lists */
-  ul { list-style-type: disc; }                   /* Level 1: Bullet */
-  ul ul { list-style-type: circle; }              /* Level 2: Hollow Circle */
-  ul ul ul { list-style-type: square; }           /* Level 3: Square */
-  ul ul ul ul { list-style-type: disc; }                   /* Level 4: Bullet */
-  ul ul ul ul ul { list-style-type: circle; }              /* Level 5: Hollow Circle */
-  ul ul ul ul ul ul { list-style-type: square; }           /* Level 6: Square */
+ol ol {
+  list-style-type: lower-alpha; /* Level 2: a, b, c, ... */
+}
+
+ol ol ol {
+  list-style-type: lower-roman; /* Level 3: i, ii, iii, ... */
+}
+
+ol ol ol ol {
+  list-style-type: upper-alpha; /* Level 4: A, B, C, ... */
+}
+
+ol ol ol ol ol {
+  list-style-type: upper-roman; /* Level 5: I, II, III, ... */
+}
+
+ol ol ol ol ol ol {
+  list-style-type: decimal-leading-zero; /* Level 6: 01, 02, 03, ... */
+}
+
+/* Unordered Lists */
+ul {
+  list-style-type: disc; /* Level 1: Bullet */
+}
+
+ul ul {
+  list-style-type: circle; /* Level 2: Hollow Circle */
+}
+
+ul ul ul {
+  list-style-type: square; /* Level 3: Square */
 }
