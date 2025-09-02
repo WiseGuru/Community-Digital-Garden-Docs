@@ -1,12 +1,12 @@
 ---
-title: Add Media to a Digital Garden or Obsidian Note
+title: Add Media to a Digital Garden
 layout: default
 parent: Customization
 nav_order: 50
 nav_exclude: false
 ---
 
-# Add Media to a Digital Garden or Obsidian Note
+# Add Media to a Digital Garden
 {: .no_toc}
 
 {: .warning}

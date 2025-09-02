@@ -1,13 +1,28 @@
 ---
-dg-publish: true
+title: Script to Modify Graphs
+layout: default
+parent: Customization
+nav_order: 50
+nav_exclude: true
 ---
 
+[colored obsidian graph](https://www.paologabriel.com/swamp/colored-obsidian-graph/)
 
-So you want to show graphs on your digital garden, but don't want to have index-style pages cluttering everything up, right? And maybe you want to colorize folders to make them easier to differentiate, or colorize certain folders with a certain color? Well, here's a modified script to do that.
+# Script to Modify Graphs
+{: .no_toc}
 
-> NOTE: This is for Ole's invaluable [Digital Garden plugin for Obsidian.](https://github.com/oleeskild/Obsidian-Digital-Garden) 
-> **Reminder**: Free software isn't free. Support Ole, the Digital Garden developer: [Buy Ole Eskild Steensen a Coffee - oleeskild - Ko-fi](https://ko-fi.com/oleeskild)
-# Instructions
+Digital Gardens feature a map of all pages connected to the current one. By default, all linked pages are the same color, and index pages can overshadow more helpful links. 
+
+
+![](../assets/images/script-to-modify-graphs.png)
+
+## Table of Contents
+{: .no_toc .text-delta}
+1. TOC
+{:toc}
+
+
+## How to 
 1. Replace the contents of the graphScript.njk at `src/site/_includes/components/graphScript.njk` with the code below
 2. Find the sections commented with `**Modification Start**` and make the relevant changes
 	1. To exclude folders, replace the folder and file paths with ones from your Digital Garden
@@ -75,7 +90,6 @@ So you want to show graphs on your digital garden, but don't want to have index-
             const nodeUrl = decodeURIComponent(n.url);
 
             // Exclude nodes in specified folders
-            const inExcludedFolder = foldersToExclude.some(folder => nodeUrl.startsWith(folder));
             // Exclude specified files
             const isExcludedFile = filesToExclude.includes(nodeUrl);
             const shouldHide = n.hide || inExcludedFolder || isExcludedFile;
