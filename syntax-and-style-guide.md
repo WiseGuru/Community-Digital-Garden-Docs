@@ -224,8 +224,6 @@ console.log('Hello World');
 ### Jekyll
 Jekyll formatted codeblocks include the three code tics at the top and bottom and have a larger reading pane. This makes it better for sample code which must be modified before being run.
 
-The first line should read `{% highlight markdown %}`, and the last line `{% endhighlight %}`
-
 Jekyll should be formatted like this:
 
 ![](assets/images/syntax-and-style-guide-5.png)
@@ -245,13 +243,15 @@ console.log('Hello World');
 console.log('Hello World');
 {% endhighlight %}
 
+{% highlight html %}
+<audio controls>
+  <source src="https://www.dropbox.com/scl/fi/pq27xm8b5s33g508o7qkw/Path-to-Mephistopheles.wav?rlkey=bk84g42ua7b5fpfyfhsiwmwvo&st=x9xo6i25&raw=1" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+{% endhighlight %}
 
 ----
 
 [^1]: Using GitHub Desktop or Git.
 
-[^2]: This is the linked text in the footnote.{% highlight markdown %}
-￼￼HTML￼
-
-￼￼
-{% endhighlight %}
+[^2]: This is the linked text in the footnote.
