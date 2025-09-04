@@ -206,6 +206,8 @@ The HTML `div` method just shows the raw code, but has a large border around it,
 If you use Obsidian as your editor, there are two codeblock templates for you in the templates folder; Jekyll's formatting is identified with "noborder-jekyll", where html is appended with "border-div".
 
 ### HTML
+HTML `div` codeblocks are ideal for production-ready scripts and code.
+
 HTML `<div>` should be formatted like this:
 
 ![](assets/images/syntax-and-style-guide-4.png)
@@ -220,6 +222,8 @@ console.log('Hello World');
 </div>
 
 ### Jekyll
+Jekyll formatted codeblocks are better for sample code, or where long lines may be a factor.
+
 Jekyll should be formatted like this:
 
 ![](assets/images/syntax-and-style-guide-5.png)
