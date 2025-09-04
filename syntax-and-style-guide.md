@@ -199,20 +199,20 @@ This is some text with a foot note. [^2]
 
  ![](assets/images/syntax-and-style-guide-3.png)
 ## Codeblocks
-Codeblocks with syntax highlighting can be inserted using either Jekyll's highlight syntax or HTML, as demonstrated and discussed in the [JTD official docs](https://just-the-docs.github.io/just-the-docs/docs/ui-components/code/).
+Codeblocks with syntax highlighting must be wrapped using either Jekyll's highlight syntax or HTML, as demonstrated and discussed in the [JTD official docs](https://just-the-docs.github.io/just-the-docs/docs/ui-components/code/).
 
-The HTML `div` method just shows the raw code, but has a large border around it, where Jekyll's syntax includes the Markdown codeblock characters, but has no border.
+The HTML `<div>` tag method just shows the raw code, but has a large border around it, where Jekyll's syntax includes the Markdown codeblock characters, but has no border.
 
 If you use Obsidian as your editor, there are two codeblock templates for you in the templates folder; Jekyll's formatting is identified with "noborder-jekyll", where html is appended with "border-div".
 
 ### HTML
-HTML `div` codeblocks are ideal for production-ready scripts and code.
+`<div>` codeblocks are ideal for production-ready scripts and code. The first line should read `<div class="code-example" markdown="1">`, and the last line closes the tag with `</div>`
 
-HTML `<div>` should be formatted like this:
+For example, this formatted code:
 
 ![](assets/images/syntax-and-style-guide-4.png)
 
-And looks like this:
+Looks like this:
 
 <div class="code-example" markdown="1">
 ```js
@@ -222,7 +222,9 @@ console.log('Hello World');
 </div>
 
 ### Jekyll
-Jekyll formatted codeblocks are better for sample code, or where long lines may be a factor.
+Jekyll formatted codeblocks include the three code tics at the top and bottom and have a larger reading pane. This makes it better for sample code which must be modified before being run.
+
+The first line should read `{% highlight markdown %}`, and the last line `{% endhighlight %}`
 
 Jekyll should be formatted like this:
 
@@ -235,6 +237,12 @@ And looks like this:
 // Say "Hello world!"
 console.log('Hello World');
 ```
+{% endhighlight %}
+
+
+{% highlight js %}
+// Say "Hello world!"
+console.log('Hello World');
 {% endhighlight %}
 
 
