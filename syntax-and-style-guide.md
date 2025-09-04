@@ -225,7 +225,7 @@ console.log('Hello World');
 {% endhighlight %}
 
 
-However, you can wrap normal codeblocks using the Jekyll `highlight` tag; you just need to identify the language as "markdown"
+However, you can also wrap normal codeblocks using the Jekyll `highlight` tag; you just need to identify the language as "markdown" in the tag.
 
 ![](assets/images/syntax-and-style-guide-5.png)
 
@@ -238,7 +238,7 @@ console.log('Hello World');
 
 
 ### HTML
-`<div>` codeblocks are less optimal, but are included here for completeness. The first line should read `<div class="code-example" markdown="1">`, and the last line closes the tag with `</div>`
+`<div>` codeblocks are generally less optimal, but are included here for completeness. The first line should read `<div class="code-example" markdown="1">`, and the last line closes the tag with `</div>`
 
 For example, this formatted code:
 
