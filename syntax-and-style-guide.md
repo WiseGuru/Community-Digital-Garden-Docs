@@ -201,9 +201,16 @@ This is some text with a foot note. [^2]
 ## Codeblocks
 Codeblocks with syntax highlighting can be inserted using either Jekyll's highlight syntax or HTML, as demonstrated and discussed in the [JTD official docs](https://just-the-docs.github.io/just-the-docs/docs/ui-components/code/).
 
-HTML `<div>` classing will look like this:
+The HTML `div` method just shows the raw code, but has a large border around it, where Jekyll's syntax includes the Markdown codeblock characters, but has no border.
+
+If you use Obsidian as your editor, there are two codeblock templates for you in the templates folder; Jekyll's formatting is identified with "noborder-jekyll", where html is appended with "border-div".
+
+### HTML
+HTML `<div>` should be formatted like this:
 
 ![](assets/images/syntax-and-style-guide-4.png)
+
+And looks like this:
 
 <div class="code-example" markdown="1">
 ```js
@@ -212,9 +219,12 @@ console.log('Hello World');
 ```
 </div>
 
-And Jekyll formatting looks like this:
+### Jekyll
+Jekyll should be formatted like this:
 
 ![](assets/images/syntax-and-style-guide-5.png)
+
+And looks like this:
 
 {% highlight markdown %}
 ```js
@@ -223,11 +233,13 @@ console.log('Hello World');
 ```
 {% endhighlight %}
 
-If you use Obsidian as your editor, there are two codeblock templates for you in the templates folder; Jekyll's formatting is identified with "border", where html is appended with "noborder"
-
 
 ----
 
 [^1]: Using GitHub Desktop or Git.
 
-[^2]: This is the linked text in the footnote.
+[^2]: This is the linked text in the footnote.{% highlight markdown %}
+￼￼HTML￼
+
+￼￼
+{% endhighlight %}
