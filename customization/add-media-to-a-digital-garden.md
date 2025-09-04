@@ -34,7 +34,7 @@ There are two ways to embed media in your site; you can use an inline frame (ifr
 
 > Example using the HTML `<audio>` element
 
-{% highlight html%}
+{% highlight markdown %}
 ```HTML
 <audio controls>
   <source src="https://www.dropbox.com/scl/fi/pq27...qkw/Path-to-Mephistopheles.wav?rlkey=bk84g42...mwvo&st=x9xo6i25&raw=1" type="audio/wav">
