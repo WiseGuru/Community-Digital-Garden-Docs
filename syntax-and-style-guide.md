@@ -27,12 +27,15 @@ Once the vault is open, I recommend the following changes:
 ## Frontmatter
 The following frontmatter should be included in all documents:
 
+{% highlight markdown %}
 ```
 title:            # The readable title of the document
 layout: default   # Leave as default
 parent:           # The title of the parent document, used in ToC's 
 nav_order:        # The position this document should appear in lists
 ```
+{% endhighlight %}
+
 
 `nav_order` prioritizes lower numbers to be higher in the list. If the nav_order matches, then it *should* sort alphabetically, but order may change for unknown reasons.
 
@@ -58,6 +61,7 @@ The name of the `index.md` file in a folder should match the readable folder nam
 ### Headers
 The page title should be "Header 1" and the first line of a document after the frontmatter.
 
+{% highlight markdown %}
 ```
 # Header 1
 Some text
@@ -72,10 +76,11 @@ Some text
 ###### Header 6
 Some text
 ```
+{% endhighlight %}
 
-![](assets/images/Syntax-and-Style-Guide.png)
+![](assets/images/syntax-and-style-guide.png)
 
-## Table of Contents
+syntax-and-style-guide## Table of Contents
 Creating a Table of Contents is pretty simple, and is described [Just the Docs - In-Page Navigation](https://just-the-docs.github.io/just-the-docs/docs/navigation/in-page/#generating-table-of-contents). Basically, there are a few tags to be aware of.
 
 - `{: .no_toc}` 
@@ -85,7 +90,7 @@ Creating a Table of Contents is pretty simple, and is described [Just the Docs -
 	- The first line of that list must also have "TOC" as the only text
 	- There can only be one `{:toc}` tag per document
 
-
+{% highlight markdown %}
 ```
 # In-Page Navigation
 {: .no_toc }
@@ -97,13 +102,14 @@ Creating a Table of Contents is pretty simple, and is described [Just the Docs -
 {:toc}
 
 ```
+{% endhighlight %}
 
 {: .warning}
 > Make sure that you use `{:toc}` and not `{: .toc}`, or it won't work.
 
 `{: .text-delta}` is a CSS type scale that matches an H4 header, as described in [Just the Docs - Typography](https://just-the-docs.github.io/just-the-docs/docs/ui-components/typography/#responsive-type-scale). In the example above, it converts the H2 header of "Table of Contents" to look like an H4 header.
 
-![](assets/images/Syntax-and-Style-Guide-1.png)
+![](assets/images/syntax-and-style-guide-1.png)
 
 ## Images
 Images should be stored in `assets/images` for easier management.
@@ -112,9 +118,9 @@ Embedded images must linked to the exact folder from the current location; for e
 
 Below is not a great example because the syntax guide as at the root of the repo, but here's what it looks like:
 
-`![](assets/images/Syntax%20and%20Style%20Guide.png)`
+`![](assets/images/syntax-and-style-guide-2.png)`
 
-![](assets/images/Syntax%20and%20Style%20Guide.png)
+![](assets/images/syntax-and-style-guide-2.png)
 ## Callouts
 Callouts are written following the [Just the Docs - Callouts](https://just-the-docs.github.io/just-the-docs/docs/ui-components/callouts/) documentation. This site has the following defined callouts:
 
@@ -139,10 +145,12 @@ Always make sure there is one empty line between the callout and the next piece 
 {: .tip}
 > My text.
 
+{% highlight markdown %}
 ```
 {: .tip}
 > My text.
 ```
+{% endhighlight %}
 
 Append the callout type with "-title" to convert the first line into the title for the callout.
 
@@ -151,12 +159,14 @@ Append the callout type with "-title" to convert the first line into the title f
 > 
 > This is the text.
 
+{% highlight markdown %}
 ```
 {: .warning-title}
 > This is the title
 > 
 > This is the text
 ```
+{% endhighlight %}
 
 Paragraphs must be separated with a full line break.
 
@@ -167,6 +177,7 @@ Paragraphs must be separated with a full line break.
 > 
 > This is the second paragraph
 
+{% highlight markdown %}
 ```
 {: .note-title}
 > This is the title
@@ -175,7 +186,7 @@ Paragraphs must be separated with a full line break.
 > 
 > This is the second paragraph
 ```
-
+{% endhighlight %}
 ## Footnotes
 Footnotes should use the following formatting as the link, and then as the linked text
 Link: `[^(1, 2, 3, etc.)]`
@@ -186,12 +197,29 @@ Before the linked text in the foot notes, include a line break with `---` or `--
 This is some text with a foot note. [^1]
 
 
- ![](assets/images/Syntax%20and%20Style%20Guide-1.png)
+ ![](assets/images/syntax-and-style-guide-3.png)
 ## Codeblocks
-Codeblocks with syntax highlighting can be inserted using Jekyll's highlight syntax, discussed in the [JTD official docs](https://just-the-docs.github.io/just-the-docs/docs/ui-components/code/).
+Codeblocks with syntax highlighting can be inserted using either Jekyll's highlight syntax or HTML, as demonstrated and discussed in the [JTD official docs](https://just-the-docs.github.io/just-the-docs/docs/ui-components/code/).
 
-It should look like this:
-![](assets/images/syntax-and-style-guide.png)
+HTML `<div>` classing will look like this:
+![](assets/images/syntax-and-style-guide-4.png)
+<div class="code-example" markdown="1">
+```js
+// Say "Hello world!"
+console.log('Hello World');
+```
+</div>
+
+And Jekyll formatting looks like this:
+![](assets/images/syntax-and-style-guide-5.png)
+{% highlight markdown %}
+```js
+// Say "Hello world!"
+console.log('Hello World');
+```
+{% endhighlight %}
+
+
 
 If you use Obsidian as your editor, there is also a "codeblock" template for you in the templates folder.
 
