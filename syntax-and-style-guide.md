@@ -218,7 +218,7 @@ console.log('Hello World');
 {% endhighlight %}
 
 {% highlight html %}
-<audio controls>[Jekyll Syntax Highlighting - Notes by KargWare](https://notes.kargware.com/2019/10/04/Jekyll-Syntax-Highlighting/)
+<audio controls>
   <source src="https://www.dropbox.com/scl/fi/pq27xm8b5s33g508o7qkw/Path-to-Mephistopheles.wav?rlkey=bk84g42ua7b5fpfyfhsiwmwvo&st=x9xo6i25&raw=1" type="audio/wav">
   Your browser does not support the audio element.
 </audio>
