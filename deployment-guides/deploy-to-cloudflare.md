@@ -309,11 +309,13 @@ The quickest way to create the file is to navigate to the folder in GitHub, and 
 
 Name the file `_headers`,[^5] and insert the following text:
 
-```
+<div class="code-example" markdown="1">
+```xml
 /*
   X-Frame-Options: SAMEORIGIN
   Permissions-Policy: document-domain=(self)
 ```
+</div>
 
 I've tested this against all of my sites and it hasn't caused any issues so far.
 
@@ -329,9 +331,11 @@ For me, it's around line 500-510.
 
 Then, copy and paste the line below and insert it in the stack. It doesn't matter exactly where, just that it's among the other *Passthrough* statements.
 
-```
+<div class="code-example" markdown="1">
+```js
 eleventyConfig.addPassthroughCopy("src/site/_headers");
 ```
+</div>
 
 To verify that your headers have been added, under "*Deployment Details*" click on the *Headers* tab and see what was added
 

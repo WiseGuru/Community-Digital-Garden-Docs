@@ -37,7 +37,7 @@ You may paste the script below inside or outside of the `body {}` brackets and i
 {: .success}
 > You may need to flush your browser cache for the updated CSS to appear. When in doubt, open your site in a *Private* window (`Ctrl+Shift+N` for Chrome, `Ctrl+Shift+P` for Firefox), and close/reopen it between configuration tests.
 
-{% highlight markdown %}
+<div class="code-example" markdown="1">
 ```CSS
 /* Ordered Lists */
 ol {
@@ -89,7 +89,7 @@ ul ul ul ul ul ul {
   list-style-type: square; /* Level 6: Square */
 }
 ```
-{% endhighlight %}
+</div>
 
 
 ---

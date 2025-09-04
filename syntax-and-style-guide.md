@@ -188,8 +188,12 @@ This is some text with a foot note. [^1]
 
  ![](assets/images/Syntax%20and%20Style%20Guide-1.png)
 ## Codeblocks
-Codeblocks with syntax highlighting can be inserted using Jekyll's highlight syntax.
+Codeblocks with syntax highlighting can be inserted using Jekyll's highlight syntax, discussed in the [JTD official docs](https://just-the-docs.github.io/just-the-docs/docs/ui-components/code/).
 
+It should look like this:
+![](assets/images/syntax-and-style-guide.png)
+
+If you use Obsidian as your editor, there is also a "codeblock" template for you in the templates folder.
 
 
 ----

@@ -115,6 +115,7 @@ This is caused by a bug in Digital Garden where the lucide icon library isn't lo
 > 
 > This is a patch to template-managed code, and *will be overwritten* when the plugin updates.
 
+<div class="code-example" markdown="1">
 ```html
 <script defer src="https://unpkg.com/lucide@latest"></script>
 <script defer>
@@ -125,6 +126,7 @@ This is caused by a bug in Digital Garden where the lucide icon library isn't lo
   });
 </script>
 ```
+</div>
 
 This updated coad loads the lucide icon library before the script calling the icons, and defers all of it until after the rest of the site has loaded (to ensure it doesn't prevent other components from loading). 
 

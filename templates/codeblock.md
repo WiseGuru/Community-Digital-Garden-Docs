@@ -1,5 +1,5 @@
-{% highlight markdown %}
+<div class="code-example" markdown="1">
 ```
 
 ```
-{% endhighlight %}
+</div>

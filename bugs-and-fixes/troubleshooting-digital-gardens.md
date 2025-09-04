@@ -93,7 +93,7 @@ If it's not populated, it means GitHub is not receiving your notes, and this is 
 
 {: .warning}
 >The tokens are only visible *immediately after creation or regeneration*, and if you do not copy/paste it before you navigate away from the page, you will have to regenerate it.
->This is not the end of the world, just a *douleurs dans le cul*, as Google Translate tells me the French say
+>This is not the end of the world, just a *douleurs dans le cul*, as Google Translate tells me the French say.
 
 Here's [Ole's guide on creating a token from his site](https://dg-docs.ole.dev/advanced/fine-grained-access-token/), but let's go through each step below.
 1. Go to [this page](https://github.com/settings/personal-access-tokens/new) to configure the token.
@@ -158,9 +158,10 @@ While the log tells you which files are being problematic (in this case, "S16 - 
 
 Create a Dataview codeblock and copy/paste the code below into it. This will generate a full list of all published pages with any page that has a configured `dg-home` home attribute at the top, and then is sorted by file name (which can help to identify duplicate files with slight name differences).
 
+<div class="code-example" markdown="1">
 ```
 TABLE dg-home, dg-publish
 WHERE dg-home=true OR dg-publish=true
 SORT dg-home DESCENDING, file.name
 ```
-
+</div>

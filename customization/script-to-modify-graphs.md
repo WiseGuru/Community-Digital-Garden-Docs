@@ -37,6 +37,7 @@ Digital Gardens feature a map of all pages connected to the current one. By defa
 4. Profit!
 
 ## Production-ready script
+<div class="code-example" markdown="1">
 ```Javascript
 <script>
     async function fetchGraphData() {
@@ -337,5 +338,5 @@ Digital Gardens feature a map of all pages connected to the current one. By defa
         <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
     </div>
 </div>
-
 ```
+</div>
