@@ -135,7 +135,7 @@ This updated coad loads the lucide icon library before the script calling the ic
 * `DOMContentLoaded` event: [https://developer.mozilla.org/docs/Web/API/Window/DOMContentLoaded\_event](https://developer.mozilla.org/docs/Web/API/Window/DOMContentLoaded_event)
 
 ### Pull request
-[Load lucide library before calling it by WiseGuru · Pull Request #320 · oleeskild/digitalgarden · GitHub](https://github.com/oleeskild/digitalgarden/pull/320)
+- [Load lucide library before calling it by WiseGuru · Pull Request #320 · oleeskild/digitalgarden · GitHub](https://github.com/oleeskild/digitalgarden/pull/320)
 
 ## ITS Theme Callouts Not Formatting Correctly
 The ITS theme allows the creation of right- or left-justified infobox callouts. These callouts should appear to the right or left of text, but sometines are not when published to Digital Gardens.
@@ -144,6 +144,7 @@ The ITS theme allows the creation of right- or left-justified infobox callouts. 
 This is commonly caused by the theme settings not being synced with Digital Garden, which can be done in Obsidian by going to Settings>Community Plugins>Digital Garden>Appearance, and then applying theme settings at the top.
 
 
+---
 
 [^1]: [JavaScript Date toISOString() Method](https://www.w3schools.com/jsref/jsref_toisostring.asp)
 

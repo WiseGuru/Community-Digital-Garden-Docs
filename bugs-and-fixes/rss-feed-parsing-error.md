@@ -50,14 +50,14 @@ Ole mentioned that this appears to be a problem with 11ty,[^4] and the bug re-ap
 All bugs and fixes should be linked to existing Pull Requests or Issues with the template or the plugin.
 
 ### Pull Requests
-[Fix XML Syntax of feed.xml by jeremi · Pull Request #280 · oleeskild/digitalgarden · GitHub](https://github.com/oleeskild/digitalgarden/pull/280)
+- [Fix XML Syntax of feed.xml by jeremi · Pull Request #280 · oleeskild/digitalgarden · GitHub](https://github.com/oleeskild/digitalgarden/pull/280)
 ### Issues
-[RSS \</link\> missing · Issue #136 · oleeskild/digitalgarden](https://github.com/oleeskild/digitalgarden/issues/136#issuecomment-2340139055)
-[\[BUG\] Fix for RSS feed/feed.xml error · Issue #311 · oleeskild/digitalgarden](https://github.com/oleeskild/digitalgarden/issues/311)
-[Atom/RSS feed error · Issue #493 · oleeskild/obsidian-digital-garden](https://github.com/oleeskild/obsidian-digital-garden/issues/493)
+- [RSS \</link\> missing · Issue #136 · oleeskild/digitalgarden](https://github.com/oleeskild/digitalgarden/issues/136#issuecomment-2340139055)
+- [\[BUG\] Fix for RSS feed/feed.xml error · Issue #311 · oleeskild/digitalgarden](https://github.com/oleeskild/digitalgarden/issues/311)
+- [Atom/RSS feed error · Issue #493 · oleeskild/obsidian-digital-garden](https://github.com/oleeskild/obsidian-digital-garden/issues/493)
 
 
-----
+---
 [^1]: [RSS link missing · Issue #136 · oleeskild/digitalgarden](https://github.com/oleeskild/digitalgarden/issues/136#issuecomment-2340139055)]
 
 [^2]: [Atom/RSS feed error · Issue #493 · oleeskild/obsidian-digital-garden](https://github.com/oleeskild/obsidian-digital-garden/issues/493#issuecomment-1825034758)

@@ -47,8 +47,10 @@ Describe how to carry out the specific step, with verb-first language. For examp
 All bugs and fixes should be linked to existing Pull Requests or Issues with the template or the plugin.
 
 ### Pull Requests
-[Pull requests · oleeskild/digitalgarden  - Template](https://github.com/oleeskild/digitalgarden/pulls)
-[Pull requests · oleeskild/obsidian-digital-garden - Plugin](https://github.com/oleeskild/obsidian-digital-garden/pulls)
+- [Pull requests · oleeskild/digitalgarden  - Template](https://github.com/oleeskild/digitalgarden/pulls)
+- [Pull requests · oleeskild/obsidian-digital-garden - Plugin](https://github.com/oleeskild/obsidian-digital-garden/pulls)
 ### Issues
-[Issues · oleeskild/digitalgarden - Template](https://github.com/oleeskild/digitalgarden/issues)
-[Issues · oleeskild/obsidian-digital-garden - Plugin](https://github.com/oleeskild/obsidian-digital-garden/issues)
+- [Issues · oleeskild/digitalgarden - Template](https://github.com/oleeskild/digitalgarden/issues)
+- [Issues · oleeskild/obsidian-digital-garden - Plugin](https://github.com/oleeskild/obsidian-digital-garden/issues)
+
+---

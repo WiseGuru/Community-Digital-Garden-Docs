@@ -181,9 +181,15 @@ Footnotes should use the following formatting as the link, and then as the linke
 Link: `[^(1, 2, 3, etc.)]`
 Linked text: `[^(1, 2, 3, etc.)]: Linked text`
 
-This is some text with a footnote.[^1]
+Before the linked text in the foot notes, include a line break with `---` or `----`.
 
-![](assets/images/Syntax%20and%20Style%20Guide-1.png)
+This is some text with a foot note. [^1]
+
+
+ ![](assets/images/Syntax%20and%20Style%20Guide-1.png)
+
+
+
 
 ----
 

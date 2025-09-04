@@ -356,6 +356,8 @@ The guide I used to get started is [How I Published My Knowledge Base Online for
 
 ![](../assets/images/456df70f458bd3878f9c287aa860468e.png)
 
+---
+
 [^1]: [JavaScript Date toISOString() Method](https://www.w3schools.com/jsref/jsref_toisostring.asp)
 
 [^2]: [luxon/docs/formatting.md at master · moment/luxon · GitHub](https://github.com/moment/luxon/blob/master/docs/formatting.md#table-of-tokens)

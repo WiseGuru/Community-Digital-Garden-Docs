@@ -131,7 +131,9 @@ If you already have the link to the file and don't want to go through the steps 
 
 ### Pull Requests
 These feature-requests add the ability to natively embed and host PDFs and audio-files in Digital Garden.
-[PDF Extension by MostlyKIGuess · Pull Request #691 · oleeskild/obsidian-digital-garden · GitHub](https://github.com/oleeskild/obsidian-digital-garden/pull/691)
-[Add support for audio files by eulersson · Pull Request #674 · oleeskild/obsidian-digital-garden · GitHub](https://github.com/oleeskild/obsidian-digital-garden/pull/674)
+- [PDF Extension by MostlyKIGuess · Pull Request #691 · oleeskild/obsidian-digital-garden · GitHub](https://github.com/oleeskild/obsidian-digital-garden/pull/691)
+- [Add support for audio files by eulersson · Pull Request #674 · oleeskild/obsidian-digital-garden · GitHub](https://github.com/oleeskild/obsidian-digital-garden/pull/674)
+
+---
 
 [^1]: Ellipses used for obfuscation.

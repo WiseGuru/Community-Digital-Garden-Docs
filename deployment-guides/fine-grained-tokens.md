@@ -85,6 +85,6 @@ Regenerating the token allows you to set a new expiration date. The old token wi
 ![](../assets/images/fine-grained-tokens-8.png)
 
 
-
+---
 
 [^1]: [GitHub personal access tokens](https://graphite.dev/guides/github-personal-access-token)

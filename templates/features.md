@@ -35,5 +35,7 @@ Describe how to carry out the specific step, with verb-first language. For examp
 	- Explain why it's relevant, if not apparent
 
 ### Pull Requests (optional)
-[Pull requests · oleeskild/digitalgarden  - Template](https://github.com/oleeskild/digitalgarden/pulls)
-[Pull requests · oleeskild/obsidian-digital-garden - Plugin](https://github.com/oleeskild/obsidian-digital-garden/pulls)
+- [Pull requests · oleeskild/digitalgarden  - Template](https://github.com/oleeskild/digitalgarden/pulls)
+- [Pull requests · oleeskild/obsidian-digital-garden - Plugin](https://github.com/oleeskild/obsidian-digital-garden/pulls)
+
+---
