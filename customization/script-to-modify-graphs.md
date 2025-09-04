@@ -37,6 +37,7 @@ Digital Gardens feature a map of all pages connected to the current one. By defa
 4. Profit!
 
 ## Production-ready script
+
 <div class="code-example" markdown="1">
 ```Javascript
 <script>
