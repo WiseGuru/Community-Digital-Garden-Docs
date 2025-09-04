@@ -187,6 +187,7 @@ Paragraphs must be separated with a full line break.
 > This is the second paragraph
 ```
 </div>
+
 ## Footnotes
 Footnotes should use the following formatting as the link, and then as the linked text
 Link: `[^(1, 2, 3, etc.)]`
@@ -196,17 +197,48 @@ Before the linked text in the foot notes, include a line break with `---` or `--
 
 This is some text with a foot note. [^2]
 
-
  ![](assets/images/syntax-and-style-guide-3.png)
-## Codeblocks
-Codeblocks with syntax highlighting must be wrapped using either Jekyll's highlight syntax or HTML, as demonstrated and discussed in the [JTD official docs](https://just-the-docs.github.io/just-the-docs/docs/ui-components/code/).
 
-The HTML `<div>` tag method just shows the raw code, but has a large border around it, where Jekyll's syntax includes the Markdown codeblock characters, but has no border.
+
+## Codeblocks
+Codeblocks with syntax highlighting must be wrapped using either Jekyll's highlight syntax[^3] or HTML, as demonstrated and discussed in the [JTD official docs](https://just-the-docs.github.io/just-the-docs/docs/ui-components/code/).
 
 If you use Obsidian as your editor, there are two codeblock templates for you in the templates folder; Jekyll's formatting is identified with "noborder-jekyll", where html is appended with "border-div".
 
+### Jekyll
+By default, code wrapped with the Jekyll `highlight` tag doesn't need to have the Markdown codeblock within. They can just wrap the script and identify the type of code[^4] in the callout itself. 
+
+Examples:
+
+![](assets/images/syntax-and-style-guide-6.png)
+
+{% highlight js %}
+// Say "Hello world!"
+console.log('Hello World');
+{% endhighlight %}
+
+{% highlight html %}
+<audio controls>[Jekyll Syntax Highlighting - Notes by KargWare](https://notes.kargware.com/2019/10/04/Jekyll-Syntax-Highlighting/)
+  <source src="https://www.dropbox.com/scl/fi/pq27xm8b5s33g508o7qkw/Path-to-Mephistopheles.wav?rlkey=bk84g42ua7b5fpfyfhsiwmwvo&st=x9xo6i25&raw=1" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+{% endhighlight %}
+
+
+However, you can wrap normal codeblocks using the Jekyll `highlight` tag; you just need to identify the language as "markdown"
+
+![](assets/images/syntax-and-style-guide-5.png)
+
+{% highlight markdown %}
+```js
+// Say "Hello world!"
+console.log('Hello World');
+```
+{% endhighlight %}
+
+
 ### HTML
-`<div>` codeblocks are ideal for production-ready scripts and code. The first line should read `<div class="code-example" markdown="1">`, and the last line closes the tag with `</div>`
+`<div>` codeblocks are less optimal, but are included here for completeness. The first line should read `<div class="code-example" markdown="1">`, and the last line closes the tag with `</div>`
 
 For example, this formatted code:
 
@@ -221,37 +253,12 @@ console.log('Hello World');
 ```
 </div>
 
-### Jekyll
-Jekyll formatted codeblocks include the three code tics at the top and bottom and have a larger reading pane. This makes it better for sample code which must be modified before being run.
-
-Jekyll should be formatted like this:
-
-![](assets/images/syntax-and-style-guide-5.png)
-
-And looks like this:
-
-{% highlight markdown %}
-```js
-// Say "Hello world!"
-console.log('Hello World');
-```
-{% endhighlight %}
-
-
-{% highlight js %}
-// Say "Hello world!"
-console.log('Hello World');
-{% endhighlight %}
-
-{% highlight html %}
-<audio controls>
-  <source src="https://www.dropbox.com/scl/fi/pq27xm8b5s33g508o7qkw/Path-to-Mephistopheles.wav?rlkey=bk84g42ua7b5fpfyfhsiwmwvo&st=x9xo6i25&raw=1" type="audio/wav">
-  Your browser does not support the audio element.
-</audio>
-{% endhighlight %}
-
 ----
 
 [^1]: Using GitHub Desktop or Git.
 
 [^2]: This is the linked text in the footnote.
+
+[^3]: [Tags Filters \| Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/liquid/tags/)
+
+[^4]: [List of supported languages and lexers · rouge-ruby/rouge Wiki · GitHub](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers)

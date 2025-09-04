@@ -1,5 +1,3 @@
-{% highlight markdown %}
-```
+{% highlight  %}
 
-```
 {% endhighlight %}
