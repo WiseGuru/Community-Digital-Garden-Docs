@@ -45,12 +45,12 @@ There are two ways to embed media in your site; you can use an inline frame (ifr
 
 > Example using an iframe
 
-<div class="code-example" markdown="1">
+{% highlight markdown %}
 ```html
 <iframe style="background: #2F383E;" src="https://drive.google.com/file/d/1xySbXbL...KHXqYm/preview" width="480">
 </iframe>
 ```
-</div>
+{% endhighlight %}
 
 Not all cloud storage hosts work the same way, and getting a workable link for embedding content can be annoying.
 ## Adding music from Dropbox using the HTML 'audio' element
