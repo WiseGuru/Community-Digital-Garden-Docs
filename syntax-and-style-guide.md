@@ -7,7 +7,7 @@ layout: default
 This site uses a slightly different version of Markdown than Obsidian, and there are some key differences in how files are formatted
 
 ## Editing in Obsidian
-To edit the files in this repository in Obsidian, clone the repo to your computer[^2] then open the folder as a vault in Obsidian.
+To edit the files in this repository in Obsidian, clone the repo to your computer[^1] then open the folder as a vault in Obsidian.
 
 Once the vault is open, I recommend the following changes:
 1. Files and Links
@@ -27,14 +27,14 @@ Once the vault is open, I recommend the following changes:
 ## Frontmatter
 The following frontmatter should be included in all documents:
 
-{% highlight markdown %}
+<div class="code-example" markdown="1">
 ```
 title:            # The readable title of the document
 layout: default   # Leave as default
 parent:           # The title of the parent document, used in ToC's 
 nav_order:        # The position this document should appear in lists
 ```
-{% endhighlight %}
+</div>
 
 
 `nav_order` prioritizes lower numbers to be higher in the list. If the nav_order matches, then it *should* sort alphabetically, but order may change for unknown reasons.
@@ -61,7 +61,7 @@ The name of the `index.md` file in a folder should match the readable folder nam
 ### Headers
 The page title should be "Header 1" and the first line of a document after the frontmatter.
 
-{% highlight markdown %}
+<div class="code-example" markdown="1">
 ```
 # Header 1
 Some text
@@ -76,7 +76,7 @@ Some text
 ###### Header 6
 Some text
 ```
-{% endhighlight %}
+</div>
 
 ![](assets/images/syntax-and-style-guide.png)
 
@@ -90,7 +90,7 @@ Creating a Table of Contents is pretty simple, and is described [Just the Docs -
 	- The first line of that list must also have "TOC" as the only text
 	- There can only be one `{:toc}` tag per document
 
-{% highlight markdown %}
+<div class="code-example" markdown="1">
 ```
 # In-Page Navigation
 {: .no_toc }
@@ -102,7 +102,7 @@ Creating a Table of Contents is pretty simple, and is described [Just the Docs -
 {:toc}
 
 ```
-{% endhighlight %}
+</div>
 
 {: .warning}
 > Make sure that you use `{:toc}` and not `{: .toc}`, or it won't work.
@@ -145,12 +145,12 @@ Always make sure there is one empty line between the callout and the next piece 
 {: .tip}
 > My text.
 
-{% highlight markdown %}
+<div class="code-example" markdown="1">
 ```
 {: .tip}
 > My text.
 ```
-{% endhighlight %}
+</div>
 
 Append the callout type with "-title" to convert the first line into the title for the callout.
 
@@ -159,14 +159,14 @@ Append the callout type with "-title" to convert the first line into the title f
 > 
 > This is the text.
 
-{% highlight markdown %}
+<div class="code-example" markdown="1">
 ```
 {: .warning-title}
 > This is the title
 > 
 > This is the text
 ```
-{% endhighlight %}
+</div>
 
 Paragraphs must be separated with a full line break.
 
@@ -177,7 +177,7 @@ Paragraphs must be separated with a full line break.
 > 
 > This is the second paragraph
 
-{% highlight markdown %}
+<div class="code-example" markdown="1">
 ```
 {: .note-title}
 > This is the title
@@ -186,7 +186,7 @@ Paragraphs must be separated with a full line break.
 > 
 > This is the second paragraph
 ```
-{% endhighlight %}
+</div>
 ## Footnotes
 Footnotes should use the following formatting as the link, and then as the linked text
 Link: `[^(1, 2, 3, etc.)]`
@@ -194,7 +194,7 @@ Linked text: `[^(1, 2, 3, etc.)]: Linked text`
 
 Before the linked text in the foot notes, include a line break with `---` or `----`.
 
-This is some text with a foot note. [^1]
+This is some text with a foot note. [^2]
 
 
  ![](assets/images/syntax-and-style-guide-3.png)
@@ -202,7 +202,9 @@ This is some text with a foot note. [^1]
 Codeblocks with syntax highlighting can be inserted using either Jekyll's highlight syntax or HTML, as demonstrated and discussed in the [JTD official docs](https://just-the-docs.github.io/just-the-docs/docs/ui-components/code/).
 
 HTML `<div>` classing will look like this:
+
 ![](assets/images/syntax-and-style-guide-4.png)
+
 <div class="code-example" markdown="1">
 ```js
 // Say "Hello world!"
@@ -211,7 +213,9 @@ console.log('Hello World');
 </div>
 
 And Jekyll formatting looks like this:
+
 ![](assets/images/syntax-and-style-guide-5.png)
+
 {% highlight markdown %}
 ```js
 // Say "Hello world!"
@@ -219,13 +223,11 @@ console.log('Hello World');
 ```
 {% endhighlight %}
 
-
-
-If you use Obsidian as your editor, there is also a "codeblock" template for you in the templates folder.
+If you use Obsidian as your editor, there are two codeblock templates for you in the templates folder; Jekyll's formatting is identified with "border", where html is appended with "noborder"
 
 
 ----
 
-[^1]: This is the linked text in the footnote.
+[^1]: Using GitHub Desktop or Git.
 
-[^2]: Using GitHub Desktop or Git.
+[^2]: This is the linked text in the footnote.
