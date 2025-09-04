@@ -43,7 +43,7 @@ There are two ways to embed media in your site; you can use an inline frame (ifr
 ```
 {% endhighlight %}
 
-Example using an iframe
+> Example using an iframe
 
 <div class="code-example" markdown="1">
 ```html
