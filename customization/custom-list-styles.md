@@ -1,7 +1,7 @@
 ---
 title: Custom List Styles for Nested Ordered Lists
 layout: default
-parent: Bugs and Fixes
+parent: Customization
 nav_order: 50
 nav_exclude: false
 ---
@@ -34,10 +34,10 @@ If you want to simulate looping, you can copy/paste the existing code and add th
 ### The Script
 You may paste the script below inside or outside of the `body {}` brackets and it should work.
 
-{: .note}
+{: .success}
 > You may need to flush your browser cache for the updated CSS to appear. When in doubt, open your site in a *Private* window (`Ctrl+Shift+N` for Chrome, `Ctrl+Shift+P` for Firefox), and close/reopen it between configuration tests.
 
-
+{% highlight markdown %}
 ```CSS
 /* Ordered Lists */
 ol {
@@ -89,6 +89,8 @@ ul ul ul ul ul ul {
   list-style-type: square; /* Level 6: Square */
 }
 ```
+{% endhighlight %}
+
 
 ---
 

@@ -187,7 +187,8 @@ This is some text with a foot note. [^1]
 
 
  ![](assets/images/Syntax%20and%20Style%20Guide-1.png)
-
+## Codeblocks
+Codeblocks with syntax highlighting can be inserted using Jekyll's highlight syntax.
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Script to Modify Graphs
+title:
 layout: default
 parent: Customization
 nav_order: 50
 nav_exclude: true
 ---
-
+# WORK IN PROGRESS - IGNORE
 [colored obsidian graph](https://www.paologabriel.com/swamp/colored-obsidian-graph/)
 
 # Script to Modify Graphs
