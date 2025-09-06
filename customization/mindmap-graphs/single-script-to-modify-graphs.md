@@ -1,20 +1,17 @@
 ---
-title:
+title: Single Script to Modify Graphs
 layout: default
-parent: Customization
+parent: Mindmap Graphs
 nav_order: 50
 nav_exclude: true
 ---
-# WORK IN PROGRESS - IGNORE
-[colored obsidian graph](https://www.paologabriel.com/swamp/colored-obsidian-graph/)
-
-# Script to Modify Graphs
+# Single Script to Modify Graphs
 {: .no_toc}
 
-Digital Gardens feature a map of all pages connected to the current one. By default, all linked pages are the same color, and index pages can overshadow more helpful links. 
+The Digital Garden plugin offers a similar graph feature to Obsidian, showing all connected pages to the current page out to different layers. By default, all linked pages are the same color, and index pages can overshadow more helpful links. 
 
 
-![](../assets/images/script-to-modify-graphs.png)
+![](../../assets/images/script-to-modify-graphs.png)
 
 ## Table of Contents
 {: .no_toc .text-delta}
@@ -22,24 +19,27 @@ Digital Gardens feature a map of all pages connected to the current one. By defa
 {:toc}
 
 
-## How to 
-1. Replace the contents of the graphScript.njk at `src/site/_includes/components/graphScript.njk` with the code below
-2. Find the sections commented with `**Modification Start**` and make the relevant changes
-	1. To exclude folders, replace the folder and file paths with ones from your Digital Garden
-		1. Make sure that the paths match the URL.
-			1. For example, in my [ADHD BAMF](https://adhdbamf.com/) site, the folder "Project Management" is entered in the script as `'/project-management/'`, and the file "About ADHD BAMF" is `'/about-adhd-bamf'`, and the homepage is simply `'/'`. 
-			2. If I did not exclude the "Project Management" folder and I wanted to hide the "Proto-List of Expressions.md" file, it would be^[Again, this is just an example since I already excluded the folder.] `'/project-management/proto-list-of-expressions'`.
-		2. If you exclude a folder, you do not need to also exclude any pages it contains.
-	2. To colorize specific folders, add the folder name to the list, and use the hex-value for the color you want.
+## How to add coloration to the graph
+1. Replace the contents of the graphScript.njk at `src/site/_includes/components/graphScript.njk` with the code below.
+2. There are two sections commented `**User Start**` that mark where you should make changes.
+	1. The first section is to identify files or folders you wish to exclude from the graph (like index files or home pages)
+	2. The second section is where you make color choices based on folders.
+3. Excluding files and folders
+	1. Use commas to separate files
+		1. e.g., `['/about-adhd-bamf', '/']`
+	2. **Make sure that the paths match the URL**.
+		1. For example on [ADHD BAMF](https://adhdbamf.com/), the folder "Project Management" is written in the script as `'/project-management/'`, the "Proto-List of Expressions.md" file in the "Project Management" folder would be `'/project-management/proto-list-of-expressions'`,[^1] and the homepage is simply `'/'`. 
+	3. If you exclude a folder, you do not need to also exclude any pages it contains.
+4. Colorizing nodes based on folder
+	1. To colorize specific folders, add the folder name to the list, and use the hex-value for the color you want.
 		1. Like when excluding folders, make sure that the folders match the URL (e.g., `/expressions` instead of "Expressions").
 		2. You can search for hex codes, or use sites like [ColorsWall](https://colorswall.com/palettes) to find hex codes for the colors you want.
-3. Save and commit changes.
-4. Profit!
+5. Save and commit changes.
+6. Profit!
 
 ## Production-ready script
 
-<div class="code-example" markdown="1">
-```Javascript
+{% highlight  js%}
 <script>
     async function fetchGraphData() {
         const graphData = await fetch('/graph.json').then(res => res.json());
@@ -85,8 +85,10 @@ Digital Gardens feature a map of all pages connected to the current one. By defa
         }
 
         // **Modification Start**: Filter nodes based on folders or files with decoded URLs
+	    // **User Start**: Enter folder and file paths to exclude
         const foldersToExclude = ['/project-management/']; // Use the URL folder path
         const filesToExclude = ['/about-adhd-bamf', '/']; // Use the full URL file path
+		// **User End**
 
         nodes = Object.values(existing).filter(n => {
             const nodeUrl = decodeURIComponent(n.url);
@@ -133,6 +135,7 @@ Digital Gardens feature a map of all pages connected to the current one. By defa
         let hoverNode = null;
 
         // **Modification Start**: Define specific colors for folders
+        // **User Start**: Enter folder and color pairings
         const folderColorMap = {
             '/expressions': '#530000',    // Red
             '/mitigations': '#228B22',    // Green
@@ -146,6 +149,7 @@ Digital Gardens feature a map of all pages connected to the current one. By defa
                                      '#e6beff', '#9a6324', '#fffac8', '#800000',
                                      '#aaffc3', '#808000', '#ffd8b1', '#000075',
                                      '#808080'];
+		// **User End**
 
         let defaultColorIndex = 0;
 
@@ -339,5 +343,6 @@ Digital Gardens feature a map of all pages connected to the current one. By defa
         <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
     </div>
 </div>
-```
-</div>
+{% endhighlight %}
+
+[^1]: Note that you do not need to exclude both folder and file, this is just for demonstration purposes.
