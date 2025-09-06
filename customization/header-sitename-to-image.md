@@ -48,3 +48,7 @@ Icon for when the filetree is being displayed (either in full-screen or as a pop
  </a>
 ```
 {% endhighlight %}
+
+![](assets/images/cbfdbdeb471b7eb3a7382ce6b42e8256.png)
+
+![](assets/images/45f4fa3f2b7d7bd3a2aae6318b73411c.png)
