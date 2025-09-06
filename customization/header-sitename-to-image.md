@@ -11,7 +11,7 @@ nav_exclude: true
 
 Jentu on the Digital Garden discord was looking for a way to replace the site name at the top-left corner with an SVG icon instead; here's how I was able to get it to work.
 
-{: .warning}
+{: .warning-title}
 > Warning - Out of band Modification
 > 
 > This mod is outside of the "safe zone" for the template, meaning that any future updates to the template by Ole will overwrite these changes.
@@ -49,7 +49,6 @@ Icon for when the filetree is being displayed (either in full-screen or as a pop
  <a href="/" style="text-decoration: none;">
 	   <h1 style="text-align:center;">{{meta.siteName}}</h1>
  </a>
- {% for imp in dynamics.filetree.afterTitle %}
 ```
 {% endhighlight %}
 
@@ -67,7 +66,6 @@ Icon for when the filetree is being displayed (either in full-screen or as a pop
 				style="max-width: 100%; width: 180px; height: auto; margin: 15px !important; display: block;">
 		</a>
 	</div>
- {% for imp in dynamics.filetree.afterTitle %}
 ```
 {% endhighlight %}
 
@@ -119,7 +117,6 @@ Icon for when the filetree is collapsed. The changes begin at line 7.
 <a href="/" style="text-decoration: none;">
 	<h1 style="margin: 15px !important;">{{meta.siteName}}</h1>
 </a>
-{% for imp in dynamics.filetree.afterTitle %}
 ```
 {% endhighlight %}
 
@@ -134,7 +131,6 @@ Icon for when the filetree is collapsed. The changes begin at line 7.
 			alt="{{meta.siteName}}"
 			style="max-height: 100%; height: 100px; width: auto; margin: 15px !important; display: block;">
 	</a>
-{% for imp in dynamics.filetree.afterTitle %}
 ```
 {% endhighlight %}
 
