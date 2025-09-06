@@ -34,6 +34,7 @@ Below are examples where I've copied favicon.svg into the `/img` folder in my Di
 I also provided screenshots to show image size using current settings next to text. You may need to tweak the pixel sizes to get your image to show optimally.
 
 ### filetree.njk
+
 `src/site/_includes/components/filetree.njk`
 
 Icon for when the filetree is being displayed (either in full-screen or as a pop-out). Changes begin at line 39.
@@ -67,6 +68,7 @@ Icon for when the filetree is being displayed (either in full-screen or as a pop
 ![](assets/images/3fa58e803f23e7eafe742069fff9b13b.png)
 
 ### navbar.njk
+
 `src/site/_includes/components/navbar.njk`
 
 Icon for when filetree is disabled entirely in the Digital Garden settings. The changes begin at line 3.
@@ -81,7 +83,7 @@ Icon for when filetree is disabled entirely in the Digital Garden settings. The 
 </div>
 {% endhighlight %}
 
-> I don't have a *Before* screenshot here because I forgot to test ahead of time and I don't use it anyway, but I trust you to figure out how it looks normally.
+I don't have a *Before* screenshot here because I forgot to test ahead of time and I don't use it anyway, but I trust you to figure out how it looks normally.
 
 #### After:
 
@@ -97,7 +99,8 @@ Icon for when filetree is disabled entirely in the Digital Garden settings. The 
 
 ![](assets/images/bc95812fc11fcc38cd6bb9379dbead64.png)
 
-## filetreeNavbar.njk
+### filetreeNavbar.njk
+
 `src/site/_includes/components/filetreeNavbar.njk`
 
 Icon for when the filetree is collapsed. The changes begin at line 7.
