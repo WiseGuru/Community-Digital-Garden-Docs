@@ -11,7 +11,7 @@ nav_exclude: false
 
 Below are common user-centered or -related problems. 
 
-{: .note}
+{: .tip}
 > The problems described in this document should probably be converted into their own documents for better tracking.
 
 ## Table of Contents

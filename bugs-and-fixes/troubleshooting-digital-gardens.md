@@ -77,7 +77,7 @@ If you do not have a `dg-home` property set, you can manually change `dg-publish
 
 **If you made any changes,** publish your *homepage* using the *Command Palette* or the *Digital Garden Publication Center* and check your site.
 
-{: .note}
+{: .tip}
 >Be careful when unchecking the `dg-publish` tag or moving many pages. Uploading multiple pages counts as one commit, but *deleting or moving multiple pages counts as one commit per page*. If you have a large site (100+ pages), you can quickly run out of available free commits.
 
 If your site doesn't update, or your pages are marked correctly, proceed to the next step.
@@ -88,7 +88,7 @@ Log into your *GitHub* account, open your repository, and check `src/site/notes`
 
 If it's not populated, it means GitHub is not receiving your notes, and this is likely caused by a **fine-grained token** misconfiguration, so let's just rebuild it from scratch.
 
-{: .note}
+{: .tip}
 >Even if you see a green checkmark in the Digital Garden plugin in Obsidian, that only checks if the token is *legitimate*, not that it has the correct permissions.
 
 {: .warning}

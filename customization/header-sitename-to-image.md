@@ -31,7 +31,7 @@ There are three Nunjucks scripts that manage the formatting for different parts 
 
 Below are examples where I've copied favicon.svg into the `/img` folder in my Digital Garden repo, with 1 line of text script on top and bottom. Since we're inserting elements, I want to show where exactly everything goes. 
 
-{: .note}
+{: .tip}
 > There should be screenshots of the before and after, but something with the site formatting is preventing them from appearing. We are troubleshooting this, and any insight is appreciated.
 
 ### filetree.njk

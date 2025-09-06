@@ -132,7 +132,7 @@ Callouts are written following the [Just the Docs - Callouts](https://just-the-d
 	1. green
 4. reminder
 	1. blue
-5. note
+5. tip
 	1. blue
 6. example
 	1. purple
@@ -142,12 +142,12 @@ Use braces to indicate what kind of callout you're using, and then greater-than 
 
 Always make sure there is one empty line between the callout and the next piece of text; failure to do so will include the subsequent line in the callout.
 
-{: .tip}
+{: .alert}
 > My text.
 
 <div class="code-example" markdown="1">
 ```
-{: .tip}
+{: .alert}
 > My text.
 ```
 </div>
@@ -170,7 +170,7 @@ Append the callout type with "-title" to convert the first line into the title f
 
 Paragraphs must be separated with a full line break.
 
-{: .note-title}
+{: .tip-title}
 > This is the title
 > 
 > This is the first paragraph
@@ -179,7 +179,7 @@ Paragraphs must be separated with a full line break.
 
 <div class="code-example" markdown="1">
 ```
-{: .note-title}
+{: .tip-title}
 > This is the title
 > 
 > This is the first paragraph

@@ -17,8 +17,8 @@ callouts:
     title: Warning
     color: red
 ## Yellow
-  tip:
-    title: Tip
+  alert:
+    title: Alert
     color: yellow
 ## Green
   success:
@@ -28,8 +28,8 @@ callouts:
   reminder:
     title: Reminder
     color: blue
-  note:
-    title: Note
+  tip:
+    title: Tip
     color: blue
 ## Purple
   example:

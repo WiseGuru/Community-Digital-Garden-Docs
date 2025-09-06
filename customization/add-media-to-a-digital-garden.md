@@ -57,7 +57,7 @@ Not all cloud storage hosts work the same way, and getting a workable link for e
 ## Adding music from Dropbox using the HTML 'audio' element
 Here's how you can embed music *which you have the rights to share* into your site with Dropbox. For this example, we're using a song whose lyrics were written by Max McGuire; [The Path to Mephistopheles](https://lendalorsjournal.online/songs-and-stories/path-to-mephistopheles/).
 
-{: .note}
+{: .tip}
 > Some file formats don't play well with different hosts; for example, a .wav works fine when hosted on Dropbox, but gives an error for an incompatible browser on Google Drive. However, .mp3 files work fine from Google Drive.
 > 
 > Experiment with different hosts if you run into problems.
@@ -69,7 +69,7 @@ Permissions will be set automatically the first time you click the link.
 
 by default, this link is accessible to anyone without requiring a password.
 
-{: .note}
+{: .tip}
 > You can delete this link by going to the three-dot menu for the file, selecting *Manage Permissions*, going to *Links*, then clicking on *Settings* to manage or delete the link.
 
 

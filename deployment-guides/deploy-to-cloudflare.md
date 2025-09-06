@@ -132,7 +132,7 @@ There are a few ways to publish your site when you're ready.
 You could open the *Command Palette* and select *Publish all notes* or *Publish single note*
 ![](../assets/images/8eb84664c7fe20fcf11346002d282647.png)
 
-{: .note}
+{: .tip}
 > You can [configure hotkeys](https://help.obsidian.md/Customization/Custom+hotkeys) in Obsidian’s Settings to make publication easier. The combination below is intuitive for me, and doesn’t have any overlapping uses.
 > ![](../assets/images/8b1e5f61947b75af19417b22975c1566.png)
 
@@ -207,7 +207,7 @@ Click on your domain, and let's get started with the Quick Start Guide from the 
 
 Once done, we should go down the options in left slide-out menu and enable a bunch of other security and optimization features.
 
-{: .tip}
+{: .alert}
 >*Don't send email from your domain*? Stop anyone from impersonating you with **these rules that reject all email sent from your domain**:
 > SPF: `TXT   @   "v=spf1 -all"`
 > DMARC: `TXT  _dmarc.example.com   "v=DMARC1; p=reject"`
