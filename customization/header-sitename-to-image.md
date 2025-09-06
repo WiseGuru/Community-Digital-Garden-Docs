@@ -42,11 +42,6 @@ Icon for when the filetree is being displayed (either in full-screen or as a pop
 
 #### Before
 
-{% highlight  html%}
- <a href="/" style="text-decoration: none;">
-	   <h1 style="text-align:center;"></h1>
- </a>
-{% endhighlight %}
 
 ![](assets/images/cbfdbdeb471b7eb3a7382ce6b42e8256.png)
 
