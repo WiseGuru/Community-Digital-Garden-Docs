@@ -45,7 +45,6 @@ Icon for when the filetree is being displayed (either in full-screen or as a pop
 
 {% highlight  markdown%}
 ```html
-{% endfor %}
  <a href="/" style="text-decoration: none;">
 	   <h1 style="text-align:center;">{{meta.siteName}}</h1>
  </a>
@@ -60,7 +59,6 @@ Icon for when the filetree is being displayed (either in full-screen or as a pop
 
 {% highlight  markdown%}
 ```html
-{% endfor %}
 	<div style="display: flex; justify-content: center;">
 		<a href="/" style="text-decoration: none;">
 			<img src='/img/favicon.svg'
@@ -115,7 +113,6 @@ Icon for when the filetree is collapsed
 
 {% highlight  markdown%}
 ```html
-{% endfor %}
 <a href="/" style="text-decoration: none;">
 	<h1 style="margin: 15px !important;">{{meta.siteName}}</h1>
 </a>
@@ -129,7 +126,6 @@ Icon for when the filetree is collapsed
 
 {% highlight  markdown%}
 ```html
-{% endfor %}
 	<a href="/" style="text-decoration: none;">
 		<img src='/img/favicon.svg'
 			alt="{{meta.siteName}}"
