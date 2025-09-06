@@ -203,7 +203,7 @@ This is some text with a foot note. [^2]
 ## Codeblocks
 Codeblocks with syntax highlighting must be wrapped using either Jekyll's highlight syntax[^3] or HTML, as demonstrated and discussed in the [JTD official docs](https://just-the-docs.github.io/just-the-docs/docs/ui-components/code/).
 
-If you use Obsidian as your editor, there are two codeblock templates for you in the templates folder; Jekyll's formatting is identified with "noborder-jekyll", where html is appended with "border-div".
+If you use Obsidian as your editor, there are two codeblock templates for you in the templates folder; Jekyll's formatting is identified with "noborder-jekyll", where html is appended with "border-div". Additionally, if the sample text is HTML, it's recommended that you wrap the text in triple-tics and use either Jekyll-Markdown or HTML `div` to wrap it, as Obsidian renders HTML natively and this can cause problems.
 
 ### Jekyll
 By default, code wrapped with the Jekyll `highlight` tag doesn't need to have the Markdown codeblock within. They can just wrap the script and identify the type of code[^4] in the callout itself. 
