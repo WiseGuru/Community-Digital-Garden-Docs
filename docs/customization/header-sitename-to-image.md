@@ -11,6 +11,10 @@ nav_exclude: false
 
 Jentu on the Digital Garden discord was looking for a way to replace the site name at the top-left corner with an SVG icon instead; here's how I was able to get it to work.
 
+{: .warning-title} 
+> *WARNING*: Out-of-Band Patch
+> 
+> This is a patch to template-managed code, and *will be overwritten* when the plugin updates.
 
 ## Table of Contents
 {: .no_toc .text-delta}
@@ -36,6 +40,13 @@ Below are examples where I've copied favicon.svg into the `/img` folder in my Di
 
 ### filetree.njk
 
+
+`src/site/_includes/components/filetree.njk`
+
+Icon for when the filetree is being displayed (either in full-screen or as a pop-out). Changes begin at line 39.
+
+#### Before
+
 {% highlight html %}
 {% raw %}
 {% endfor %}
@@ -46,18 +57,6 @@ Below are examples where I've copied favicon.svg into the `/img` folder in my Di
 {% endraw %}
 {% endhighlight %}
 
-`src/site/_includes/components/filetree.njk`
-
-Icon for when the filetree is being displayed (either in full-screen or as a pop-out). Changes begin at line 39.
-
-#### Before
-
-{% highlight  html %}
- <a href="/" style="text-decoration: none;">
-	   <h1 style="text-align:center;">{{meta.siteName}}</h1>
- </a>
-{% endhighlight %}
-
 ![](../../assets/images/cbfdbdeb471b7eb3a7382ce6b42e8256.png)
 
 ![](../../assets/images/45f4fa3f2b7d7bd3a2aae6318b73411c.png)
@@ -65,6 +64,8 @@ Icon for when the filetree is being displayed (either in full-screen or as a pop
 #### After
 
 {% highlight  html %}
+{% raw %}
+{% endfor %}
 	<div style="display: flex; justify-content: center;">
 		<a href="/" style="text-decoration: none;">
 			<img src='/img/favicon.svg'
@@ -72,6 +73,8 @@ Icon for when the filetree is being displayed (either in full-screen or as a pop
 				style="max-width: 100%; width: 180px; height: auto; margin: 15px !important; display: block;">
 		</a>
 	</div>
+ {% for imp in dynamics.filetree.afterTitle %}
+ {% endraw %}
 {% endhighlight %}
 
 ![](../../assets/images/21bab61a18fb1eb9e8dac7873b0b5e62.png)
@@ -119,9 +122,13 @@ Icon for when the filetree is collapsed. The changes begin at line 7.
 #### Before
 
 {% highlight  html %}
+{% raw %}
+{% endfor %}
 <a href="/" style="text-decoration: none;">
 	<h1 style="margin: 15px !important;">{{meta.siteName}}</h1>
 </a>
+{% for imp in dynamics.filetree.afterTitle %}
+{% endraw %}
 {% endhighlight %}
 
 ![](../../assets/images/2b16e73fef2eb9532f114085fe0936b6.png)
@@ -129,11 +136,15 @@ Icon for when the filetree is collapsed. The changes begin at line 7.
 #### After
 
 {% highlight  html %}
+{% raw %}
+{% endfor %}
 	<a href="/" style="text-decoration: none;">
 		<img src='/img/favicon.svg'
 			alt="{{meta.siteName}}"
 			style="max-height: 100%; height: 100px; width: auto; margin: 15px !important; display: block;">
 	</a>
+{% for imp in dynamics.filetree.afterTitle %}
+{% endraw %}
 {% endhighlight %}
 
 ![](../../assets/images/993bbbd765f16db0b031af2c64c00439.png)
