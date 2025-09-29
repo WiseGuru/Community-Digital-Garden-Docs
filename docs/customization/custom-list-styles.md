@@ -37,8 +37,7 @@ You may paste the script below inside or outside of the `body {}` brackets and i
 {: .success}
 > You may need to flush your browser cache for the updated CSS to appear. When in doubt, open your site in a *Private* window (`Ctrl+Shift+N` for Chrome, `Ctrl+Shift+P` for Firefox), and close/reopen it between configuration tests.
 
-```CSS
-{% raw %}
+{% highlight css%}
 /* Ordered Lists */
 ol {
   list-style-type: decimal; /* Level 1: 1, 2, 3, ... */
@@ -88,8 +87,7 @@ ul ul ul ul ul {
 ul ul ul ul ul ul {
   list-style-type: square; /* Level 6: Square */
 }
-{% endraw %}
-```
+{% endhighlight %}
 
 
 ---
