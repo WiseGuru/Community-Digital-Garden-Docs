@@ -17,7 +17,7 @@ Troubleshooting problems with your Digital Garden can be difficult, especially i
 {: .reminder-title}
 > **Protect your Domain from Spoofing**
 > 
-> Even if you don't have email connected to your domain, you should set up SPF and DMARC records for your Digital Garden. Check out [[../customization/prevent-domain-spoofing]] for more details.
+> Even if you don't have email connected to your domain, you should set up SPF and DMARC records for your Digital Garden. Check out [prevent-domain-spoofing](../customization/prevent-domain-spoofing.md) for more details.
 
 # How to ask for Help
 If you have gone through the steps below and you're still having trouble, then reach out on the [Digital Garden Discord **Help** Channel](https://discord.gg/Z46n2RNX8e) with the following information:
