@@ -32,6 +32,8 @@ Once the vault is open, I recommend the following changes:
 		1. This is specifically for the "Malformed Pages" table which looks for pages with formatting problems.
 		2. **Dataview is not supported by Jekyll**
 
+Once you have finished making changes, you can push the changes back up into GitHub for review and publication.
+
 ## Frontmatter
 The following frontmatter should be included in all documents:
 
