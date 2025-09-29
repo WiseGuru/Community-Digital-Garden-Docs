@@ -69,7 +69,7 @@ File names should be all lower-case with hyphens between words. Use the `title` 
 The name of the `index.md` file in a folder should match the readable folder name.
 
 ### Headers
-The page title should be "Header 1" and the first line of a document after the frontmatter.
+The page title should be "Header 1" and the first line of a document after the frontmatter. Other headers can be 
 
 <div class="code-example" markdown="1">
 ```
@@ -90,7 +90,7 @@ Some text
 
 ![](assets/images/syntax-and-style-guide.png)
 
-syntax-and-style-guide## Table of Contents
+## Table of Contents
 Creating a Table of Contents is pretty simple, and is described [Just the Docs - In-Page Navigation](https://just-the-docs.github.io/just-the-docs/docs/navigation/in-page/#generating-table-of-contents). Basically, there are a few tags to be aware of.
 
 - `{: .no_toc}` 

@@ -25,11 +25,11 @@ Jentu on the Digital Garden discord was looking for a way to replace the site na
 
 Theoretically, you can do this with any file, not just an SVG; however, SVGs tend to scale a better than other formats, and if you already created an SVG for your favicon, you have one readily available.
 
-## 1. Add the desired image to the `/img` directory in your DG repo
+# 1. Add the desired image to the `/img` directory in your DG repo
 
 I tried to have it just use the favicon where it is, but it wasn't getting passed through in the build; however, the `/img` folder does get passed through, so you can safely add images here.
 
-## 2. Update the relevant scripts
+# 2. Update the relevant scripts
 
 There are three Nunjucks scripts that manage the formatting for different parts of the site; each script is described below, with *Before* and *After*  sections of code which need to be updated.
 
@@ -38,14 +38,14 @@ Below are examples where I've copied favicon.svg into the `/img` folder in my Di
 {: .tip}
 > There should be screenshots of the before and after, but something with the site formatting is preventing them from appearing. We are troubleshooting this, and any insight is appreciated.
 
-### filetree.njk
+## filetree.njk
 
 
 `src/site/_includes/components/filetree.njk`
 
 Icon for when the filetree is being displayed (either in full-screen or as a pop-out). Changes begin at line 39.
 
-#### Before
+### Before
 
 {% highlight html %}
 {% raw %}
@@ -61,7 +61,7 @@ Icon for when the filetree is being displayed (either in full-screen or as a pop
 
 ![](../../assets/images/45f4fa3f2b7d7bd3a2aae6318b73411c.png)
 
-#### After
+### After
 
 {% highlight  html %}
 {% raw %}
@@ -81,13 +81,13 @@ Icon for when the filetree is being displayed (either in full-screen or as a pop
 
 ![](../../assets/images/3fa58e803f23e7eafe742069fff9b13b.png)
 
-### navbar.njk
+## navbar.njk
 
 `src/site/_includes/components/navbar.njk`
 
 Icon for when filetree is disabled entirely in the Digital Garden settings. The changes begin at line 3.
 
-#### Before
+### Before
 
 {% highlight  html %}
 <div class="navbar-inner">
@@ -99,7 +99,7 @@ Icon for when filetree is disabled entirely in the Digital Garden settings. The 
 
 I don't have a *Before* screenshot here because I forgot to test ahead of time and I don't use it anyway, but I trust you to figure out how it looks normally.
 
-#### After
+### After
 
 {% highlight  html %}
 <div class="navbar-inner">
@@ -113,13 +113,13 @@ I don't have a *Before* screenshot here because I forgot to test ahead of time a
 
 ![](../../assets/images/bc95812fc11fcc38cd6bb9379dbead64.png)
 
-### filetreeNavbar.njk
+## filetreeNavbar.njk
 
 `src/site/_includes/components/filetreeNavbar.njk`
 
 Icon for when the filetree is collapsed. The changes begin at line 7.
 
-#### Before
+### Before
 
 {% highlight  html %}
 {% raw %}
@@ -133,7 +133,7 @@ Icon for when the filetree is collapsed. The changes begin at line 7.
 
 ![](../../assets/images/2b16e73fef2eb9532f114085fe0936b6.png)
 
-#### After
+### After
 
 {% highlight  html %}
 {% raw %}
