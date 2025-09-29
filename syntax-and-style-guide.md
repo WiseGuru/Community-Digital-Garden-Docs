@@ -241,7 +241,7 @@ If your codeblock has nunjucks tags (e.g. `{% ... %}`), you will need to mark it
 
 ![](assets/images/syntax-and-style-guide-8.png)
 
-{% highlight html%}
+{% highlight html %}
 {% raw %}
 {% endfor %}
  <a href="/" style="text-decoration: none;">
