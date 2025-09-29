@@ -29,7 +29,7 @@ Unfortunately, this formatting won't loop, and once you reach the lowest level i
 
 If you want to simulate looping, you can copy/paste the existing code and add the appropriate `ol/ul`'s to indicate the new levels.
 
-![](../assets/images/aa005043be03026f71b0779b4474d706.jpg)
+![](../../assets/images/aa005043be03026f71b0779b4474d706.jpg)
 
 ### The Script
 You may paste the script below inside or outside of the `body {}` brackets and it should work.
@@ -37,7 +37,6 @@ You may paste the script below inside or outside of the `body {}` brackets and i
 {: .success}
 > You may need to flush your browser cache for the updated CSS to appear. When in doubt, open your site in a *Private* window (`Ctrl+Shift+N` for Chrome, `Ctrl+Shift+P` for Firefox), and close/reopen it between configuration tests.
 
-<div class="code-example" markdown="1">
 ```CSS
 {% raw %}
 /* Ordered Lists */
@@ -91,7 +90,6 @@ ul ul ul ul ul ul {
 }
 {% endraw %}
 ```
-</div>
 
 
 ---
