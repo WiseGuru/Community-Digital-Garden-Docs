@@ -39,6 +39,7 @@ You may paste the script below inside or outside of the `body {}` brackets and i
 
 <div class="code-example" markdown="1">
 ```CSS
+{% raw %}
 /* Ordered Lists */
 ol {
   list-style-type: decimal; /* Level 1: 1, 2, 3, ... */
@@ -88,6 +89,7 @@ ul ul ul ul ul {
 ul ul ul ul ul ul {
   list-style-type: square; /* Level 6: Square */
 }
+{% endraw %}
 ```
 </div>
 
