@@ -225,18 +225,7 @@ console.log('Hello World');
 {% endhighlight %}
 
 
-You can also wrap normal codeblocks using the Jekyll `highlight` tag; you just need to identify the language as "markdown" in the tag.
-
-![](assets/images/syntax-and-style-guide-5.png)
-
-{% highlight markdown %}
-```js
-// Say "Hello world!"
-console.log('Hello World');
-```
-{% endhighlight %}
-
-#### Nunjucks tags
+### Nunjucks tags
 If your codeblock has nunjucks tags (the percentiles and squiggly-brackets), you will need to mark it as "raw" so that it is not rendered by Jekyll.
 
 ![](assets/images/syntax-and-style-guide-8.png)
@@ -252,7 +241,24 @@ If your codeblock has nunjucks tags (the percentiles and squiggly-brackets), you
 {% endhighlight %}
 
 
-### HTML (do not use)
+### Codeblock formatting you probably shouldn't use
+
+#### Wrapping backticks
+
+You can also wrap normal codeblocks using the Jekyll `highlight` tag; you just need to identify the language as "markdown" in the tag.
+
+![](assets/images/syntax-and-style-guide-5.png)
+
+{% highlight markdown %}
+```js
+// Say "Hello world!"
+console.log('Hello World');
+```
+{% endhighlight %}
+
+This should probably be avoided so that when people copy/paste the contents of the codeblock, they aren't copying the markdown codeblock syntax.
+
+#### HTML tags
 `<div>` codeblocks are generally less optimal, but are included here for completeness. The first line should read `<div class="code-example" markdown="1">`, and the last line closes the tag with `</div>`
 
 For example, this formatted code:
