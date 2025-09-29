@@ -36,7 +36,7 @@ Below are examples where I've copied favicon.svg into the `/img` folder in my Di
 
 ### filetree.njk
 
-{% highlight html%}
+{% highlight html %}
 {% raw %}
 {% endfor %}
  <a href="/" style="text-decoration: none;">
@@ -52,7 +52,7 @@ Icon for when the filetree is being displayed (either in full-screen or as a pop
 
 #### Before
 
-{% highlight  html%}
+{% highlight  html %}
  <a href="/" style="text-decoration: none;">
 	   <h1 style="text-align:center;">{{meta.siteName}}</h1>
  </a>
@@ -64,7 +64,7 @@ Icon for when the filetree is being displayed (either in full-screen or as a pop
 
 #### After
 
-{% highlight  html%}
+{% highlight  html %}
 	<div style="display: flex; justify-content: center;">
 		<a href="/" style="text-decoration: none;">
 			<img src='/img/favicon.svg'
@@ -86,7 +86,7 @@ Icon for when filetree is disabled entirely in the Digital Garden settings. The 
 
 #### Before
 
-{% highlight  html%}
+{% highlight  html %}
 <div class="navbar-inner">
 	<a href="/" style="text-decoration: none;">
 		<h1 style="margin: 15px !important;">{{meta.siteName}}</h1>
@@ -98,7 +98,7 @@ I don't have a *Before* screenshot here because I forgot to test ahead of time a
 
 #### After
 
-{% highlight  html%}
+{% highlight  html %}
 <div class="navbar-inner">
 	<a href="/" style="text-decoration: none;">
 		<img src='/img/favicon.svg'
@@ -118,7 +118,7 @@ Icon for when the filetree is collapsed. The changes begin at line 7.
 
 #### Before
 
-{% highlight  html%}
+{% highlight  html %}
 <a href="/" style="text-decoration: none;">
 	<h1 style="margin: 15px !important;">{{meta.siteName}}</h1>
 </a>
@@ -128,7 +128,7 @@ Icon for when the filetree is collapsed. The changes begin at line 7.
 
 #### After
 
-{% highlight  html%}
+{% highlight  html %}
 	<a href="/" style="text-decoration: none;">
 		<img src='/img/favicon.svg'
 			alt="{{meta.siteName}}"
