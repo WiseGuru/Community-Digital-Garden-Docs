@@ -282,7 +282,9 @@ console.log('Hello World');
 ```
 </div>
 
-They should be avoided because they add unnecessary whitespace around the codeblock.
+HTML tags should be avoided because they add unnecessary whitespace around the codeblock.
+
+
 ----
 
 [^1]: Using GitHub Desktop or Git.
