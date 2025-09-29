@@ -239,9 +239,9 @@ console.log('Hello World');
 #### Nunjucks tags
 If your codeblock has nunjucks tags (e.g. `{% ... %}`), you will need to mark it as "raw" so that it is not rendered by Jekyll.
 
-![](assets/images/syntax-and-style-guide-7.png)
+![](assets/images/syntax-and-style-guide-8.png)
 
-{% highlight html}
+{% highlight html%}
 {% raw %}
 {% endfor %}
  <a href="/" style="text-decoration: none;">

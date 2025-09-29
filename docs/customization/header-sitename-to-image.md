@@ -36,7 +36,7 @@ Below are examples where I've copied favicon.svg into the `/img` folder in my Di
 
 ### filetree.njk
 
-{% highlight html}
+{% highlight html%}
 {% raw %}
 {% endfor %}
  <a href="/" style="text-decoration: none;">
