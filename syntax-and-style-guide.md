@@ -236,6 +236,21 @@ console.log('Hello World');
 ```
 {% endhighlight %}
 
+#### Nunjucks tags
+If your codeblock has nunjucks tags (the percentiles and squiggly-brackets), you will need to mark it as "raw" so that it is not rendered by Jekyll.
+
+![](assets/images/syntax-and-style-guide-8.png)
+
+{% highlight html%}
+{% raw %}
+{% endfor %}
+ <a href="/" style="text-decoration: none;">
+	   <h1 style="text-align:center;">{{meta.siteName}}</h1>
+ </a>
+ {% for imp in dynamics.filetree.afterTitle %}
+{% endraw %}
+{% endhighlight %}
+
 
 ### HTML (do not use)
 `<div>` codeblocks are generally less optimal, but are included here for completeness. The first line should read `<div class="code-example" markdown="1">`, and the last line closes the tag with `</div>`
