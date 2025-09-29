@@ -225,7 +225,7 @@ console.log('Hello World');
 {% endhighlight %}
 
 
-However, you can also wrap normal codeblocks using the Jekyll `highlight` tag; you just need to identify the language as "markdown" in the tag.
+You can also wrap normal codeblocks using the Jekyll `highlight` tag; you just need to identify the language as "markdown" in the tag.
 
 ![](assets/images/syntax-and-style-guide-5.png)
 
@@ -236,8 +236,22 @@ console.log('Hello World');
 ```
 {% endhighlight %}
 
+#### Nunjucks tags
+If your codeblock has nunjucks tags (e.g. `{% ... %}`), you will need to mark it as "raw" so that it is not rendered by Jekyll.
 
-### HTML
+![](assets/images/syntax-and-style-guide-7.png)
+
+{% highlight html}
+{% raw %}
+{% endfor %}
+ <a href="/" style="text-decoration: none;">
+	   <h1 style="text-align:center;">{{meta.siteName}}</h1>
+ </a>
+ {% for imp in dynamics.filetree.afterTitle %}
+{% endraw %}
+{% endhighlight %}
+
+### HTML (do not use)
 `<div>` codeblocks are generally less optimal, but are included here for completeness. The first line should read `<div class="code-example" markdown="1">`, and the last line closes the tag with `</div>`
 
 For example, this formatted code:
