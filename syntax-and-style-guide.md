@@ -227,6 +227,16 @@ console.log('Hello World');
 
 You can also wrap normal codeblocks using the Jekyll `highlight` tag; you just need to identify the language as "markdown" in the tag.
 
+![](assets/images/syntax-and-style-guide-5.png)
+
+{% highlight markdown %}
+```js
+{% raw %}
+// Say "Hello world!"
+console.log('Hello World');
+{% endraw %}
+```
+{% endhighlight %}
 
 #### Nunjucks and Javascript
 If your codeblock has nunjucks tags (e.g. `{% ... %}`), you will need to mark it as "raw" so that it is not rendered by Jekyll.
