@@ -9,11 +9,11 @@ nav_order: 50
 
 Out of the box, the RSS feed for Digital Gardens doesn't compile properly. When navigating to `yoursite.com/feed.xml`, you see an XML Parsing error (like below).
 
-![](../assets/images/280ef664d06874de2c78de24a90ccdf4.png)
+![](../../assets/images/280ef664d06874de2c78de24a90ccdf4.png)
 
 The raw XML file will reveal that the "link" tags are not being closed properly.
 
-![](../assets/images/fixing-the-rss-feed-1.png)
+![](../../assets/images/fixing-the-rss-feed-1.png)
 
 ## Table of Contents
 {: .no_toc .text-delta}
@@ -27,9 +27,9 @@ The raw XML file will reveal that the "link" tags are not being closed properly.
 
 To fix this, open `/src/site/feed.njk` from your repo and modify lines 10, 11, and 26 to have 5 slashes (`/`) instead of 4.
 
-![jdeComment](../assets/images/jdeComment.png)
+![jdeComment](../../assets/images/jdeComment.png)
 
-![](../assets/images/feed.njk.png)
+![](../../assets/images/feed.njk.png)
 
 Save and push changes, and your feed should start rendering properly.
 
@@ -40,7 +40,7 @@ Save and push changes, and your feed should start rendering properly.
 dayne on GitHub did a ton of testing and found the solution of using 5 `/` instead of 4.[^2] 
 
 
-![](../assets/images/98b7854739e6946e724541fab1455a97.png)
+![](../../assets/images/98b7854739e6946e724541fab1455a97.png)
 
 In his second to last test, dayne tried `></link>`, and it resolved to `>`; Recent attempts to solve this problem tried removing the htmlMinifier from the application, and while this can solve other common problems,[^3] it did not change how `feed.njk` closed links.
 

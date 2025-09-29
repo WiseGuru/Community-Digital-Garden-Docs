@@ -13,7 +13,7 @@ It is incredibly easy to impersonate someone online. One of the easiest methods 
 
 Email is not a secure protocol; it doesn't require any kind of authentication or authorization before you can send or receive an email. This means that without anything else, I could send an email as jeff.bezos@amazon.com and the email protocol has nothing to verify that I'm not Jeff Bezos.
 
-![](../assets/images/prevent-domain-spoofing.png)
+![](../../assets/images/prevent-domain-spoofing.png)
 > An example spoofed email from [Zoom.us](https://www.zoom.us)
 
 {: .success-title}

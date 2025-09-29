@@ -56,20 +56,20 @@ Let's review the publication pipeline for your Obsidian Digital Garden. Each sto
 
 Open the Obsidian *Command Palette*, search for **Digital Garden**, and select the "Digital Garden: Add publish flag" command.
 
-![](../assets/images/8f7cad6b70451880cde9d5576459d64b.png)
+![](../../assets/images/8f7cad6b70451880cde9d5576459d64b.png)
 If you do not have a `dg-home` property set, you can manually change `dg-publish` to `dg-home` and then add another publish flag to the sheet.
 
 ### Option 2: Manually add the properties
 {: .no_toc}
 
 1. Select the three-dot menu at the top-left of your note, and click "Add file property..."
-	1. ![](../assets/images/3f42a84128c1632467de6a89deaf0e50.png)
+	1. ![](../../assets/images/3f42a84128c1632467de6a89deaf0e50.png)
 2. Name the property either `dg-home` or `dg-publish`
-	1. ![](../assets/images/090bd324f0247fd6d3d7c691c67179fc.png)
+	1. ![](../../assets/images/090bd324f0247fd6d3d7c691c67179fc.png)
 3. Select the icon to the left of the name, and change the "Property Type" to *Checkbox*
-	1. ![](../assets/images/f3f601348812b1bf9e1aed4230d389a4.png)
+	1. ![](../../assets/images/f3f601348812b1bf9e1aed4230d389a4.png)
 4. Check the box to enable the property, uncheck the box to disable it.
-	1. ![](../assets/images/b1dfa00cf72ebe9eea5829a6cac5c5fd.png)
+	1. ![](../../assets/images/b1dfa00cf72ebe9eea5829a6cac5c5fd.png)
 		1. With *this configuration*, the note is set as the home page, *but* will not be published to the Digital Garden, and *will result in a failed deployment.*
 		2. Both `dg-home` and `dg-publish` need to be checked on the homepage.
 
@@ -83,8 +83,8 @@ If you do not have a `dg-home` property set, you can manually change `dg-publish
 If your site doesn't update, or your pages are marked correctly, proceed to the next step.
 ## 02. Check your GitHub Repo to make sure its populating
 Log into your *GitHub* account, open your repository, and check `src/site/notes` to see if it's populated with any of your notes.
-![](../assets/images/c71d3837716992fa8f2298a6a4219af4.png)
-![](../assets/images/e61e0f87f1c87a3701951827399f6b72.png)
+![](../../assets/images/c71d3837716992fa8f2298a6a4219af4.png)
+![](../../assets/images/e61e0f87f1c87a3701951827399f6b72.png)
 
 If it's not populated, it means GitHub is not receiving your notes, and this is likely caused by a **fine-grained token** misconfiguration, so let's just rebuild it from scratch.
 
@@ -125,11 +125,11 @@ Will add details later, but for now, check these three things:
 
 1. You are publishing to the "Main" branch by default
 	1. [Changing the default branch - GitHub Docs](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/changing-the-default-branch)
-	2. ![](../assets/images/bc50e16bd917004be62d3c978323ba5d.png)
+	2. ![](../../assets/images/bc50e16bd917004be62d3c978323ba5d.png)
 2. In GitHub, got to the *Actions* tab and look for Errors
-	1. ![](../assets/images/8ab5e1f6101150cc7b99d963354fded2.png)
-	2. ![](../assets/images/c6516c4ab32e27d09bb012bf82e43f3f.png)
-	3. ![](../assets/images/2bbc7a0be2db425b031d54ae73a80adb.png)
+	1. ![](../../assets/images/8ab5e1f6101150cc7b99d963354fded2.png)
+	2. ![](../../assets/images/c6516c4ab32e27d09bb012bf82e43f3f.png)
+	3. ![](../../assets/images/2bbc7a0be2db425b031d54ae73a80adb.png)
 		1. If you see errors like this one, it means there are duplicate files in your repo or two pages marked with `dg-home`.
 3. Host (Vercel, Cloudflare, etc.) logs
 	1. These logs will look similar to the ones in GitHub.
@@ -145,14 +145,14 @@ The first 5 or so lines of the 11ty output contain the information you want.
 In this case, I have a problem with the file "Do I have ADHD?" which was originally uploaded from a Windows machine (which does not allow a `?` in the file name) and then a Linux machine, which has no problem with question marks in file names.
 
 DG formatted their URLs the same way, and there was a build error.
-![](../assets/images/23a4956493a68d9dea89f0f11500cb54.png)
+![](../../assets/images/23a4956493a68d9dea89f0f11500cb54.png)
 
 Depending on the issue, you may need to manually delete the file from your GitHub Repo or Obsidian. If the issue is a syntax problem (like above) and you did a "Publish All" command, then the problem should resolve itself when it deletes the (now missing) file and rebuilds the site.
 
 #### Sample Log; Multiple Homepages
 As an example, I set two pages to have the `dg-home` page checked; it references `dist/index.html` in the second line, indicating two or more files writing to `dist/index.html`, which is the home page.
 
-![](../assets/images/d24ed04f2d366357c4786da8cde60628.png)
+![](../../assets/images/d24ed04f2d366357c4786da8cde60628.png)
 
 While the log tells you which files are being problematic (in this case, "S16 - We Got Milk" and "Fake Character"), you can also use a Dataview table to find and review all published files.
 

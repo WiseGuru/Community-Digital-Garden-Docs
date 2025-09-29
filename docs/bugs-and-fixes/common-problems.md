@@ -36,7 +36,7 @@ This probably only happened if you included the branches from the template
 ## First time publishing Garden stuck on "Calculating publication status from GitHub"
 This is caused by the fine-tuned GitHub Token not being configured with the correct permissions. Your fine-grained personal access token should have the following permissions on the management page:
 
-![](../assets/images/c8217bc0451c4636b96311f1c8a4d325.png)
+![](../../assets/images/c8217bc0451c4636b96311f1c8a4d325.png)
 
 You can follow our guide here, [Creating Fine-Grained Tokens](../deployment-guides/fine-grained-tokens.md), to recreate your token with the correct permissions.
 
@@ -53,7 +53,7 @@ There are two possible solutions, but be careful; if your Nunjucks script is bus
 ## Build failure with htmlMinifier and HTML content in logs
 When you try to publish your page, you get an error that looks like this: 
 
-![](../assets/images/a1bfb55d2b6bffd6beb33ffe56e91366.png)
+![](../../assets/images/a1bfb55d2b6bffd6beb33ffe56e91366.png)
 
 This is caused by `htmlMinifier` interpreting a character on your page incorrectly and failing to render the page properly.
 
@@ -78,7 +78,7 @@ The only solution so far is to either disable `htmlMinifier` in the `.eleventy.j
 
 To remove htmlMinifier, open `.eleventy.js` in your favorite text or code editor, and add a `//` to the beginning of every line in the "htmlMinifier" section.
 
-![](../assets/images/fec695ac9b1585c6089d9848f1bd56de.png)
+![](../../assets/images/fec695ac9b1585c6089d9848f1bd56de.png)
 
 Since I'm using [Kate](https://kate-editor.org/), I can drop the cursor at the beginning of the top line, press and hold **Ctrl + Alt**, and then use the arrow keys to drop the cursor to all subsequent lines. Save your changes then push the repo up.
 
@@ -93,20 +93,20 @@ For example, if you added the following creation date `2025-05-28 23:59:58.024` 
 
 You only need data up to the most granular time you want. If you wanted to only show the date, you would just `YYYY-MM-DD`, or the to minute, just `YYYY-MM-DD HH:mm`
 
-![](../assets/images/396adae1bb7d6de2292bc782653a73c3.png)
+![](../../assets/images/396adae1bb7d6de2292bc782653a73c3.png)
 > Timestamp Settings in the Digital Garden plugin
 
-![](../assets/images/6165c95fe0ebcaf93ceed03259ad2939.png)
+![](../../assets/images/6165c95fe0ebcaf93ceed03259ad2939.png)
 > Frontmatter values formatted in ISO-8601
 
-![](../assets/images/93763ab35f8d92f135bb77d2a13e7a98.png)
+![](../../assets/images/93763ab35f8d92f135bb77d2a13e7a98.png)
 > Published page showing the created date and times.
 
 
 ## Missing Menu and Search Icons
 When the sidebar is hidden, the hamburger menu icon at the top left and the magnifying glass in the search bar in the top right are missing, as seen in the example below.
 
-![](../assets/images/5d9083719290134ea5e1e14b01917fac.png)
+![](../../assets/images/5d9083719290134ea5e1e14b01917fac.png)
 
 This is caused by a bug in Digital Garden where the lucide icon library isn't loaded before it's called to generate the icons. This can be fixed by updating the script in `src/site/_includes/components/lucide.njk` to the following:
 

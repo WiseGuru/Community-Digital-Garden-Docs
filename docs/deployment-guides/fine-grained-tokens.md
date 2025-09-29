@@ -33,7 +33,7 @@ To get started, log into GitHub from the browser.
 4. Click "*Generate new token*"
 	1. You may required to re-authenticate with your MFA token or GitHub app.
 
-![](../assets/images/fine-grained-tokens.png)
+![](../../assets/images/fine-grained-tokens.png)
 
 ### Step 2. Configure the token
 Make the following changes to each section
@@ -51,9 +51,9 @@ Make the following changes to each section
 	2. *Metadata*: Read-only (this is set automatically)
 	3. *Pull Requests*: Read and write
 
-![](../assets/images/fine-grained-tokens-1.png)
-![](../assets/images/fine-grained-tokens-2.png)
-![](../assets/images/fine-grained-tokens-3.png)
+![](../../assets/images/fine-grained-tokens-1.png)
+![](../../assets/images/fine-grained-tokens-2.png)
+![](../../assets/images/fine-grained-tokens-3.png)
 
 
 {: .warning}
@@ -63,13 +63,13 @@ Make the following changes to each section
 2. *This is the only time on GitHub that you will be able to see this token!*
 	1. Feel free to save it to your preferred password manager as a backup.
 	2. It is also stored in the plugin itself in clear text.
-![](../assets/images/fine-grained-tokens-4.png)
+![](../../assets/images/fine-grained-tokens-4.png)
 
 ### Step 3. Add the PAT to the Digital Garden Plugin
 Copy and paste the token from GitHub into the Digital Garden plugin in Obsidian.
 
 1. Open Obsidian, go to *Settings*, and in the left column under *Community Plugins* select *Digital Garden*. Enter the Repo name, your user account name, and paste the **Fine-Grained Token you just created**.
-![](../assets/images/fine-grained-tokens-5.png)
+![](../../assets/images/fine-grained-tokens-5.png)
 
 ### Step 4. Managing and Regenerating the Token
 
@@ -77,12 +77,12 @@ From the Fine-grained tokens page, you can also review and manage the token by c
 
 This allows you to Delete or Regenerate the token and review its permissions. 
 
-![](../assets/images/fine-grained-tokens-6.png)
+![](../../assets/images/fine-grained-tokens-6.png)
 
 Regenerating the token allows you to set a new expiration date. The old token will expire, and the new token will have to saved/entered into the plugin to be able to continue publishing changes.
 
-![](../assets/images/fine-grained-tokens-7.png)
-![](../assets/images/fine-grained-tokens-8.png)
+![](../../assets/images/fine-grained-tokens-7.png)
+![](../../assets/images/fine-grained-tokens-8.png)
 
 
 ---

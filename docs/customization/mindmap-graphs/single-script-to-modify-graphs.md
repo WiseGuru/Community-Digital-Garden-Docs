@@ -11,7 +11,7 @@ nav_exclude: true
 The Digital Garden plugin offers a similar graph feature to Obsidian, showing all connected pages to the current page out to different layers. By default, all linked pages are the same color, and index pages can overshadow more helpful links. 
 
 
-![](../../assets/images/script-to-modify-graphs.png)
+![](../../../assets/images/script-to-modify-graphs.png)
 
 ## Table of Contents
 {: .no_toc .text-delta}

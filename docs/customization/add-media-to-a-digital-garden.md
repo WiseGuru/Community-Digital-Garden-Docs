@@ -65,7 +65,7 @@ Here's how you can embed music *which you have the rights to share* into your si
 ### 1. Upload the file to Dropbox and click the link icon to share it
 Permissions will be set automatically the first time you click the link. 
 
-![](../assets/images/dropbox-link%201.gif)
+![](../../assets/images/dropbox-link%201.gif)
 
 by default, this link is accessible to anyone without requiring a password.
 
@@ -112,17 +112,17 @@ Embedding files from Google Drive is relatively straightforward, and they even h
 ### 1. Open the file in a new tab and changing permissions
 1. Double-click the file to open a preview of it, then click on the three-dot menu next to the **Share** button and click "*Open in new window*"
 
-![](../assets/images/Add%20Media%20to%20a%20Digital%20Garden%20or%20Obsidian%20Note-3.png)
+![](../../assets/images/Add%20Media%20to%20a%20Digital%20Garden%20or%20Obsidian%20Note-3.png)
 
 2. Change "General Access" from "Restricted" to "Anyone with a link"
 	1. **Leave this permission as "Viewer" to prevent people from making changes to the file**
 
-![](../assets/images/Add%20Media%20to%20a%20Digital%20Garden%20or%20Obsidian%20Note-2.png)
+![](../../assets/images/Add%20Media%20to%20a%20Digital%20Garden%20or%20Obsidian%20Note-2.png)
 
 ### 2. Copy the "Embed" code and paste it into Obsidian
 1. click on the three-dot menu next to the "Share" button and select "Embed item..."
 
-![](../assets/images/Add%20Media%20to%20a%20Digital%20Garden%20or%20Obsidian%20Note-4.png)
+![](../../assets/images/Add%20Media%20to%20a%20Digital%20Garden%20or%20Obsidian%20Note-4.png)
 
 Copy and paste the code into an Obsidian note. Don't use a code, as this will only show you the code, and not the file being previewed.
 
