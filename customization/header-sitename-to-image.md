@@ -36,6 +36,16 @@ Below are examples where I've copied favicon.svg into the `/img` folder in my Di
 
 ### filetree.njk
 
+```html
+{% raw %}
+{% endfor %}
+ <a href="/" style="text-decoration: none;">
+	   <h1 style="text-align:center;">{{meta.siteName}}</h1>
+ </a>
+ {% for imp in dynamics.filetree.afterTitle %}
+{% endraw %}
+```
+
 `src/site/_includes/components/filetree.njk`
 
 Icon for when the filetree is being displayed (either in full-screen or as a pop-out). Changes begin at line 39.
