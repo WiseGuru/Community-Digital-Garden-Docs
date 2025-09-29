@@ -234,12 +234,12 @@ You can also wrap normal codeblocks using the Jekyll `highlight` tag; you just n
 ![](assets/images/syntax-and-style-guide-5.png)
 
 {% highlight markdown %}
-```js
 {% raw %}
+```js
 // Say "Hello world!"
 console.log('Hello World');
-{% endraw %}
 ```
+{% endraw %}
 {% endhighlight %}
 
 #### Nunjucks and Javascript
