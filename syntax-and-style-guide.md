@@ -4,7 +4,15 @@ title: Syntax and Style Guide
 layout: default
 ---
 # Syntax and Style Guide
+{: .no_toc }
+
 This site uses a slightly different version of Markdown than Obsidian, and there are some key differences in how files are formatted
+
+## Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ## Editing in Obsidian
 To edit the files in this repository in Obsidian, clone the repo to your computer[^1] then open the folder as a vault in Obsidian.
@@ -274,6 +282,7 @@ console.log('Hello World');
 ```
 </div>
 
+They should be avoided because they add unnecessary whitespace around the codeblock.
 ----
 
 [^1]: Using GitHub Desktop or Git.
