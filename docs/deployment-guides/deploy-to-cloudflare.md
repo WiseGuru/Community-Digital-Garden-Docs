@@ -9,7 +9,7 @@ nav_order: 50
 
 I've created a few sites using Ole's [GitHub - oleeskild/digitalgarden](https://github.com/oleeskild/digitalgarden) and [Cloudflare Pages](https://pages.cloudflare.com/). When I was first getting setup, there were precious few guides out there on the matter, and nothing that was very concise or straightforward. 
 
-To that end, I've created this guide on configuring *Cloudflare* as a host for your *Digital Garden*
+To that end, I've created this guide on configuring *Cloudflare* as a host for your *Digital Garden*.
 
 ## Table of Contents
 {: .no_toc .text-delta}

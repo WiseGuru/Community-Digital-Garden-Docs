@@ -19,23 +19,28 @@ Define the {topic} in 1-2 sentences.
 {:toc}
 
 
-## What is {topic} 
+# What is {topic} 
 Describe the topic with screenshots, if more details are needed. 
 
-## How to {topic} 
+# How to {topic} 
 Describe each step with screenshots, using language aimed at a new user of Obsidian and the digital garden plugin. Explain why a Step needs to be taken, where appropriate. 
 
-### Step x 
+## Step x 
 [Step Screenshot]
 
 Describe how to carry out the specific step, with verb-first language. For example, "Click the x link," "scroll down to y section," vs. "The y link should be made visible on your screen."  
 
-## Related 
+# Related 
 - List relevant link
 	- Explain why it's relevant, if not apparent
 
-### Pull Requests (optional)
+## Linked Issues and Pull Requests (optional)
+All bugs and fixes should be linked to existing Pull Requests or Issues with the template or the plugin.
+
+### Pull Requests
 - [Pull requests · oleeskild/digitalgarden  - Template](https://github.com/oleeskild/digitalgarden/pulls)
 - [Pull requests · oleeskild/obsidian-digital-garden - Plugin](https://github.com/oleeskild/obsidian-digital-garden/pulls)
-
+### Issues
+- [Issues · oleeskild/digitalgarden - Template](https://github.com/oleeskild/digitalgarden/issues)
+- [Issues · oleeskild/obsidian-digital-garden - Plugin](https://github.com/oleeskild/obsidian-digital-garden/issues)
 ---
