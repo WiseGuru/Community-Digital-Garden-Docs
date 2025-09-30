@@ -19,6 +19,7 @@ When Ole releases updates to the Digital Garden template, out-of-band modificati
 1. TOC
 {:toc}
 
+
 # How to Change Existing PRs
 This guide assumes you have an otherwise working site, have downloaded/installed/configured [GitHub Desktop](https://desktop.github.com/download/) to view your repository, and have a basic working knowledge of your computing environment.
 
@@ -31,7 +32,7 @@ Backing up your Garden can be done in a few different ways, but downloading it a
 
 1. Log into GitHub and navigate to your Digital Garden repository
 2. From the repo homescreen, click on the green "Code" button at the top-left corner of the list of files
-3. Click "Download ZIP"
+3. Click "Download ZIP" and save it to your computer where you can easily access it (e.g., the Downloads folder)
 
 ## Step 2. Create the Template PR with Obsidian
 Before creating the template PR, it's recommended to update the Digital Garden plugin in Obsidian.
