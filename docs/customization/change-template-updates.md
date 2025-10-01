@@ -1,12 +1,12 @@
 ---
-title: 00. Keeping Changes Across Template Updates
+title: 00. Maintaining Site Customizations Across Template Updates
 layout: default
 parent: Customization
 nav_order: 20
 nav_exclude: false
 ---
 
-# Keeping Changes Across DG Template Updates
+# Maintaining Site Customizations Across DG Template Updates
 {: .no_toc}
 
 When Ole releases updates to the Digital Garden template, out-of-band modifications that you've made may be overwritten. However, you can use GitHub Desktop to review the changes being made in the template update and undo or modify those changes.
