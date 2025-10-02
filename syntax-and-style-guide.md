@@ -70,6 +70,12 @@ File names should be all lower-case with hyphens between words. Use the `title` 
 
 The name of the `index.md` file in a folder should match the readable folder name.
 
+{: .warning-title}
+> Titles for Works in Progress
+> 
+> Files that are works in progress (and are not intended to be published yet) **should** begin with "WIP" in the file name, **should not** have the `title` property set, and **should** have `nav_exclude` set to *true*.
+> 
+> Remember, however, that these documents will be public, just more difficult to find; **never commit/push information not intended for public availability.**
 ### Headers
 The page title should be "Header 1" and the first line of a document after the frontmatter. Other headers can be 
 
