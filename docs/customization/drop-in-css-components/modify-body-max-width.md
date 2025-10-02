@@ -28,7 +28,7 @@ You can find most of the Digital Garden-specific CSS code under `src/site/styles
 ## Step 1. Create `custom-style.scss` and enter in code
 Create (or open) the file `src/site/styles/custom-style.scss` in your editor of choice, then copy and paste the following text.
 
-{% highlight  %}
+{% highlight css %}
 {% raw %}
 body {
 .content {
