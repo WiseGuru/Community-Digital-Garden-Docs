@@ -17,6 +17,8 @@ This site uses a slightly different version of Markdown than Obsidian, and there
 ## Editing in Obsidian
 To edit the files in this repository in Obsidian, clone the repo to your computer[^1] then open the folder as a vault in Obsidian.
 
+The settings in Obsidian are not synchronized with GitHub, so it's important to ensure the following is enabled:
+
 Once the vault is open, I recommend the following changes:
 1. Files and Links
 	1. **Automatically update internal links**: Toggled on
@@ -32,7 +34,7 @@ Once the vault is open, I recommend the following changes:
 		1. This is specifically for the "Malformed Pages" table which looks for pages with formatting problems.
 		2. **Dataview is not supported by Jekyll**
 
-Once you have finished making changes, you can push the changes back up into GitHub for review and publication.
+Once you have finished adding or updating your documents, you can push the changes back up into GitHub for review and publication. As a reminder, your Obsidian Vault settings will not synchronize.
 
 ## Frontmatter
 The following frontmatter should be included in all documents:
