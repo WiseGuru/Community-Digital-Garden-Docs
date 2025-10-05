@@ -3,7 +3,7 @@ title: Broken Header Links
 layout: default
 parent: Bugs and Fixes
 nav_order: 50
-nav_exclude: true
+nav_exclude: false
 ---
 
 # Broken Header Links
