@@ -94,7 +94,9 @@ Below is a screenshot of the source page in Obsidian, along with the resulting r
 All bugs and fixes should be linked to existing Pull Requests or Issues with the template or the plugin.
 
 ### Pull Requests
+
 - [Fix edge cases in link creation by foxblock · Pull Request #321 · oleeskild/digitalgarden · GitHub](https://github.com/oleeskild/digitalgarden/pull/321)
 ### Issues
-- [\[BUG\] Links to headings in the same document are not created · Issue #318 · oleeskild/digitalgarden](https://github.com/oleeskild/digitalgarden/issues/318)
+
+- [(BUG) Links to headings in the same document are not created · Issue #318 · oleeskild/digitalgarden](https://github.com/oleeskild/digitalgarden/issues/318)
 ---
