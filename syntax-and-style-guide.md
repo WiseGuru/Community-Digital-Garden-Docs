@@ -146,12 +146,12 @@ Always make sure there is one empty line between the callout and the next piece 
 
 <div class="code-example" markdown="1">
 ```
-{: .alert}
+{: .attention}
 > My text.
 ```
 </div>
 
-{: .alert}
+{: .attention}
 > My text.
 
 This site has the following defined callouts:
