@@ -148,9 +148,11 @@ Callouts are written following the [Just the Docs - Callouts](https://just-the-d
 	1. yellow
 3. success
 	1. green
-4. tip
+4. reminder
 	1. blue
-5. example
+5. tip
+	1. blue
+6. example
 	1. purple
 
 {: .warning}
@@ -161,6 +163,9 @@ Callouts are written following the [Just the Docs - Callouts](https://just-the-d
 
 {: .success}
 > Success example
+
+{: .reminder}
+> Reminder example
 
 {: .tip}
 > Tip example
