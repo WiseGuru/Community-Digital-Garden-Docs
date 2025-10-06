@@ -25,9 +25,6 @@ callouts:
     title: Success
     color: bg-green
 ## Blue
-  reminder:
-    title: Reminder
-    color: bg-blue
   tip:
     title: Tip
     color: bg-blue
