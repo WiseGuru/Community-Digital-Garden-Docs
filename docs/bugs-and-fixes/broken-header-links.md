@@ -85,7 +85,7 @@ function getAnchorAttributes(filePath, linkTitle) {
 
 The final result isn't perfect IMO, since it includes a `#` before the header. Maybe that's intentional and is a good reference for people that it's a link to a header and not to another page. In either case, you can change the name of the link with markdown to cover it up. 
 
-Below is a screenshot of the source page in Obsidian, along with the resulting rendered website.
+Below is a screenshot of the source page in Obsidian, along with the resulting rendered website. 
 
 ![](../../assets/images/broken-header-links-1.png)
 ![](../../assets/images/broken-header-links-2.png)
