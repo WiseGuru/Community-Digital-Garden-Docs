@@ -83,12 +83,12 @@ function getAnchorAttributes(filePath, linkTitle) {
 
 ## Step 2. Formatting and Results
 
-The final result isn't perfect IMO, since it includes a `#` before the header. Maybe that's intentional and is a good reference for people that it's a link to a header and not to another page. In either case, you can change the name of the link with markdown to cover it up. 
+The final result includes a `#` before the header, much like when linking to the header in another document. If you don't like this you can change the name of the link with markdown to cover it up. 
 
 Below is a screenshot of the source page in Obsidian, along with the resulting rendered website. 
 
-![](../../assets/images/broken-header-links-1.png)
-![](../../assets/images/broken-header-links-2.png)
+![](../../assets/images/broken-header-links-5.png)
+![](../../assets/images/broken-header-links-4.png)
 
 ## Linked Issues and Pull Requests
 All bugs and fixes should be linked to existing Pull Requests or Issues with the template or the plugin.
