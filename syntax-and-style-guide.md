@@ -140,18 +140,21 @@ Below is not a great example because the syntax guide as at the root of the repo
 
 ![](assets/images/syntax-and-style-guide-2.png)
 ## Callouts
-Callouts are written following the [Just the Docs - Callouts](https://just-the-docs.github.io/just-the-docs/docs/ui-components/callouts/) documentation. This site has the following defined callouts:
+Callouts are written following the [Just the Docs - Callouts](https://just-the-docs.github.io/just-the-docs/docs/ui-components/callouts/) documentation. Use braces to indicate what kind of callout you're using, and then greater-than symbols for text.
 
-1. warning
-	1. red
-2. tip
-	1. yellow
-3. success
-	1. green
-4. tip
-	1. blue
-5. example
-	1. purple
+Always make sure there is one empty line between the callout and the next piece of text; failure to do so will include the subsequent line in the callout.
+
+<div class="code-example" markdown="1">
+```
+{: .alert}
+> My text.
+```
+</div>
+
+{% endraw %}
+{% endhighlight %}
+
+This site has the following defined callouts:
 
 {: .warning}
 > Warning example
@@ -176,21 +179,6 @@ Callouts are written following the [Just the Docs - Callouts](https://just-the-d
 
 {: .attention}
 > Attention example
-
-### Callout Formatting
-Use braces to indicate what kind of callout you're using, and then greater-than symbols for text.
-
-Always make sure there is one empty line between the callout and the next piece of text; failure to do so will include the subsequent line in the callout.
-
-{: .alert}
-> My text.
-
-<div class="code-example" markdown="1">
-```
-{: .alert}
-> My text.
-```
-</div>
 
 Append the callout type with "-title" to convert the first line into the title for the callout.
 
