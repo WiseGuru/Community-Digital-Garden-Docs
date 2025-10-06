@@ -10,7 +10,7 @@ nav_exclude: false
 {: .no_toc}
 
 {: .warning}
-> Embedding a file on a site allows anyone to download it. Like [Ohm-I raps about in "Download This Song For Free](https://mcohmi.bandcamp.com/track/download-this-song-for-free), these are just links to files, and there are no protections in place preventing someone from downloading them to their own device.
+> Embedding a file on a site allows anyone to download it. Like [Ohm-I raps about in "Download This Song For Free"](https://mcohmi.bandcamp.com/track/download-this-song-for-free), these are just links to files, and there are no protections in place preventing someone from downloading them to their own device.
 
 You can add externally-hosted media to your digital garden using HTML code and iframes. Below are some examples of embedded music and PDFs which are hosted on other sites.
 
