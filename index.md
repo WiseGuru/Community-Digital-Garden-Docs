@@ -17,13 +17,9 @@ Welcome! This is a collection of guides, fixes, and customizations you can apply
 {: .important}
 >  Free software isn't free. Support Ole, the Digital Garden developer: [Buy Ole Eskild Steensen a Coffee - oleeskild - Ko-fi](https://ko-fi.com/oleeskild)
 
-
-- Digital Garden Docs
-	- [https://dg-docs.ole.dev/](https://dg-docs.ole.dev/)
-- Digital Garden plugin repository/source code
-	- [https://github.com/oleeskild/obsidian-digital-garden](https://github.com/oleeskild/obsidian-digital-garden)
-- Digital Garden site template
-	- [https://github.com/oleeskild/digitalgarden](https://github.com/oleeskild/digitalgarden)
+- [Digital Garden official docs](https://dg-docs.ole.dev/)
+- [Digital Garden plugin repository/source code](https://github.com/oleeskild/obsidian-digital-garden)
+- [Digital Garden site template](https://github.com/oleeskild/digitalgarden)
 
 # Teamwork
 This is a community-managed site and series of guides. If you would like to contribute, please visit the repo: [https://github.com/WiseGuru/Community-Digital-Garden-Docs](https://github.com/WiseGuru/Community-Digital-Garden-Docs)
@@ -32,4 +28,4 @@ From here, you can download all of the docs if you'd like, submit issues with ou
 
 
 {: .warning}
-> While made with the best intentions, no guarantees can be made about the content on this site. You are expected to perform your own due diligence take reasonable precautions (such as backups) to protect your accounts and resources.
+> While made with the best intentions, no guarantees can be made about the content on this site. You are expected to perform your own due diligence and take reasonable precautions (such as backups) to protect your accounts and resources.
