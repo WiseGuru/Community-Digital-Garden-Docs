@@ -104,11 +104,13 @@ Headers can also be linked to using the traditional bracket/parenthesis links. I
 {% highlight md %}
 {% raw %}
 [Headers](#headers)
+
 [Table of Contents](#table-of-contents)
 {% endraw %}
 {% endhighlight %}
 
-[Headers](#Headers)
+[Headers](#headers)
+
 [Table of Contents](#table-of-contents)
 
 ## Table of Contents
