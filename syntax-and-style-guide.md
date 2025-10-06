@@ -155,6 +155,25 @@ Callouts are written following the [Just the Docs - Callouts](https://just-the-d
 6. example
 	1. purple
 
+{: .warning}
+> Warning example
+
+{: .alert}
+> Alert example
+
+{: .success}
+> Success example
+
+{: .reminder}
+> Reminder example
+
+{: .tip}
+> Tip example
+
+{: .example}
+> Example example
+
+
 ### Callout Formatting
 Use braces to indicate what kind of callout you're using, and then greater-than symbols for text.
 
