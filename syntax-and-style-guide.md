@@ -99,15 +99,17 @@ Some text
 
 ![](assets/images/syntax-and-style-guide.png)
 
-Headers can also be linked to using the traditional bracket/paranthesis links. If using Obsidian with the settings described earlier, entering double-bracket/hashtag and selecting the header from the dropdown will format the link correctly.
+Headers can also be linked to using the traditional bracket/parenthesis links. If using Obsidian with the settings described earlier, entering double-bracket/hashtag and selecting the header from the dropdown will format the link, but you will need to set the header as lower-case and sluggified (hyphens for spaces).
 
 {% highlight md %}
 {% raw %}
-[Headers](#Headers)
+[Headers](#headers)
+[Table of Contents](#table-of-contents)
 {% endraw %}
 {% endhighlight %}
 
 [Headers](#Headers)
+[Table of Contents](#table-of-contents)
 
 ## Table of Contents
 Creating a Table of Contents is pretty simple, and is described [Just the Docs - In-Page Navigation](https://just-the-docs.github.io/just-the-docs/docs/navigation/in-page/#generating-table-of-contents). Basically, there are a few tags to be aware of.
@@ -246,7 +248,7 @@ Codeblocks with syntax highlighting must be wrapped using either Jekyll's highli
 If you use Obsidian as your editor, there is a codeblock template for you in the templates folder, and it includes the `raw/endraw` Nunjucks tags described below. Additionally, if the sample text is HTML, it's recommended that you wrap the text in triple-tics and use either Jekyll-Markdown or HTML `div` to wrap it, as Obsidian renders HTML natively and this can cause problems.
 
 ### Jekyll
-By default, code wrapped with the Jekyll `highlight` tag doesn't need to have the Markdown codeblock within. They can just wrap the script and identify the type of code[^4] in the callout itself. 
+By default, code wrapped with the Jekyll `highlight` tag doesn't need to have the Markdown codeblock within. They can just wrap the script and identify the type of code[^4] in the callout itself. [Supported syntax highlighting in Jekyll - Fabrizio Musacchio](https://www.fabriziomusacchio.com/blog/2021-08-11-Syntax_Highlighting_in_Jekyll/)
 
 Examples:
 
