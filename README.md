@@ -1,7 +1,7 @@
 # Community Digital Garden Docs 
 This is a collection of guides, fixes, and customizations you can apply to your Digital Garden. It is not directly affiliated with Ole’s Digital Garden plugin, template, or docs. (We love it!) 
 
-You can access the docs [here](https://wiseguru.github.io/Community-Digital-Garden-Docs/).
+You can access the docs at [help.dg-docs.com].
 
 ## Tech stack 
 The Community Digital Garden Docs tech stack includes: 
@@ -30,6 +30,7 @@ The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party 
 
 [^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
 
+[help.dg-docs.com]: https://wiseguru.github.io/Community-Digital-Garden-Docs/
 [Jekyll]: https://jekyllrb.com
 [Just the Docs]: https://just-the-docs.github.io/just-the-docs/
 [GitHub Pages]: https://docs.github.com/en/pages
