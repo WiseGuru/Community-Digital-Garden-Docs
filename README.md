@@ -18,6 +18,18 @@ This is a community-managed site and series of guides. If you would like to cont
 
 Accepted changes will be merged with the main branch [^1]. 
 
+## Building and previewing your site locally
+
+Assuming [Jekyll] and [Bundler] are installed on your computer:
+
+1.  Change your working directory to the root directory of your site.
+2.  Run `bundle install`.
+3.  Run `bundle exec jekyll serve` to build your site and preview it at `localhost:4000`.
+
+The built site is stored in the directory `_site`.
+
+For more details, you can check the [GitHub Docs Official Documentation](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)
+
 --- 
 
 ## Licensing and Attribution
@@ -35,6 +47,8 @@ The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party 
 [Just the Docs]: https://just-the-docs.github.io/just-the-docs/
 [GitHub Pages]: https://docs.github.com/en/pages
 [mmCEsim.org]: https://github.com/mmcesim/mmcesim.org
+[Bundler]: https://bundler.io
+[GitHub Docs Official Documentation]: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll
 [MIT License]: https://en.wikipedia.org/wiki/MIT_License
 [starter workflows]: https://github.com/actions/starter-workflows/blob/main/pages/jekyll.yml
 [actions/starter-workflows]: https://github.com/actions/starter-workflows/blob/main/LICENSE
