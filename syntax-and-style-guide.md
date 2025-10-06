@@ -156,18 +156,26 @@ Callouts are written following the [Just the Docs - Callouts](https://just-the-d
 {: .warning}
 > Warning example
 
-{: .alert}
-> Alert example
+{: .hint}
+> Hint example
 
-{: .success}
-> Success example
+{: .important}
+> Important example
+
+{: .note}
+> Note example
 
 {: .tip}
 > Tip example
 
-{: .example}
-> Example example
+{: .caution}
+> Caution example
 
+{: .error}
+> Error example
+
+{: .attention}
+> Attention example
 
 ### Callout Formatting
 Use braces to indicate what kind of callout you're using, and then greater-than symbols for text.
