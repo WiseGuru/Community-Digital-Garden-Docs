@@ -15,24 +15,24 @@ callouts:
 ## Red
   warning:
     title: Warning
-    color: red
+    color: callred
 ## Yellow
   alert:
     title: Alert
-    color: yellow
+    color: callyellow
 ## Green
   success:
     title: Success
-    color: green
+    color: callgreen
 ## Blue
   reminder:
     title: Reminder
-    color: blue
+    color: callblue
   tip:
     title: Tip
-    color: blue
+    color: callblue
 ## Purple
   example:
     title: Example
-    color: purple
+    color: callpurple
 
