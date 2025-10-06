@@ -11,7 +11,7 @@ nav_exclude: false
 
 By default, your Digital Garden has a max-width for the body of `700px`. However, you can easily change the max-width (and other sizing settings) of your Digital Garden by modifying some CSS code.
 
-{: .alert-title}
+{: .warning-title}
 > Work in Progress
 > 
 > This will cause elements in the page to overlap and overrun at certain window widths, so make sure to test your settings on different browser widths and devices.

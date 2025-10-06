@@ -10,8 +10,6 @@ nav_exclude: false
 
 In order to allow the Digital Garden plugin to connect to your Digital Garden repo, you need to create a fine-grained personal access token (PAT) with the correct permissions.
 
-[Screenshot of topic]
-
 ## Table of Contents
 {: .no_toc .text-delta}
 1. TOC
@@ -56,7 +54,7 @@ Make the following changes to each section
 ![](../../assets/images/fine-grained-tokens-3.png)
 
 
-{: .warning}
+{: .caution}
 > This is the only time you will see this token. You navigate away from the page, you will need to regenerate the token following steps at the bottom of this guide.
 
 1. When you're ready, click on the green "Generate Token" button at the bottom of the screen.

@@ -32,8 +32,7 @@ You can add externally-hosted media to your digital garden using HTML code and i
 # How to embed media in your Digital Garden
 There are two ways to embed media in your site; you can use an inline frame (iframe) element, or (if it's audio), you can use the HTML `<audio>` element. Both methods can be entered directly into your notes in Obsidian, and should render as they will appear on your site.
 
-> Example using the HTML `<audio>` element
-
+**Example using the HTML `<audio>` element**
 <div class="code-example" markdown="1">
 ```html
 <audio controls>
@@ -43,9 +42,7 @@ There are two ways to embed media in your site; you can use an inline frame (ifr
 ```
 </div>
 
-> Example using an iframe
-
-
+**Example using an iframe**
 <div class="code-example" markdown="1">
 ```html
 <iframe style="background: #2F383E;" src="https://drive.google.com/file/d/1xySbXbL...KHXqYm/preview" width="480">

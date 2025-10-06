@@ -14,7 +14,7 @@ Troubleshooting problems with your Digital Garden can be difficult, especially i
 1. TOC
 {:toc}
 
-{: .reminder-title}
+{: .caution-title}
 > **Protect your Domain from Spoofing**
 > 
 > Even if you don't have email connected to your domain, you should set up SPF and DMARC records for your Digital Garden. Check out [prevent-domain-spoofing](../customization/prevent-domain-spoofing.md) for more details.

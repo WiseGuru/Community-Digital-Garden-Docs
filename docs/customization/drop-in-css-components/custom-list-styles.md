@@ -34,7 +34,7 @@ If you want to simulate looping, you can copy/paste the existing code and add th
 ### The Script
 You may paste the script below inside or outside of the `body {}` brackets and it should work.
 
-{: .success}
+{: .important}
 > You may need to flush your browser cache for the updated CSS to appear. When in doubt, open your site in a *Private* window (`Ctrl+Shift+N` for Chrome, `Ctrl+Shift+P` for Firefox), and close/reopen it between configuration tests.
 
 {% highlight css %}
