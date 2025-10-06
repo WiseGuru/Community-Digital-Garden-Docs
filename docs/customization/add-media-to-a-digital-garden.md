@@ -33,24 +33,25 @@ You can add externally-hosted media to your digital garden using HTML code and i
 There are two ways to embed media in your site; you can use an inline frame (iframe) element, or (if it's audio), you can use the HTML `<audio>` element. Both methods can be entered directly into your notes in Obsidian, and should render as they will appear on your site.
 
 **Example using the HTML `<audio>` element**
-<div class="code-example" markdown="1">
-```html
+{% highlight html %}
+{% raw %}
 <audio controls>
   <source src="https://www.dropbox.com/scl/fi/pq27...qkw/Path-to-Mephistopheles.wav?rlkey=bk84g42...mwvo&st=x9xo6i25&raw=1" type="audio/wav">
   Your browser does not support the audio element.
 </audio>
-```
-</div>
+{% endraw %}
+{% endhighlight %}
 
 **Example using an iframe**
-<div class="code-example" markdown="1">
-```html
+{% highlight html %}
+{% raw %}
 <iframe style="background: #2F383E;" src="https://drive.google.com/file/d/1xySbXbL...KHXqYm/preview" width="480">
 </iframe>
-```
-</div>
+{% endraw %}
+{% endhighlight %}
 
 Not all cloud storage hosts work the same way, and getting a workable link for embedding content can be annoying.
+
 ## Adding music from Dropbox using the HTML 'audio' element
 Here's how you can embed music *which you have the rights to share* into your site with Dropbox. For this example, we're using a song whose lyrics were written by Max McGuire; [The Path to Mephistopheles](https://lendalorsjournal.online/songs-and-stories/path-to-mephistopheles/).
 
@@ -69,7 +70,6 @@ by default, this link is accessible to anyone without requiring a password.
 {: .tip}
 > You can delete this link by going to the three-dot menu for the file, selecting *Manage Permissions*, going to *Links*, then clicking on *Settings* to manage or delete the link.
 
-
 You will get a URL that looks something like this:[^1]
 
 `https://www.dropbox.com/scl/fi/pq27xm8b5s33g508o7qkw/Path-to-Mephistopheles.wav?rlkey=bk8...vo&st=ryuj9e70&dl=0`
@@ -82,14 +82,14 @@ Modify the end of the link so that instead of `&dl=0`, set it to `&raw=1`. This 
 ### 3. Embed the song with code
 Insert your link into the `<audio>` tag sample below, replacing the fake link to Dropbox with your own link.
 
-<div class="code-example" markdown="1">
-```HTML
+{% highlight html %}
+{% raw %}
 <audio controls>
   <source src="https://dropbox.com/link.to.file&raw=1" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-```
-</div>
+{% endraw %}
+{% endhighlight %}
 
 Don't use a codeblock for this; write the code directly on the page. A codeblock will let you see the code, but won't actually run it.
 
@@ -123,11 +123,11 @@ Embedding files from Google Drive is relatively straightforward, and they even h
 
 Copy and paste the code into an Obsidian note. Don't use a code, as this will only show you the code, and not the file being previewed.
 
-<div class="code-example" markdown="1">
-```html
+{% highlight html %}
+{% raw %}
 <iframe src="https://drive.google.com/file/d/1HqnOOw5w8qUUByFA-3hkLESA4ALzvesK/preview" width="640" height="480" allow="autoplay"></iframe>
-```
-</div>
+{% endraw %}
+{% endhighlight %}
 
 {: .warning}
 > By default, Google's embed code has "autoplay" enabled. Remove that function unless you hate people who visit your site and wish to cause them pain.
