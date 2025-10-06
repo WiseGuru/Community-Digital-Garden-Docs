@@ -31,7 +31,7 @@ Now that you've got your accounts in order, you need to use the [Digital Garden 
 Go to [this repo](https://github.com/oleeskild/digitalgarden), click "*Use this Template*," and select "*Create a new repository*"
 ![](../../assets/images/9fabbeb10f3cd0020e5878d895eb506d.png)
 
-{: .reminder}
+{: .tip}
 >If you don't see the *Template* button, you may need to either maximize the page or zoom out.
 
 On the next page, configure the repo as follows:
@@ -78,6 +78,7 @@ To connect the plugin with your Repo, you will need to generate a Fine-Grained A
 ### 02. Configure Obsidian Plugin and Pages
 Once you've got your Repo and Plugin connected, there are some settings you should adjust in the plugin to further customize your site.
 
+{: .important}
 >If you make these changes before you connect to Cloudflare, you might have to re-apply them later. However, clicking "Apply" will make them all take effect at once, conserving the number of builds you use.
 
 #### Configure the Plugin
@@ -152,7 +153,9 @@ Log in to Cloudflare, expand the left menu bar, expand *Compute (Worker)*, selec
 Select the *Pages* tab, then *Get started* next to "Import an existing Git repository" to link your GIT account, and select the Repo you created from the *Digital Garden* template.
 ![](../../assets/images/dbfc2bfb9324a96381ae94e819ea2f16.png)
 
-{: .reminder}
+{: .hint-title}
+> Note
+> 
 > If you've done this before, you'll have to select "*Add account*", then scroll down and select the new repo from the dropdown for the it to appear in Cloudflare.
 > ![](../../assets/images/b0f3ff99a3db9d1413782670a102f15a.png)
 > ![](../../assets/images/a6a025e45dccf5f3fb20ef3e5fb7b659.png)
@@ -168,7 +171,7 @@ Select the *Pages* tab, then *Get started* next to "Import an existing Git repos
 
 Then click Finish (or something, I completely forgot to screencap this part), and it will do the first build for your site! If you're going to run into problems, you're likely to run into them here. Check out the [troubleshooting-digital-gardens](../bugs-and-fixes/troubleshooting-digital-gardens.md) guide at the very end for help.
 
-{: .reminder}
+{: .tip}
 > You may need to re-apply the features or appearance customizations you set earlier by clicking "Apply Settings" in the plugin.
 
 ### 04. (OPT) Register and Assign a Custom Domain
@@ -196,6 +199,7 @@ If you already own a domain with a different registrar, you can either change th
 #### Add Cloudflare Security and Optimization Features
 Now that we've connected our domain to Cloudflare, we can view it under *Websites* at the top of the left-side slideout menu, and make a host of performance and security upgrades. From [your Cloudflare dashboard](https://dash.cloudflare.com), you should be able to see the domain you just registered, and a little green checkmark with *Active* next to it.
 
+{: .note}
 > Cloudflare is always adapting to new threats and frequently changes features and options. Use this section as more of a rough guide than hard-and-fast rules.
 
 Click on your domain, and let's get started with the Quick Start Guide from the main panel.
@@ -207,7 +211,7 @@ Click on your domain, and let's get started with the Quick Start Guide from the 
 
 Once done, we should go down the options in left slide-out menu and enable a bunch of other security and optimization features.
 
-{: .alert}
+{: .caution}
 >*Don't send email from your domain*? Stop anyone from impersonating you with **these rules that reject all email sent from your domain**:
 > SPF: `TXT   @   "v=spf1 -all"`
 > DMARC: `TXT  _dmarc.example.com   "v=DMARC1; p=reject"`
@@ -273,7 +277,7 @@ Additionally, **I strongly recommended** that you familiarize yourself with *Vis
 Ok, with that out of the way, let's...
 #### Configure Security and Dependency Updates in GitHub
 
-{: .reminder}
+{: .important}
 >If you apply updates through Dependabot, *Digital Garden* updates overwrite them, and you may be required to re-apply them. However, *it's better to be running patched* than unpatched, and *it's not that hard to do*.
 
 In the Repo, navigate to "*Settings*," *Code security and analysis*, and enable Dependabot *Alerts* and *Security Updates*
@@ -299,7 +303,7 @@ Installing security headers **critical**, as it improves your site's security an
 
 Don't believe me? You can check your site's headers and see how an attacker can take advantage of your sit with [securityheaders.com](https://securityheaders.com)
 
-{: .reminder}
+{: .tip}
 > These headers will get overwritten when *Digital Garden* releases an update, so you will have to re-apply them each time. This re-application is made much easier if you use **Github Desktop** and **Visual Studio Code** as mentioned before.
 
 To add security headers, you need to first create a file called `_headers` in the folder `/src/site` in your GitHub Repo, then modify the *.eleventy.js* configuration file to the file through to Cloudflare.
@@ -339,10 +343,10 @@ eleventyConfig.addPassthroughCopy("src/site/_headers");
 
 To verify that your headers have been added, under "*Deployment Details*" click on the *Headers* tab and see what was added
 
->Successful addition of headers:
+**Successful addition of headers:**
 ![](../../assets/images/ad5751ebef5f934bc331f9bbefe13372.png)
 
->Failed addition of headers:
+**Failed addition of headers:**
 ![](../../assets/images/b40106512d1ddacb4276eb1ad02ee057.png)
 
 You can also go to [Security Header Scanner by Probely](https://securityheaders.com) to view your site's current headers after the deployment succeeds.[^6]
