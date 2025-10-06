@@ -3,7 +3,7 @@ title: Single Script to Modify Graphs
 layout: default
 parent: Mindmap Graphs
 nav_order: 50
-nav_exclude: true
+nav_exclude: false
 ---
 # Single Script to Modify Graphs
 {: .no_toc}
