@@ -248,8 +248,9 @@ Codeblocks with syntax highlighting must be wrapped using either Jekyll's highli
 If you use Obsidian as your editor, there is a codeblock template for you in the templates folder, and it includes the `raw/endraw` described below.
 
 ### Jekyll
-Jekyll's syntax highlighting is the least-janky way to highlight code. Jekyll supports a wide-range of languages for syntax-highlighting, described here and elsewhere: [Supported syntax highlighting in Jekyll - Fabrizio Musacchio](https://www.fabriziomusacchio.com/blog/2021-08-11-Syntax_Highlighting_in_Jekyll/)[^4]
+Jekyll's syntax highlighting is the least-janky way to highlight code. Jekyll supports a wide-range of languages for syntax-highlighting, described here and elsewhere: [Supported syntax highlighting in Jekyll - Fabrizio Musacchio](https://www.fabriziomusacchio.com/blog/2021-08-11-Syntax_Highlighting_in_Jekyll/)[^4] 
 
+Unfortunately, it does not support Nunjucks, though there may be a workaround we can implement in the future.[^5]
 
 Examples:
 
@@ -268,12 +269,12 @@ console.log('Hello World');
 {% endhighlight %}
 
 
-#### Nunjucks `raw` and `endraw`
+#### Nunjucks
 If your codeblock has nunjucks tags (the percentiles and squiggly-brackets), you **must** use the "raw" tags so that it is not rendered by Jekyll.
 
 ![](assets/images/syntax-and-style-guide-8.png)
 
-{% highlight jinja2 %}
+{% highlight html %}
 {% raw %}
 {% endfor %}
  <a href="/" style="text-decoration: none;">
@@ -329,3 +330,5 @@ HTML tags should be avoided because they add unnecessary whitespace around the c
 [^3]: [Tags Filters \| Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/liquid/tags/)
 
 [^4]: [List of supported languages and lexers · rouge-ruby/rouge Wiki · GitHub](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers)
+
+[^5]: [Nunjucks / \*.njk syntax highlighting · helix-editor/helix · Discussion #5740 · GitHub](https://github.com/helix-editor/helix/discussions/5740)
