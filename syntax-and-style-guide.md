@@ -151,6 +151,9 @@ Always make sure there is one empty line between the callout and the next piece 
 ```
 </div>
 
+{: .alert}
+> My text.
+
 This site has the following defined callouts:
 
 {: .warning}
@@ -179,11 +182,6 @@ This site has the following defined callouts:
 
 Append the callout type with "-title" to convert the first line into the title for the callout.
 
-{: .warning-title}
-> This is the title
-> 
-> This is the text.
-
 <div class="code-example" markdown="1">
 ```
 {: .warning-title}
@@ -193,14 +191,12 @@ Append the callout type with "-title" to convert the first line into the title f
 ```
 </div>
 
-Paragraphs must be separated with a full line break.
-
-{: .tip-title}
+{: .warning-title}
 > This is the title
 > 
-> This is the first paragraph
-> 
-> This is the second paragraph
+> This is the text.
+
+Paragraphs must be separated with a full line break.
 
 <div class="code-example" markdown="1">
 ```
@@ -212,6 +208,13 @@ Paragraphs must be separated with a full line break.
 > This is the second paragraph
 ```
 </div>
+
+{: .tip-title}
+> This is the title
+> 
+> This is the first paragraph
+> 
+> This is the second paragraph
 
 ## Footnotes
 Footnotes should use the following formatting as the link, and then as the linked text
