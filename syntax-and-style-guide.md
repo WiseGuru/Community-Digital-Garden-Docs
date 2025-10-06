@@ -76,11 +76,12 @@ The name of the `index.md` file in a folder should match the readable folder nam
 > Files that are works in progress (and are not intended to be published yet) **should** begin with "WIP" in the file name, **should not** have the `title` property set, and **should** have `nav_exclude` set to *true*.
 > 
 > Remember, however, that these documents will be public, just more difficult to find; **never commit/push information not intended for public availability.**
+
 ### Headers
 The page title should be "Header 1" and the first line of a document after the frontmatter. Other headers can be 
 
-<div class="code-example" markdown="1">
-```
+{% highlight md %}
+{% raw %}
 # Header 1
 Some text
 ## Header 2
@@ -93,10 +94,20 @@ Some text
 Some text
 ###### Header 6
 Some text
-```
-</div>
+{% endraw %}
+{% endhighlight %}
 
 ![](assets/images/syntax-and-style-guide.png)
+
+Headers can also be linked to using the traditional bracket/paranthesis links. If using Obsidian with the settings described earlier, entering double-bracket/hashtag and selecting the header from the dropdown will format the link correctly.
+
+{% highlight md %}
+{% raw %}
+[Headers](#Headers)
+{% endraw %}
+{% endhighlight %}
+
+[Headers](#Headers)
 
 ## Table of Contents
 Creating a Table of Contents is pretty simple, and is described [Just the Docs - In-Page Navigation](https://just-the-docs.github.io/just-the-docs/docs/navigation/in-page/#generating-table-of-contents). Basically, there are a few tags to be aware of.
@@ -108,8 +119,9 @@ Creating a Table of Contents is pretty simple, and is described [Just the Docs -
 	- The first line of that list must also have "TOC" as the only text
 	- There can only be one `{:toc}` tag per document
 
-<div class="code-example" markdown="1">
-```
+{% highlight md %}
+{% raw %}
+
 # In-Page Navigation
 {: .no_toc }
 
@@ -119,8 +131,8 @@ Creating a Table of Contents is pretty simple, and is described [Just the Docs -
 1. TOC
 {:toc}
 
-```
-</div>
+{% endraw %}
+{% endhighlight %}
 
 {: .warning}
 > Make sure that you use `{:toc}` and not `{: .toc}`, or it won't work.
