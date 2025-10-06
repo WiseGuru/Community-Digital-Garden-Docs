@@ -245,10 +245,11 @@ This is some text with a foot note. [^2]
 ## Codeblocks
 Codeblocks with syntax highlighting must be wrapped using either Jekyll's highlight syntax[^3] or HTML, as demonstrated and discussed in the [JTD official docs](https://just-the-docs.github.io/just-the-docs/docs/ui-components/code/).
 
-If you use Obsidian as your editor, there is a codeblock template for you in the templates folder, and it includes the `raw/endraw` Nunjucks tags described below. Additionally, if the sample text is HTML, it's recommended that you wrap the text in triple-tics and use either Jekyll-Markdown or HTML `div` to wrap it, as Obsidian renders HTML natively and this can cause problems.
+If you use Obsidian as your editor, there is a codeblock template for you in the templates folder, and it includes the `raw/endraw` described below.
 
 ### Jekyll
-By default, code wrapped with the Jekyll `highlight` tag doesn't need to have the Markdown codeblock within. They can just wrap the script and identify the type of code[^4] in the callout itself. [Supported syntax highlighting in Jekyll - Fabrizio Musacchio](https://www.fabriziomusacchio.com/blog/2021-08-11-Syntax_Highlighting_in_Jekyll/)
+Jekyll's syntax highlighting is the least-janky way to highlight code. Jekyll supports a wide-range of languages for syntax-highlighting, described here and elsewhere: [Supported syntax highlighting in Jekyll - Fabrizio Musacchio](https://www.fabriziomusacchio.com/blog/2021-08-11-Syntax_Highlighting_in_Jekyll/)[^4]
+
 
 Examples:
 
@@ -267,12 +268,12 @@ console.log('Hello World');
 {% endhighlight %}
 
 
-### Nunjucks tags
-If your codeblock has nunjucks tags (the percentiles and squiggly-brackets), you will need to mark it as "raw" so that it is not rendered by Jekyll.
+#### Nunjucks `raw` and `endraw`
+If your codeblock has nunjucks tags (the percentiles and squiggly-brackets), you **must** use the "raw" tags so that it is not rendered by Jekyll.
 
 ![](assets/images/syntax-and-style-guide-8.png)
 
-{% highlight html%}
+{% highlight jinja2 %}
 {% raw %}
 {% endfor %}
  <a href="/" style="text-decoration: none;">
