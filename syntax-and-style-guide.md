@@ -151,9 +151,6 @@ Always make sure there is one empty line between the callout and the next piece 
 ```
 </div>
 
-{% endraw %}
-{% endhighlight %}
-
 This site has the following defined callouts:
 
 {: .warning}
