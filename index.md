@@ -14,7 +14,7 @@ Welcome! This is a collection of guides, fixes, and customizations you can apply
 
 ## Official Resources
 
-{: .reminder}
+{: .important}
 >  Free software isn't free. Support Ole, the Digital Garden developer: [Buy Ole Eskild Steensen a Coffee - oleeskild - Ko-fi](https://ko-fi.com/oleeskild)
 
 
