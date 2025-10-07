@@ -4,6 +4,9 @@ theme: just-the-docs
 color_scheme: nil
 favicon_ico: "/assets/favicon.svg"
 
+plugins:
+  - jekyll-relative-links
+
 
 url: https://wiseguru.github.io/Community-Digital-Garden-Docs
 

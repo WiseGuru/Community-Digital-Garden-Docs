@@ -220,7 +220,7 @@ Once done, we should go down the options in left slide-out menu and enable a bun
 
 1. **DNS**
 	1. Records
-		1. If you don't use email with this domain, create two records to prevent anyone from sending mail from your domain.^[For more details, check out [prevent-domain-spoofing](../customization/prevent-domain-spoofing.md).]
+		1. If you don't use email with this domain, create two records to prevent anyone from sending mail from your domain.[^7]
 			1. [SPF](https://maxwellcti.com/definitions-and-topics/spf): `TXT   @   "v=spf1 -all"`
 				1. Type is `TXT`, the name is `@` (meaning your domain), and the value requires the quotes.
 				2. This says that there are no servers authenticated to send email for your domain.
@@ -377,3 +377,5 @@ The guide I used to get started is [How I Published My Knowledge Base Online for
 [^5]: JUST `_headers`, not `_headers.txt`, not `headers`, and for godsake not `TheseAreMySecurityHeadersForMyCloudflareSite.txt.xml.zip.tar.gz`
 
 [^6]: You might be wondering about the Content-Security-Policy warning; I don't want to distract from this guide, but here's why I gave up trying to implement [CSP on Digital Gardens](CSP%20on%20Digital%20Gardens)
+
+[^7]: For more details, check out [prevent-domain-spoofing](../customization/prevent-domain-spoofing.md).
