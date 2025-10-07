@@ -169,7 +169,7 @@ Select the *Pages* tab, then *Get started* next to "Import an existing Git repos
 5. Set the *Build output directory* to `dist`
  ![](../../assets/images/4550e035a1c4c2fd707b6b2a5dd45974.png)
 
-Then click Finish (or something, I completely forgot to screencap this part), and it will do the first build for your site! If you're going to run into problems, you're likely to run into them here. Check out the [troubleshooting-digital-gardens](../bugs-and-fixes/troubleshooting-digital-gardens.md) guide at the very end for help.
+Then click Finish (or something, I completely forgot to screencap this part), and it will do the first build for your site! If you're going to run into problems, you're likely to run into them here. Check out the [troubleshooting-digital-gardens](../bugs-and-fixes/troubleshooting-digital-gardens.md) [Troubleshooting Digital Garden] guide at the very end for help.
 
 {: .tip}
 > You may need to re-apply the features or appearance customizations you set earlier by clicking "Apply Settings" in the plugin.
@@ -377,3 +377,5 @@ The guide I used to get started is [How I Published My Knowledge Base Online for
 [^5]: JUST `_headers`, not `_headers.txt`, not `headers`, and for godsake not `TheseAreMySecurityHeadersForMyCloudflareSite.txt.xml.zip.tar.gz`
 
 [^7]: For more details, check out [prevent-domain-spoofing](../customization/prevent-domain-spoofing.md).
+
+[Troubleshooting Digital Gardens]: {% link /bugs-and-fixes/troubleshooting-digital-gardens.md %}
