@@ -378,4 +378,4 @@ The guide I used to get started is [How I Published My Knowledge Base Online for
 
 [^7]: For more details, check out [prevent-domain-spoofing](../customization/prevent-domain-spoofing.md).
 
-[Troubleshooting Digital Gardens]: {% link /bugs-and-fixes/troubleshooting-digital-gardens.md %}
+[Troubleshooting Digital Gardens]: {% link ../bugs-and-fixes/troubleshooting-digital-gardens.md %}
