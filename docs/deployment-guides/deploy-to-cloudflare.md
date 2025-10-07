@@ -349,7 +349,7 @@ To verify that your headers have been added, under "*Deployment Details*" click 
 **Failed addition of headers:**
 ![](../../assets/images/b40106512d1ddacb4276eb1ad02ee057.png)
 
-You can also go to [Security Header Scanner by Probely](https://securityheaders.com) to view your site's current headers after the deployment succeeds.[^6]
+You can also go to [Security Header Scanner by Probely](https://securityheaders.com) to view your site's current headers after the deployment succeeds.
 
 And that's it! Finally! Now go write some stuff and publish it.
 
@@ -375,7 +375,5 @@ The guide I used to get started is [How I Published My Knowledge Base Online for
 [^4]: What, you thought you were signing up for some free and easy way to upload your notes to the internet? Well with great power comes great security risks, and if you don't want some script kiddie owning your base, you should assume the people making free tools have overlooked something. Sometimes you gotta fix dependencies yourself for security updates, and boy howdy, knowing how these tools work is key.
 
 [^5]: JUST `_headers`, not `_headers.txt`, not `headers`, and for godsake not `TheseAreMySecurityHeadersForMyCloudflareSite.txt.xml.zip.tar.gz`
-
-[^6]: You might be wondering about the Content-Security-Policy warning; I don't want to distract from this guide, but here's why I gave up trying to implement [CSP on Digital Gardens](CSP%20on%20Digital%20Gardens)
 
 [^7]: For more details, check out [prevent-domain-spoofing](../customization/prevent-domain-spoofing.md).
