@@ -356,6 +356,6 @@ HTML tags should be avoided because they add unnecessary whitespace around the c
 
 [^5]: [Nunjucks / \*.njk syntax highlighting · helix-editor/helix · Discussion #5740 · GitHub](https://github.com/helix-editor/helix/discussions/5740)
 
-[^6]: [This is broken link](docs/deployment-guides/fine-grained-tokens.md)
+[^6]: [This is a broken link](docs/deployment-guides/fine-grained-tokens.md)
 
 [^7]: [This is a working link](docs/deployment-guides/fine-grained-tokens.html)
