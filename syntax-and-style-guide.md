@@ -63,22 +63,17 @@ Other relevant frontmatter properties are listed below:
 
 # Folders, File names, Titles, and Headers
 
-## Link Test
-**Testing, please ignore.**
+## Links
+Links to other internal resources follow the same pattern as links to external resources; `[displayed text](relative file path or url)`.
 
-[deploy-to-cloudflare](docs/deployment-guides/deploy-to-cloudflare.md)
+Internal links must use a relative path to the file. For example, if you have to travel up several folders to reach the file, they must be marked with `..` (see screenshot). Obsidian will automatically update links if you use it as your editor.
 
-[troubleshooting-digital-gardens](docs/bugs-and-fixes/troubleshooting-digital-gardens.md)
+![](assets/images/syntax-and-style-guide-10.png)
 
-Some text [^6]
-
-[Deploy to Cloudflare](docs/deployment-guides/deploy-to-cloudflare.md)
-
-[Troubleshooting Digital Gardens](docs/bugs-and-fixes/troubleshooting-digital-gardens.md)
-
-Some text [^7]
-
-
+{: .warning-title}
+> Warning - Internal Links in Footnotes
+> 
+> While in-body internal links get updated from `.md` to `.html`, internal links in footnotes *do not* get updated. For the time being, it is best to either avoid links in footnotes or manually correct them to end in `.html`
 
 ## Folders and index.md
 Each folder should have a short summary document named "index.md" that describes the folder contents. All other notes in the folder should list that file's title as the parent so that they appear in the Table of Contents automatically generated at the bottom of the file.
@@ -353,6 +348,6 @@ HTML tags should be avoided because they add unnecessary whitespace around the c
 
 [^5]: [Nunjucks / \*.njk syntax highlighting · helix-editor/helix · Discussion #5740 · GitHub](https://github.com/helix-editor/helix/discussions/5740)
 
-[^6]: This is a link to [fine-grained-tokens](docs/deployment-guides/fine-grained-tokens.md)
+[^6]: This is broken link [fine-grained-tokens](docs/deployment-guides/fine-grained-tokens.md)
 
-[^7]: This is a link to [Fine Grained Tokens](docs/deployment-guides/fine-grained-tokens.md)
+[^7]: This is a working link [Fine Grained Tokens](docs/deployment-guides/fine-grained-tokens.html)
