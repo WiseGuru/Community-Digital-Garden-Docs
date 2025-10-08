@@ -161,8 +161,8 @@ Create a Dataview codeblock and copy/paste the code below into it. This will gen
 
 <div class="code-example" markdown="1">
 ```
-TABLE dg-home, dg-publish
+TABLE dg-home, dg-publish, file.folder
 WHERE dg-home=true OR dg-publish=true
-SORT dg-home DESCENDING, file.name
+SORT dg-home DESCENDING, file.folder, file.name
 ```
 </div>
