@@ -76,6 +76,7 @@ Internal links must use a relative path to the file. For example, if you have to
 > While in-body internal links get updated from `.md` to `.html`, internal links in footnotes *do not* get updated. For the time being, it is best to either avoid links in footnotes or manually correct them to end in `.html`
 > 
 > For example, here are two[^6] footnotes,[^7] where one has been manually updated to end with `.html`
+> 
 > ![](assets/images/syntax-and-style-guide-11.png)
 
 
@@ -254,6 +255,8 @@ Paragraphs must be separated with a full line break.
 Footnotes should use the following formatting as the link, and then as the linked text
 Link: `[^(1, 2, 3, etc.)]`
 Linked text: `[^(1, 2, 3, etc.)]: Linked text`
+
+The order of footnotes does not matter; upon rendering the site, Jekyll/JTD will add the footnotes in order of appearance in the document. For example, if you add a bunch of footnotes through the document, but then later add footnote 9 at the very top, 9 will be come 1 on the website, 1 will become 2, etc.
 
 Before the linked text in the foot notes, include a line break with `---` or `----`.
 
