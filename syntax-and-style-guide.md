@@ -14,7 +14,7 @@ This site uses a slightly different version of Markdown than Obsidian, and there
 1. TOC
 {:toc}
 
-## Editing in Obsidian
+# Editing in Obsidian
 To edit the files in this repository in Obsidian, clone the repo to your computer[^1] then open the folder as a vault in Obsidian.
 
 The settings in Obsidian are not synchronized with GitHub, so it's important to ensure the following is enabled:
@@ -36,7 +36,7 @@ Once the vault is open, I recommend the following changes:
 
 Once you have finished adding or updating your documents, you can push the changes back up into GitHub for review and publication. As a reminder, your Obsidian Vault settings will not synchronize.
 
-## Frontmatter
+# Frontmatter
 The following frontmatter should be included in all documents:
 
 <div class="code-example" markdown="1">
@@ -61,11 +61,23 @@ Other relevant frontmatter properties are listed below:
 	2. **This does not say whether the page is published, just if it's listed on the site**
 	3. Designates whether it's listed on the site (`false`) or not (`true`)
 
-## Folders, File names, Titles, and Headers
-### Folders and index.md
+# Folders, File names, Titles, and Headers
+
+## Link Test
+[deploy-to-cloudflare](docs/deployment-guides/deploy-to-cloudflare.md)
+[troubleshooting-digital-gardens](docs/bugs-and-fixes/troubleshooting-digital-gardens.md)
+Some text [^6]
+
+[Deploy to Cloudflare](docs/deployment-guides/deploy-to-cloudflare.md)
+[Troubleshooting Digital Gardens](docs/bugs-and-fixes/troubleshooting-digital-gardens.md)
+Some text [^7]
+
+
+
+## Folders and index.md
 Each folder should have a short summary document named "index.md" that describes the folder contents. All other notes in the folder should list that file's title as the parent so that they appear in the Table of Contents automatically generated at the bottom of the file.
 
-### Naming conventions
+## Naming conventions
 File names should be all lower-case with hyphens between words. Use the `title` property in the frontmatter and a Header 1 in the first line of the document to set the readable title of the document.
 
 The name of the `index.md` file in a folder should match the readable folder name.
@@ -77,7 +89,7 @@ The name of the `index.md` file in a folder should match the readable folder nam
 > 
 > Remember, however, that these documents will be public, just more difficult to find; **never commit/push information not intended for public availability.**
 
-### Headers
+## Headers
 The page title should be "Header 1" and the first line of a document after the frontmatter. Other headers can be 
 
 {% highlight md %}
@@ -145,7 +157,7 @@ Creating a Table of Contents is pretty simple, and is described [Just the Docs -
 
 ![](assets/images/syntax-and-style-guide-1.png)
 
-## Images
+# Images
 Images should be stored in `assets/images` for easier management.
 
 Embedded images must linked to the exact folder from the current location; for example, linking to a file in `/assets/images` from `/Folder1` would require the path `../assets/images/picture.jpg`
@@ -155,7 +167,7 @@ Below is not a great example because the syntax guide as at the root of the repo
 `![](assets/images/syntax-and-style-guide-2.png)`
 
 ![](assets/images/syntax-and-style-guide-2.png)
-## Callouts
+# Callouts
 Callouts are written following the [Just the Docs - Callouts](https://just-the-docs.github.io/just-the-docs/docs/ui-components/callouts/) documentation. Use braces to indicate what kind of callout you're using, and then greater-than symbols for text.
 
 Always make sure there is one empty line between the callout and the next piece of text; failure to do so will include the subsequent line in the callout.
@@ -232,7 +244,7 @@ Paragraphs must be separated with a full line break.
 > 
 > This is the second paragraph
 
-## Footnotes
+# Footnotes
 Footnotes should use the following formatting as the link, and then as the linked text
 Link: `[^(1, 2, 3, etc.)]`
 Linked text: `[^(1, 2, 3, etc.)]: Linked text`
@@ -244,12 +256,12 @@ This is some text with a foot note. [^2]
  ![](assets/images/syntax-and-style-guide-3.png)
 
 
-## Codeblocks
+# Codeblocks
 Codeblocks with syntax highlighting must be wrapped using either Jekyll's highlight syntax[^3] or HTML, as demonstrated and discussed in the [JTD official docs](https://just-the-docs.github.io/just-the-docs/docs/ui-components/code/).
 
 If you use Obsidian as your editor, there is a codeblock template for you in the templates folder, and it includes the `raw/endraw` described below.
 
-### Jekyll
+## Jekyll
 Jekyll's syntax highlighting is the least-janky way to highlight code. Jekyll supports a wide-range of languages for syntax-highlighting, described here and elsewhere: [Supported syntax highlighting in Jekyll - Fabrizio Musacchio](https://www.fabriziomusacchio.com/blog/2021-08-11-Syntax_Highlighting_in_Jekyll/)[^4] 
 
 Unfortunately, it does not support Nunjucks, though there may be a workaround we can implement in the future.[^5]
@@ -271,7 +283,7 @@ console.log('Hello World');
 {% endhighlight %}
 
 
-#### Nunjucks
+### Nunjucks
 If your codeblock has nunjucks tags (the percentiles and squiggly-brackets), you **must** use the "raw" tags so that it is not rendered by Jekyll.
 
 ![](assets/images/syntax-and-style-guide-8.png)
@@ -287,9 +299,9 @@ If your codeblock has nunjucks tags (the percentiles and squiggly-brackets), you
 {% endhighlight %}
 
 
-### Codeblock formatting you probably shouldn't use
+## Codeblock formatting you probably shouldn't use
 
-#### Wrapping backticks
+### Wrapping backticks
 
 You can also wrap normal codeblocks using the Jekyll `highlight` tag; you just need to identify the language as "markdown" in the tag.
 
@@ -304,7 +316,7 @@ console.log('Hello World');
 
 This should probably be avoided so that when people copy/paste the contents of the codeblock, they aren't copying the markdown codeblock syntax.
 
-#### HTML tags
+### HTML tags
 `<div>` codeblocks are generally less optimal, but are included here for completeness. The first line should read `<div class="code-example" markdown="1">`, and the last line closes the tag with `</div>`
 
 For example, this formatted code:
@@ -334,3 +346,7 @@ HTML tags should be avoided because they add unnecessary whitespace around the c
 [^4]: [List of supported languages and lexers · rouge-ruby/rouge Wiki · GitHub](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers)
 
 [^5]: [Nunjucks / \*.njk syntax highlighting · helix-editor/helix · Discussion #5740 · GitHub](https://github.com/helix-editor/helix/discussions/5740)
+
+[^6]: This is a link to [fine-grained-tokens](docs/deployment-guides/fine-grained-tokens.md)
+
+[^7]: This is a link to [Fine Grained Tokens](docs/deployment-guides/fine-grained-tokens.md)
