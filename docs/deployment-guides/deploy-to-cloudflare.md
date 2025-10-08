@@ -11,8 +11,6 @@ I've created a few sites using Ole's [GitHub - oleeskild/digitalgarden](https://
 
 To that end, I've created this guide on configuring *Cloudflare* as a host for your *Digital Garden*.
 
-[troubleshooting-digital-gardens](../bugs-and-fixes/troubleshooting-digital-gardens.html)
-
 ## Table of Contents
 {: .no_toc .text-delta}
 1. TOC
