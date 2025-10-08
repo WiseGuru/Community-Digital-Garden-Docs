@@ -16,18 +16,18 @@ To that end, I've created this guide on configuring *Cloudflare* as a host for y
 1. TOC
 {:toc}
 
-## Steps to Publish Cloudflare
+# Steps to Publish Cloudflare
 
-### 00. Prep-work
+## 00. Prep-work
 In order to complete this project, you will need the following:
 
 1. Install the [Digital Garden plugin](obsidian://show-plugin?id=digitalgarden) on your [Obsidian app](https://obsidian.md/)
 2. Create a [GitHub](https://github.com) account if you don't already have one.
 3. Create a [Cloudflare](https://dash.cloudflare.com/login) account.
 
-### 01. Setup GitHub Repository and Access Token
+## 01. Setup GitHub Repository and Access Token
 Now that you've got your accounts in order, you need to use the [Digital Garden Repo](https://github.com/oleeskild/digitalgarden) Template to create your site's repo.
-#### Create the Repo
+### Create the Repo
 Go to [this repo](https://github.com/oleeskild/digitalgarden), click "*Use this Template*," and select "*Create a new repository*"
 ![](../../assets/images/9fabbeb10f3cd0020e5878d895eb506d.png)
 
@@ -46,9 +46,9 @@ On the next page, configure the repo as follows:
 
 >Example configuration for my idea-dumpsite, [wisdump.work](https://wisdump.work/)
 
-#### Create an access token to the Repo for Digital Garden
+### Create an access token to the Repo for Digital Garden
 
-To connect the plugin with your Repo, you will need to generate a Fine-Grained Access Token from GitHub.^[You could do a regular token, but that's a bad idea and you should feel bad for having it.] Oleeskild also has a guide to create a [fine grained access token](https://dg-docs.ole.dev/advanced/fine-grained-access-token/), though the image is a little compressed.
+To connect the plugin with your Repo, you will need to generate a Fine-Grained Access Token from GitHub.[^8] Oleeskild also has a guide to create a [fine grained access token](https://dg-docs.ole.dev/advanced/fine-grained-access-token/), though the image is a little compressed.
 
 1. From within GitHub, click on your profile icon at the top-right corner
 	1. Select "*Settings*"
@@ -75,13 +75,13 @@ To connect the plugin with your Repo, you will need to generate a Fine-Grained A
 4. Copy and paste the token from GitHub into the Digital Garden plugin in Obsidian.
 	1. Open Obsidian, go to *Settings*, and in the left column under *Community Plugins* select *Digital Garden*. Enter the Repo name, your user account name, and paste the **Fine-Grained Token you just created**.
 
-### 02. Configure Obsidian Plugin and Pages
+## 02. Configure Obsidian Plugin and Pages
 Once you've got your Repo and Plugin connected, there are some settings you should adjust in the plugin to further customize your site.
 
 {: .important}
 >If you make these changes before you connect to Cloudflare, you might have to re-apply them later. However, clicking "Apply" will make them all take effect at once, conserving the number of builds you use.
 
-#### Configure the Plugin
+### Configure the Plugin
 Nothing here is hard and fast, just some observations I've made:
 1. Features
 	1. I like turning almost all of the Features on, excluding Frontmatter, which can break the site
@@ -105,7 +105,7 @@ Nothing here is hard and fast, just some observations I've made:
 
 If you have any questions about other settings, check out the [Digital Garden guide](https://dg-docs.ole.dev/) or [join the Discord server](https://discord.gg/Z46n2RNX8e)
 
-#### Add Properties to Pages
+### Add Properties to Pages
 Now that the plugin has been configured, we can start adding pages to be published. We do this by adding specific *properties* to every page we want to publish, and while there are several properties you can use to configure your pages, there are *two* that are **required** for you to have a functioning site.
 
 1. `dg-home`
@@ -127,7 +127,7 @@ If you don't see a "Properties" section at the top of your page, you can create 
 If you've manually created a *Property*, you need to set it as a *checkbox*.
 ![](../../assets/images/70346ead3605c638cebbd4e586b565c2.png)
 
-#### Publishing your Site
+### Publishing your Site
 There are a few ways to publish your site when you're ready.
 
 You could open the *Command Palette* and select *Publish all notes* or *Publish single note*
@@ -142,10 +142,10 @@ Or you could use the *Digital Garden Publication Center* and pick from a more nu
 
 ![](../../assets/images/9646d6f27d9b1e2810012dfb1f8cdc60.png)
 
-### 03. Configure Cloudflare
+## 03. Configure Cloudflare
 Now that your Vault is ready for **Prime Time**, let's get it setup in Cloudflare
 
-#### Create the Pages Application
+### Create the Pages Application
 
 Log in to Cloudflare, expand the left menu bar, expand *Compute (Worker)*, select *Workers and PAges*, and click *Create*
 ![](../../assets/images/334299bf3b27f876b8577e5c05842c79.png)
@@ -160,7 +160,7 @@ Select the *Pages* tab, then *Get started* next to "Import an existing Git repos
 > ![](../../assets/images/b0f3ff99a3db9d1413782670a102f15a.png)
 > ![](../../assets/images/a6a025e45dccf5f3fb20ef3e5fb7b659.png)
 
-#### Configure your First Deployment
+### Configure your First Deployment
 1. Enter the project name (default is the Repo name)
 2. Set production branch to *Main*
 3. Leave the *Framework* preset as default or set to *Eleventy*
@@ -174,21 +174,21 @@ Then click Finish (or something, I completely forgot to screencap this part), an
 {: .tip}
 > You may need to re-apply the features or appearance customizations you set earlier by clicking "Apply Settings" in the plugin.
 
-### 04. (OPT) Register and Assign a Custom Domain
+## 04. (OPT) Register and Assign a Custom Domain
 In order to configure various Cloudflare security features (*but not custom headers*), you will need to register a domain name and link it to your Pages project on Cloudflare.
 
 In my opinion, the security features offered by *Cloudflare* are a big reason I picked it as a host over other services, so I don't really think this is an optional step. Also, for how cheap you can get a domain ($10 for a year), it's not even that expensive.
 
-#### Transfer the Nameservers or Register a New Domain
+### Transfer the Nameservers or Register a New Domain
 It's easiest if you register the domain through Cloudflare, but not a requirement.
-##### Registering a domain
+#### Registering a domain
 1. Expand *Domain Registration* in the slide-out menu on the left, and choose *Register Domain*
 2. Search for the domain you want to buy and purchase it.
 	1. **NOTE**: Some of the more obscure *TLDs* (aka *Top Level Domains*, like .work or .online) are cheaper than .com or .io. If you don't care too much about branding, you could save a few bucks.
 3. Back under your application, select the *Custom domains* tab, and click "*Setup a custom domain*"
 4. Follow the steps, and you should be golden.
 
-##### Transfer a domain or set Cloudflare nameservers
+#### Transfer a domain or set Cloudflare nameservers
 If you already own a domain with a different registrar, you can either change the domain's *Name Servers* to Cloudflare's, or you can *transfer the domain* (which I won't get into right now, and is different from *DNS Transfer*). The steps are very similar to the one's above; however, begin by navigating to your *Cloudflare Pages* app and click *Custom domains*.
 1. Enter the domain you want to use, and then click *Begin DNS transfer*
 2. Re-enter the name you want to use, and select whichever tier plan you want to use
@@ -196,7 +196,7 @@ If you already own a domain with a different registrar, you can either change th
 3. Follow the steps on the page, and update your domain registrar's Nameserver entries to Cloudflare's servers
 4. Once the Nameserver update has been completed, you can add the domain as a *Custom domain* for your *Digital Garden*. 
 
-#### Add Cloudflare Security and Optimization Features
+### Add Cloudflare Security and Optimization Features
 Now that we've connected our domain to Cloudflare, we can view it under *Websites* at the top of the left-side slideout menu, and make a host of performance and security upgrades. From [your Cloudflare dashboard](https://dash.cloudflare.com), you should be able to see the domain you just registered, and a little green checkmark with *Active* next to it.
 
 {: .note}
@@ -237,7 +237,7 @@ Once done, we should go down the options in left slide-out menu and enable a bun
 		1. If you're squeamish, choose "*Full*"
 		2. Because the whole site is hosted on Cloudflare, you shouldn't have to create any additional certificates
 	3. Under "*Edge Certificates*"
-		1. Enable "*HTTP Strict Transport Security (HSTS)*";^[[HSTS Preload List Submission](https://hstspreload.org)]^[[The HTTPS-Only Standard - HTTP Strict Transport Security](https://https.cio.gov/hsts/)] this brings up a big scary menu. Check the box and click *Next*, and choose the options in the following menu:
+		1. Enable "*HTTP Strict Transport Security (HSTS)*";[^9][^10] this brings up a big scary menu. Check the box and click *Next*, and choose the options in the following menu:
 			1. Enable HSTS
 			2. Max Age - 1 Year
 				1. Required for *Preload*
@@ -257,7 +257,7 @@ Once done, we should go down the options in left slide-out menu and enable a bun
 		3. I would advocate *Medium* and doing some testing from different browsers, using a VPN, etc., and downgrading if you feel it's necessary
 	4. Challenge Passage: *Your preference* (Default 30 minutes)
 		1. If a suspicious visitor gets past the challenge, this dictates how frequently they are re-challenged
-		2. *Default* is *30* *minutes*, and based on your testing for Security Level (e.g., if it trips when you're using a VPN), I would set the time period higher^[[Life of a Tor user : r/TOR](https://www.reddit.com/r/TOR/comments/187rfbh/life_of_a_tor_user/)]
+		2. *Default* is *30* *minutes*, and based on your testing for Security Level (e.g., if it trips when you're using a VPN), I would set the time period higher[^11]
 	5. Bot traffic
 		1. Block AI Bots - Enabled
 		2. AI Labyrinth (Beta) - Enabled
@@ -266,7 +266,7 @@ Once done, we should go down the options in left slide-out menu and enable a bun
 	2. In my experience, "Rocket Loader" has caused problems with loading Mermaid charts, so I do not advise enabling it.
 
 
-### 05. (OPT) Configure Dependabot on GitHub and Create Custom Headers
+## 05. (OPT) Configure Dependabot on GitHub and Create Custom Headers
 Now that we have *Cloudflare* configured securely, let's make sure we're not publishing obsolete and vulnerable code.
 
 {: .warning}
@@ -275,7 +275,7 @@ Now that we have *Cloudflare* configured securely, let's make sure we're not pub
 Additionally, **I strongly recommended** that you familiarize yourself with *Visual Studio Code*, *Node.js*, and *GitHub Desktop*[^4]. But rather than make this already long guide longer, you can find more information on this under [How to manually update packages for Digital Gardens](How%20to%20manually%20update%20packages%20for%20Digital%20Gardens).
 
 Ok, with that out of the way, let's...
-#### Configure Security and Dependency Updates in GitHub
+### Configure Security and Dependency Updates in GitHub
 
 {: .important}
 >If you apply updates through Dependabot, *Digital Garden* updates overwrite them, and you may be required to re-apply them. However, *it's better to be running patched* than unpatched, and *it's not that hard to do*.
@@ -296,8 +296,8 @@ To merge a succeeding pull request, click the *green button to "Merge pull reque
 
 And it's updated! Hoo-raaay! But if you haven't already, I *highly recommend* you check out my guide on [How to manually update packages for Digital Gardens](How%20to%20manually%20update%20packages%20for%20Digital%20Gardens). It covers instances where Dependabot finds a security vulnerability but can't fix it for you automatically. 
 
-#### Custom Security Headers
-Cloudflare allows you to install custom headers^[[Headers · Cloudflare Pages docs](https://developers.cloudflare.com/pages/platform/headers/)] on your site without much fuss.
+### Custom Security Headers
+Cloudflare allows you to install custom headers[^12] on your site without much fuss.
 
 Installing security headers **critical**, as it improves your site's security and reduces the likelihood an attacker will use your site to hack your visitors. *Don't enable attackers*.
 
@@ -351,14 +351,15 @@ To verify that your headers have been added, under "*Deployment Details*" click 
 
 You can also go to [Security Header Scanner by Probely](https://securityheaders.com) to view your site's current headers after the deployment succeeds.
 
+
+# Troubleshooting
 And that's it! Finally! Now go write some stuff and publish it.
 
-## Troubleshooting
 ... unless it didn't work. 
 
 Don't panic! If you're running into trouble, I highly recommend checking out my guide on [troubleshooting-digital-gardens](../bugs-and-fixes/troubleshooting-digital-gardens.md), which covers common problems and the best way to find help.
 
-## Other Resources and Honorable Mentions
+# Other Resources and Honorable Mentions
 
 The guide I used to get started is [How I Published My Knowledge Base Online for Free](https://sharaf.cc/40-49-toolbox/40-note-taking/40-01-obsidian/guides/publish-obsidian-vault-for-free/) by Sharaf; unfortunately, it gets a critical part of the process wrong during initial setup in the **Build Configuration**. Specifically, you need to set the "*Build command*" to `npm run build` and the "*Build output directory*" to `/dist`.
 
@@ -378,3 +379,12 @@ The guide I used to get started is [How I Published My Knowledge Base Online for
 
 [^7]: For more details, check out [prevent-domain-spoofing](../customization/prevent-domain-spoofing.md).
 
+[^8]: You could do a regular token, but that's a bad idea and you should feel bad for having it.
+
+[^9]: [HSTS Preload List Submission](https://hstspreload.org)
+
+[^10]: [The HTTPS-Only Standard - HTTP Strict Transport Security](https://https.cio.gov/hsts/)
+
+[^11]: [Life of a Tor user : r/TOR](https://www.reddit.com/r/TOR/comments/187rfbh/life_of_a_tor_user/)
+
+[^12]: [Headers · Cloudflare Pages docs](https://developers.cloudflare.com/pages/platform/headers/)
