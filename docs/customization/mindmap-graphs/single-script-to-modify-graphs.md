@@ -333,14 +333,14 @@ The Digital Garden plugin offers a similar graph feature to Obsidian, showing al
                     <span id="depth-display" x-text="depth"></span>
                 </div>
                 <div class="ctrl-right">
-                    <span id="global-graph-btn" x-on:click="showFullGraph = true; setTimeout(() => { fullGraph = openFullGraph(fullGraphData)}, 100)"><i  icon-name="globe" aria-hidden="true"></i></span>
-                    <span  id="graph-fs-btn"  x-on:click="fullScreen = !fullScreen;"><i  icon-name="expand" aria-hidden="true"></i></span>
+                    <span id="global-graph-btn" x-on:click="showFullGraph = true; setTimeout(() => { fullGraph = openFullGraph(fullGraphData)}, 100)"><i  data-lucide="globe" aria-hidden="true"></i></span>
+                    <span  id="graph-fs-btn"  x-on:click="fullScreen = !fullScreen;"><i  data-lucide="expand" aria-hidden="true"></i></span>
                 </div>
         </div>
     </div>
     <div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen);" id="link-graph" ></div>
     <div x-show="showFullGraph" id="full-graph" class="show" style="display: none;">
-        <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
+        <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i data-lucide="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
     </div>
 </div>
 {% endhighlight %}
