@@ -35,20 +35,20 @@ Create a new file named `theme-switcher.njk` in `src/site/_includes/components/u
     rel="noopener noreferrer"
     title="Buy me a coffee- thank you!"
   >
-    <i icon-name="coffee" aria-hidden="true"></i>
+    <i data-lucide="coffee" aria-hidden="true"></i>
   </a>
 {# Email Me Link #}
   <a
     id="emailme"
     href="#"
   >
-    <i icon-name="mail-plus" title="Discuss" aria-hidden="true"></i>
+    <i data-lucide="mail-plus" title="Discuss" aria-hidden="true"></i>
   </a>
 {# Theme Switching Link #}
   <span id="theme-switch">
-    <i class="svg-icon light" icon-name="sun" aria-hidden="true"></i>
-    <i class="svg-icon dark" icon-name="moon" aria-hidden="true"></i>
-    <i class="svg-icon auto" icon-name="sun-moon" aria-hidden="true"></i>
+    <i class="svg-icon light" data-lucide="sun" aria-hidden="true"></i>
+    <i class="svg-icon dark" data-lucide="moon" aria-hidden="true"></i>
+    <i class="svg-icon auto" data-lucide="sun-moon" aria-hidden="true"></i>
   </span>
 </aside>
 
